@@ -3,6 +3,12 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --earthy-copper: #b87e65;
+  --desert-cream: #f5edda;
+  --brand-brown: #4a2e25;
+  --brand-black: #3a3a3a;
+  --brand-green: #8a8f6a;
+  --swiper-pagination-color: var(--color-copper);
 }
 
 @theme inline {
@@ -10,13 +16,13 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --font-raleway: var(--font-raleway);
+  --font-openSans: var(--font-openSans);
+  --color-copper: var(--earthy-copper);
+  --color-cream: var(--desert-cream);
+  --color-brand-brown: var(--brand-brown);
+  --color-brand-black: var(--brand-black);
+  --color-brand-green: var(--brand-green);
 }
 
 body {
