@@ -1,5 +1,6 @@
 "use client";
 
+import { X } from "lucide-react";
 import { useSearchParams, usePathname, useRouter } from "next/navigation";
 
 import { useEffect, useState } from "react";
@@ -15,7 +16,7 @@ const ConsulationOptions = [
 
 const ContactModal = () => {
   const searchParams = useSearchParams();
-  const modal = searchParams.get("showConsultation");
+  const modal = searchParams.get("showContactForm");
   const pathname = usePathname();
   const router = useRouter();
 
@@ -99,12 +100,12 @@ const ContactModal = () => {
       />
 
       <div
-        className={`fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 lg:w-140 sm:max-lg:w-120 xs:max-sm:w-100 max-xs:w-[90%] max-w-200 bg-white p-6 pb-10 shadow-xl z-1000 transition-all duration-300 ease-out ${isVisible ? "opacity-100 scale-100" : "opacity-0 scale-95"}`}
+        className={`fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 lg:w-140 sm:max-lg:w-120 xs:max-sm:w-100 max-xs:w-[90%] max-w-200 bg-white p-6 pb-10 shadow-xl z-1000 transition-all duration-300 ease-out font-openSans ${isVisible ? "opacity-100 scale-100" : "opacity-0 scale-95"}`}
       >
         {/* Header (Close Button) */}
         <div className="flex justify-end items-center mb-4">
-          <button onClick={handleClose} className="text-black">
-            ✕
+          <button onClick={handleClose} className="text-black cursor-pointer">
+            <X />
           </button>
         </div>
 
@@ -193,8 +194,8 @@ const ContactModal = () => {
                     cursor-pointer px-6 py-3 border transition-all duration-200 w-48 max-lg:w-35 max-sm:w-30 text-center select-none max-sm:text-sm
                     ${
                       isSelected
-                        ? "bg-black text-white border-black"
-                        : "border-gray-300 hover:bg-black hover:text-white text-black"
+                        ? "bg-brand-brown text-white border-black"
+                        : "border-gray-300 hover:bg-brand-black hover:text-white text-black"
                     }
                   `}
                         >
@@ -221,7 +222,7 @@ const ContactModal = () => {
                   >
                     <button
                       onClick={() => setStep(2)}
-                      className="bg-black text-white px-8 py-2 hover:bg-gray-800 transition-colors"
+                      className="bg-brand-black text-white px-8 py-2 hover:bg-brand-brown transition-colors"
                     >
                       Next
                     </button>
@@ -276,13 +277,13 @@ const ContactModal = () => {
                     <button
                       type="button"
                       onClick={() => setStep(1)}
-                      className="text-black underline underline-offset-4 hover:text-gray-600"
+                      className="text-brand-black underline underline-offset-4 hover:text-brand-brown"
                     >
                       Back
                     </button>
                     <button
                       type="submit"
-                      className="bg-black text-white px-8 py-2 hover:bg-gray-800 transition-colors"
+                      className="bg-brand-black text-white px-8 py-2 hover:bg-brand-brown transition-colors"
                     >
                       {isSubmitting ? (
                         <>

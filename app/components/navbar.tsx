@@ -9,10 +9,10 @@ const Navbar = () => {
   return (
     <div className="shadow-md font-raleway fixed top-0 inset-x-0 z-10 bg-white">
       <div className="flex justify-center items-center gap-40 h-[7vh]">
-        <div className="h-full flex items-center">
+        <Link href="/" className="h-full flex items-center">
           <Image src={meraGharLogo} alt="logo" width={260} />
-        </div>
-        <div className="flex gap-15 font-semibold text-brand-black">
+        </Link>
+        <div className="flex gap-15 font-semibold text-brand-black xl:text-lg">
           {links.map((link, index) => (
             <Link key={index} href={`${link.linkTo}`}>
               {link.linkTitle}
