@@ -7,7 +7,7 @@ import { navLinks } from "@/lib/data";
 const Navbar = () => {
   const links = navLinks;
   return (
-    <div className="shadow-md font-raleway">
+    <div className="shadow-md font-raleway fixed top-0 inset-x-0 z-10 bg-white">
       <div className="flex justify-center items-center gap-40 h-[7vh]">
         <div className="h-full flex items-center">
           <Image src={meraGharLogo} alt="logo" width={260} />
