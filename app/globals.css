@@ -8,6 +8,7 @@
   --brand-brown: #4a2e25;
   --brand-black: #3a3a3a;
   --brand-green: #8a8f6a;
+  --swiper-pagination-bullet-inactive-opacity: 0.5;
   --swiper-pagination-color: var(--color-copper);
 }
 
