@@ -3,7 +3,7 @@ const Page = () => {
     <div>
       <div className="py-20 w-[40%] mx-auto font-medium">
         <h1 className="text-copper text-6xl font-semibold mb-8">About</h1>
-        <p className="text-brand-black text-xl">
+        <p className="text-brand-black font-openSans text-xl">
           <p>
             <b className="font-bold">Mera Ghar</b> represents an emotion.
           </p>
