@@ -107,7 +107,7 @@ const Navbar = () => {
 
   return (
     <div
-      className={`shadow-sm font-raleway fixed top-0 inset-x-0 z-10 transition-colors duration-300 ${
+      className={`font-raleway fixed top-0 inset-x-0 z-10 transition-colors duration-300 ${
         isSolid ? "bg-white text-copper" : "bg-transparent text-cream"
       }`}
     >

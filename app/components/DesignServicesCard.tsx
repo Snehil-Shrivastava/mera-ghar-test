@@ -18,7 +18,7 @@ const DesignServicesCard = ({
       <div className="bg-white py-8 px-10 w-120 relative bottom-10 left-1/2 -translate-x-1/2 shadow-xl">
         <div className="flex justify-between">
           <h3 className="font-bold text-2xl">{name}</h3>
-          <button className="px-1.5 py-0.5 bg-copper text-white">
+          <button className="py-1 px-3 bg-copper text-white">
             <ChevronRight />
           </button>
         </div>
