@@ -2,8 +2,9 @@
 
 import { X } from "lucide-react";
 import { useSearchParams, usePathname, useRouter } from "next/navigation";
+import emailjs from "@emailjs/browser";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const ConsulationOptions = [
   "Home",
@@ -62,15 +63,29 @@ const ContactModal = () => {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
     setSubmitStatus("idle");
+
     try {
-      console.log("form submitted", {
-        ...formData,
-        projectType: selectedOptions,
-      });
+      const templateParams = {
+        name: formData.name,
+        email: formData.email,
+        phone: formData.phone,
+        wantToBuild:
+          selectedOptions.length > 0
+            ? selectedOptions.join(", ")
+            : "None specified",
+      };
+
+      await emailjs.send(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
+        templateParams,
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!,
+      );
+
       setSubmitStatus("success");
     } catch (error) {
       console.error("Submission error:", error);
@@ -165,15 +180,6 @@ const ContactModal = () => {
             <>
               {/* Icon & Title - Dynamic based on step */}
               <div className="inline-flex gap-5 max-sm:gap-2.5 items-center mx-auto relative left-1/2 -translate-x-1/2 mb-8 max-lg:mb-0">
-                {/* <div className="bg-black p-1">
-                  <Image
-                    src={step === 1 ? consultationIcon : contactIcon}
-                    alt="consultation_icon"
-                    width={15}
-                    height={15}
-                    className="max-sm:w-2 max-sm:h-2"
-                  />
-                </div> */}
                 <h2 className="uppercase text-lg max-sm:text-xs font-medium leading-5 select-none">
                   {step === 1
                     ? "What are you planning to build"
