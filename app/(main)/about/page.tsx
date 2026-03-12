@@ -1,9 +1,9 @@
 const Page = () => {
   return (
-    <div>
+    <div className="pt-[10vh]">
       <div className="py-20 w-[40%] mx-auto font-medium">
         <h1 className="text-copper text-6xl font-semibold mb-8">About</h1>
-        <p className="text-brand-black font-openSans text-xl">
+        <div className="text-brand-black font-openSans text-xl about-content-container">
           <p>
             <b className="font-bold">Mera Ghar</b> represents an emotion.
           </p>
@@ -47,7 +47,7 @@ const Page = () => {
             for your life. And it represents your choices for your life and your
             world.
           </p>
-        </p>
+        </div>
       </div>
     </div>
   );
