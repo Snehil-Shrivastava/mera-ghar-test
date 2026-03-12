@@ -8,7 +8,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
     <div>
       <Navbar />
       {/* <div className="pt-[7vh] font-raleway">{children}</div> */}
-      <div className="pt-[10vh] font-raleway">{children}</div>
+      <div className="font-raleway">{children}</div>
       <Footer />
       <Suspense fallback={null}>
         <ContactModal />

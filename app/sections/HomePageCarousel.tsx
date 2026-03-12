@@ -47,10 +47,10 @@ const HomePageCarousel = () => {
             btnTxt="Calculate Now"
           />
         </SwiperSlide>
-        <div className="prev bg-white w-12 h-12 absolute left-10 top-1/2 -translate-y-1/2 z-2 rounded-full flex items-center justify-center font-bold">
+        <div className="prev bg-cream p-2 absolute left-10 top-1/2 -translate-y-1/2 z-2 flex items-center justify-center font-bold text-copper hover:bg-copper hover:text-cream">
           <ChevronLeft />
         </div>
-        <div className="next bg-white w-12 h-12 absolute right-10 top-1/2 -translate-y-1/2 z-2 rounded-full flex items-center justify-center font-bold">
+        <div className="next bg-cream p-2 absolute right-10 top-1/2 -translate-y-1/2 z-2 flex items-center justify-center font-bold text-copper hover:bg-copper hover:text-cream">
           <ChevronRight />
         </div>
       </Swiper>
