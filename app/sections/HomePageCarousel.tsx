@@ -7,8 +7,8 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Autoplay, Keyboard, Navigation, Pagination } from "swiper/modules";
 
-import homeInterior1 from "@/public/home-interir-1.jpg";
-import homeInterior2 from "@/public/home-interir-2.jpg";
+import homeInterior1 from "@/public/home-interior-1.jpg";
+import homeInterior2 from "@/public/home-interior-2.jpg";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import ImageCarousel from "../components/image-carousel";
 

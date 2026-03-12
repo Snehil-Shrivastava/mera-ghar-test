@@ -1,7 +1,7 @@
 const Page = () => {
   return (
     <div className="pt-[10vh]">
-      <div className="py-20 w-[40%] mx-auto font-medium">
+      <div className="py-20 w-200 mx-auto font-medium">
         <h1 className="text-copper text-6xl font-semibold mb-8">About</h1>
         <div className="text-brand-black font-openSans text-xl about-content-container">
           <p>
