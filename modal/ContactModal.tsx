@@ -4,7 +4,7 @@ import { X } from "lucide-react";
 import { useSearchParams, usePathname, useRouter } from "next/navigation";
 import emailjs from "@emailjs/browser";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 
 const ConsulationOptions = [
   "Home",
