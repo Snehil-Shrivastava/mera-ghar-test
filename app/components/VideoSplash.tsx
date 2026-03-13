@@ -25,7 +25,7 @@ export default function VideoSplash({
     <div className="fixed inset-0 z-50 bg-black flex items-center justify-center">
       <video
         ref={videoRef}
-        src="/placeholder_globe.mp4"
+        src="/placeholder_globe.webm"
         autoPlay
         muted
         playsInline
