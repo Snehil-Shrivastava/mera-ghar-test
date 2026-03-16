@@ -114,49 +114,74 @@ async function getPost(slug: string) {
 }
 
 const Page = async ({ params }: { params: { slug: string } }) => {
-  const post = await getPost(params.slug);
+  const resolvedParams = await params;
+  const post = await getPost(resolvedParams.slug);
 
-  console.log("post", post);
+  //   console.log("post", post);
+
+  if (!post) {
+    return (
+      <div className="pt-[10vh]">
+        <div className="flex flex-col gap-6 py-10 px-20 font-openSans text-center">
+          <h2 className="text-3xl font-bold font-raleway">Post Not Found</h2>
+        </div>
+      </div>
+    );
+  }
 
   return (
+    // <div className="pt-[10vh]">
+    //   <div className="flex flex-col gap-6 py-10 px-20 font-openSans">
+    //     <h2 className="text-3xl font-bold font-raleway">Heading</h2>
+    //     <p>
+    //       Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum quam
+    //       earum non, aut illum nesciunt corrupti tempora labore necessitatibus
+    //       sunt est fugiat facilis et dolorum possimus voluptates ea nemo iusto.
+    //     </p>
+    //     <p>
+    //       Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum quam
+    //       earum non, aut illum nesciunt corrupti tempora labore necessitatibus
+    //       sunt est fugiat facilis et dolorum possimus voluptates ea nemo iusto.
+    //     </p>
+    //     <p>
+    //       Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum quam
+    //       earum non, aut illum nesciunt corrupti tempora labore necessitatibus
+    //       sunt est fugiat facilis et dolorum possimus voluptates ea nemo iusto.
+    //     </p>
+    //     <p>
+    //       Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum quam
+    //       earum non, aut illum nesciunt corrupti tempora labore necessitatibus
+    //       sunt est fugiat facilis et dolorum possimus voluptates ea nemo iusto.
+    //     </p>
+    //     <p>
+    //       Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum quam
+    //       earum non, aut illum nesciunt corrupti tempora labore necessitatibus
+    //       sunt est fugiat facilis et dolorum possimus voluptates ea nemo iusto.
+    //     </p>
+    //     <p>
+    //       Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum quam
+    //       earum non, aut illum nesciunt corrupti tempora labore necessitatibus
+    //       sunt est fugiat facilis et dolorum possimus voluptates ea nemo iusto.
+    //     </p>
+    //     <p>
+    //       Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum quam
+    //       earum non, aut illum nesciunt corrupti tempora labore necessitatibus
+    //       sunt est fugiat facilis et dolorum possimus voluptates ea nemo iusto.
+    //     </p>
+    //   </div>
+    // </div>
+
     <div className="pt-[10vh]">
       <div className="flex flex-col gap-6 py-10 px-20 font-openSans">
-        <h2 className="text-3xl font-bold font-raleway">Heading</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum quam
-          earum non, aut illum nesciunt corrupti tempora labore necessitatibus
-          sunt est fugiat facilis et dolorum possimus voluptates ea nemo iusto.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum quam
-          earum non, aut illum nesciunt corrupti tempora labore necessitatibus
-          sunt est fugiat facilis et dolorum possimus voluptates ea nemo iusto.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum quam
-          earum non, aut illum nesciunt corrupti tempora labore necessitatibus
-          sunt est fugiat facilis et dolorum possimus voluptates ea nemo iusto.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum quam
-          earum non, aut illum nesciunt corrupti tempora labore necessitatibus
-          sunt est fugiat facilis et dolorum possimus voluptates ea nemo iusto.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum quam
-          earum non, aut illum nesciunt corrupti tempora labore necessitatibus
-          sunt est fugiat facilis et dolorum possimus voluptates ea nemo iusto.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum quam
-          earum non, aut illum nesciunt corrupti tempora labore necessitatibus
-          sunt est fugiat facilis et dolorum possimus voluptates ea nemo iusto.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum quam
-          earum non, aut illum nesciunt corrupti tempora labore necessitatibus
-          sunt est fugiat facilis et dolorum possimus voluptates ea nemo iusto.
-        </p>
+        {/* Render the dynamic Title */}
+        <h2 className="text-3xl font-bold font-raleway">{post.title}</h2>
+
+        {/* Render the dynamic WordPress Content (HTML) */}
+        {/* If you installed @tailwindcss/typography, add 'prose prose-lg' to className below */}
+        <div
+          className="text-lg flex flex-col gap-4 wp-content"
+          dangerouslySetInnerHTML={{ __html: post.content }}
+        />
       </div>
     </div>
   );
