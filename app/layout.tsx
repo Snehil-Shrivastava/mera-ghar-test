@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Raleway, Open_Sans } from "next/font/google";
 import "./globals.css";
-import VideoSplash from "./components/VideoSplash";
 
 const raleway = Raleway({
   variable: "--font-raleway",

@@ -11,7 +11,6 @@ import homeInterior1 from "@/public/home-interior-1.webp";
 import homeInterior2 from "@/public/home-interior-2.webp";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import ImageCarousel from "../components/image-carousel";
-import Image from "next/image";
 
 const HomePageCarousel = () => {
   return (
