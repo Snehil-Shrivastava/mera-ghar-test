@@ -11,6 +11,7 @@ import homeInterior1 from "@/public/home-interior-1.webp";
 import homeInterior2 from "@/public/home-interior-2.webp";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import ImageCarousel from "../components/image-carousel";
+import Image from "next/image";
 
 const HomePageCarousel = () => {
   return (
@@ -54,6 +55,16 @@ const HomePageCarousel = () => {
           <ChevronRight />
         </div>
       </Swiper>
+      {/* <div className="relative w-full h-full">
+        <video
+          src="/HeroBgVideo.mp4"
+          autoPlay
+          muted
+          playsInline
+          loop
+          className="absolute inset-0 w-full h-full object-fill"
+        />
+      </div> */}
     </div>
   );
 };

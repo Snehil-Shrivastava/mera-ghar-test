@@ -34,7 +34,7 @@ const Page = async () => {
 
   return (
     <div className="pt-[10vh] bg-cream min-h-screen">
-      <div className="grid grid-cols-2 gap-15 w-4/5 mx-auto py-20">
+      <div className="grid grid-cols-2 gap-15 w-4/5 max-w-[1093px] mx-auto py-20">
         {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
         {posts.map((post: any) => (
           <BlogCard
