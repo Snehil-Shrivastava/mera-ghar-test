@@ -15,7 +15,7 @@ import ImageCarousel from "../components/image-carousel";
 const HomePageCarousel = () => {
   return (
     <div className="h-[90vh] relative">
-      <Swiper
+      {/* <Swiper
         cssMode={true}
         loop={true}
         autoplay={{
@@ -53,17 +53,22 @@ const HomePageCarousel = () => {
         <div className="next bg-cream py-1 px-3 absolute right-10 top-1/2 -translate-y-1/2 z-2 flex items-center justify-center font-bold text-copper hover:bg-copper hover:text-cream">
           <ChevronRight />
         </div>
-      </Swiper>
-      {/* <div className="relative w-full h-full">
+      </Swiper> */}
+      <div className="relative w-full h-full">
         <video
-          src="/HeroBgVideo.mp4"
+          src="/interior_placeholder.mp4"
           autoPlay
           muted
           playsInline
           loop
-          className="absolute inset-0 w-full h-full object-fill"
+          className="absolute inset-0 w-full h-full object-cover brightness-50"
         />
-      </div> */}
+        <div className="absolute bottom-80 left-1/2 -translate-x-1/2 z-2">
+          <button className="uppercase bg-copper py-4 px-10 text-xs font-semibold text-cream">
+            Book free consulatation
+          </button>
+        </div>
+      </div>
     </div>
   );
 };

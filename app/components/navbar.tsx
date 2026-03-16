@@ -86,7 +86,7 @@ import meraGharLogoCopper from "@/public/mera-ghar-logo-copper-skeleton.svg";
 import Link from "next/link";
 import { navLinks } from "@/lib/data";
 import { useState, useEffect } from "react";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 
 const Navbar = () => {
   const links = navLinks;
@@ -96,6 +96,8 @@ const Navbar = () => {
   // Get the current route
   const pathname = usePathname();
   const isHomePage = pathname === "/";
+
+  const router = useRouter();
 
   useEffect(() => {
     if (!isHomePage) return;
@@ -158,7 +160,12 @@ const Navbar = () => {
             isSolid ? "bg-cream" : "bg-copper"
           }`}
         >
-          <button className="uppercase cursor-pointer">Get a Quotation</button>
+          <Link
+            href="?showQuotationForm=true"
+            className="uppercase cursor-pointer"
+          >
+            Get a Quotation
+          </Link>
         </div>
 
         {/* Mobile Hamburger Button (Hidden on md+ screens) */}
@@ -224,7 +231,10 @@ const Navbar = () => {
         <div className="px-8 py-3 text-sm font-semibold bg-cream mt-2">
           <button
             className="uppercase cursor-pointer"
-            onClick={() => setIsMobileMenuOpen(false)}
+            onClick={() => {
+              setIsMobileMenuOpen(false);
+              router.push("/?showQuotationForm=true");
+            }}
           >
             Get a Quotation
           </button>

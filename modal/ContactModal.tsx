@@ -17,7 +17,7 @@ const ConsulationOptions = [
 
 const ContactModal = () => {
   const searchParams = useSearchParams();
-  const modal = searchParams.get("showContactForm");
+  const modal = searchParams.get("showQuotationForm");
   const pathname = usePathname();
   const router = useRouter();
 
