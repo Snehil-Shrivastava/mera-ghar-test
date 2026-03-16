@@ -1,34 +1,3 @@
-// import Image from "next/image";
-
-// import placeholder from "@/public/full-home-interiors.webp";
-// import Link from "next/link";
-
-// const BlogCard = ({ linkTo }: { linkTo: string }) => {
-//   return (
-//     <div className="px-3 pt-3 pb-6 shadow-md rounded-md flex flex-col gap-6 bg-white">
-//       <div className="w-full h-50 relative">
-//         <Image src={placeholder} alt="" className="object-fit" fill />
-//       </div>
-//       <div className="flex flex-col gap-6 pr-6">
-//         <div>
-//           <h4 className="text-xl font-bold">Title</h4>
-//           <p className="opacity-70 text-sm">
-//             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi,
-//             similique?
-//           </p>
-//         </div>
-//         <div>
-//           <Link href={linkTo} className="bg-copper px-3 py-2 text-cream">
-//             Read more
-//           </Link>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default BlogCard;
-
 import Image from "next/image";
 import Link from "next/link";
 import placeholder from "@/public/full-home-interiors.webp";
