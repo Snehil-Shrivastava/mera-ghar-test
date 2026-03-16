@@ -31,7 +31,7 @@ export default function RootLayout({
       <body
         className={`${raleway.variable} ${openSans.variable} antialiased relative`}
       >
-        <VideoSplash>{children}</VideoSplash>
+        {children}
       </body>
     </html>
   );
