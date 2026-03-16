@@ -13,7 +13,7 @@ const HomeDesignServices = () => {
         <h1 className="text-brand-brown font-bold text-[40px]/[48px] w-170 text-center capitalize">
           Be It End-To-End Interiors, Renovation Or Modular Solutions
         </h1>
-        <div className="grid grid-cols-2 gap-15">
+        <div className="grid grid-cols-2 gap-15 max-xl:w-[90%] max-xl:mx-auto">
           {services.map((service, index) => (
             <DesignServicesCard
               key={index}

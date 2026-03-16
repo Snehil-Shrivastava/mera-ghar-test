@@ -13,7 +13,7 @@ const HomeDesignEstimate = () => {
         <h1 className="text-brand-brown font-bold text-[40px]/[48px] w-170 text-center capitalize">
           Calculate the approximate cost of doing up your home interiors
         </h1>
-        <div className="flex gap-10">
+        <div className="flex max-xl:flex-col gap-10">
           {estimates.map((estimate, index) => (
             <DesignEstimateCard
               key={index}
