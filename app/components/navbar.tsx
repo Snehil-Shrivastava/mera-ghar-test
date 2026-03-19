@@ -17,7 +17,7 @@ const Navbar = () => {
   const pathname = usePathname();
   const isHomePage = pathname === "/";
 
-  const router = useRouter();
+  // const router = useRouter();
 
   useEffect(() => {
     if (!isHomePage) return;
@@ -49,7 +49,7 @@ const Navbar = () => {
       }`}
     >
       {/* Main Navbar Container */}
-      <div className="flex justify-between xl:justify-center items-center px-15 xl:px-10 xl:max-[1380px]:gap-25 gap-30 h-[10vh] min-h-30.5">
+      <div className="flex justify-between 1600p:justify-center items-center px-15 xl:px-10 xl:max-[1380px]:gap-25 gap-30 h-[10vh] min-h-30.5">
         {/* Logo */}
         <Link
           href="/"
@@ -65,27 +65,33 @@ const Navbar = () => {
         </Link>
 
         {/* Desktop Links (Hidden on small screens) */}
-        <div className="hidden xl:flex gap-15 xl:text-lg">
+        <div className="hidden 1600p:flex gap-15 xl:text-lg">
           {links.map((link, index) => (
-            <Link key={index} href={`${link.linkTo}`}>
-              {link.linkTitle}
-            </Link>
+            <>
+              <Link
+                key={index}
+                href={`${link.linkTo}`}
+                className="hover:text-copper"
+              >
+                {link.linkTitle}
+              </Link>
+            </>
           ))}
         </div>
 
         {/* Desktop Button (Hidden on small screens) */}
-        <div
+        {/* <div
           className={`hidden xl:block px-8 py-3 text-xs font-semibold cursor-pointer transition-colors duration-300 ${
             isSolid ? "bg-cream" : "bg-copper"
           }`}
           onClick={() => router.push("/?showQuotationForm=true")}
         >
           <button className="uppercase cursor-pointer">Get a Quotation</button>
-        </div>
+        </div> */}
 
         {/* Mobile Hamburger Button (Hidden on md+ screens) */}
         <button
-          className="xl:hidden block focus:outline-none cursor-pointer"
+          className="1600p:hidden block focus:outline-none cursor-pointer"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           aria-label="Toggle Menu"
         >
@@ -127,9 +133,9 @@ const Navbar = () => {
 
       {/* Mobile Menu Dropdown */}
       <div
-        className={`xl:hidden absolute top-[9.96vh] left-0 w-full bg-white text-copper flex flex-col items-center gap-6 shadow-xl overflow-hidden transition-all duration-300 ease-in-out ${
+        className={`1600p:hidden absolute top-[9.96vh] left-0 w-full bg-white text-copper flex flex-col items-center gap-6 shadow-xl overflow-hidden transition-all duration-300 ease-in-out ${
           isMobileMenuOpen
-            ? "max-h-125 py-8 opacity-100"
+            ? "max-h-140 pt-8 pb-12 opacity-100"
             : "max-h-0 py-0 opacity-0"
         }`}
       >
@@ -143,7 +149,7 @@ const Navbar = () => {
             {link.linkTitle}
           </Link>
         ))}
-        <div className="px-8 py-3 text-sm font-semibold bg-cream mt-2 cursor-pointer">
+        {/* <div className="px-8 py-3 text-sm font-semibold bg-cream mt-2 cursor-pointer">
           <button
             className="uppercase cursor-pointer"
             onClick={() => {
@@ -153,7 +159,7 @@ const Navbar = () => {
           >
             Get a Quotation
           </button>
-        </div>
+        </div> */}
       </div>
     </div>
   );
