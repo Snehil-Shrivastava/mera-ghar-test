@@ -27,6 +27,13 @@
   --color-brand-green: var(--brand-green);
 }
 
+@theme {
+  --breakpoint-2240p: 140rem;
+  --breakpoint-1920p: 120rem;
+  --breakpoint-1600p: 100rem;
+  --breakpoint-1440p: 90rem;
+}
+
 body {
   background: var(--background);
   color: var(--foreground);

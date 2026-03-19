@@ -6,14 +6,7 @@ import emailjs from "@emailjs/browser";
 
 import { useEffect, useState } from "react";
 
-const ConsulationOptions = [
-  "Home",
-  "Office",
-  "Showroom",
-  "Restaurants",
-  "Outdoors",
-  "Others",
-];
+const ConsulationOptions = ["Kitchens", "Wardrobes", "Doors"];
 
 const ContactModal = () => {
   const searchParams = useSearchParams();
@@ -115,10 +108,10 @@ const ContactModal = () => {
       />
 
       <div
-        className={`fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 lg:w-140 sm:max-lg:w-120 xs:max-sm:w-100 max-xs:w-[90%] max-w-200 bg-white p-6 pb-10 shadow-xl z-1000 transition-all duration-300 ease-out font-openSans ${isVisible ? "opacity-100 scale-100" : "opacity-0 scale-95"}`}
+        className={`fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 lg:w-100 sm:max-lg:w-120 xs:max-sm:w-100 max-xs:w-[90%] max-w-200 bg-white p-6 pb-10 shadow-xl z-1000 transition-all duration-300 ease-out font-openSans ${isVisible ? "opacity-100 scale-100" : "opacity-0 scale-95"}`}
       >
         {/* Header (Close Button) */}
-        <div className="flex justify-end items-center mb-4">
+        <div className="flex justify-end items-center mb-6">
           <button onClick={handleClose} className="text-black cursor-pointer">
             <X />
           </button>
@@ -179,7 +172,7 @@ const ContactModal = () => {
           {submitStatus !== "success" && (
             <>
               {/* Icon & Title - Dynamic based on step */}
-              <div className="inline-flex gap-5 max-sm:gap-2.5 items-center mx-auto relative left-1/2 -translate-x-1/2 mb-8 max-lg:mb-0">
+              <div className="inline-flex gap-5 max-sm:gap-2.5 items-center mx-auto relative left-1/2 -translate-x-1/2">
                 <h2 className="uppercase text-lg max-sm:text-xs font-medium leading-5 select-none">
                   {step === 1
                     ? "What are you planning to build"
@@ -189,7 +182,7 @@ const ContactModal = () => {
 
               {step === 1 && (
                 <div className="animate-in fade-in duration-300">
-                  <div className="py-8 grid grid-cols-2 justify-items-center gap-10 max-lg:gap-8 max-sm:gap-6 sm:max-lg:w-[70%] mx-auto">
+                  <div className="py-8 flex flex-col justify-center items-center gap-8 max-lg:gap-8 max-sm:gap-6 sm:max-lg:w-[70%] mx-auto">
                     {ConsulationOptions.map((options, index) => {
                       const isSelected = selectedOptions.includes(options);
 
@@ -220,7 +213,7 @@ const ContactModal = () => {
                   </div>
 
                   <div
-                    className={`flex justify-end transition-all duration-100 ease-linear mt-4 w-full max-sm:w-full mx-auto select-none max-sm:text-sm ${
+                    className={`flex justify-center transition-all duration-100 ease-linear mt-4 w-full max-sm:w-full mx-auto select-none max-sm:text-sm ${
                       selectedOptions.length > 0
                         ? "opacity-100 visible"
                         : "opacity-0 invisible"

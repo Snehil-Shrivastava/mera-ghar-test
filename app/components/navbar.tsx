@@ -75,16 +75,12 @@ const Navbar = () => {
 
         {/* Desktop Button (Hidden on small screens) */}
         <div
-          className={`hidden xl:block px-8 py-3 text-xs font-semibold transition-colors duration-300 ${
+          className={`hidden xl:block px-8 py-3 text-xs font-semibold cursor-pointer transition-colors duration-300 ${
             isSolid ? "bg-cream" : "bg-copper"
           }`}
+          onClick={() => router.push("/?showQuotationForm=true")}
         >
-          <Link
-            href="?showQuotationForm=true"
-            className="uppercase cursor-pointer"
-          >
-            Get a Quotation
-          </Link>
+          <button className="uppercase">Get a Quotation</button>
         </div>
 
         {/* Mobile Hamburger Button (Hidden on md+ screens) */}
