@@ -80,7 +80,7 @@ const Navbar = () => {
           }`}
           onClick={() => router.push("/?showQuotationForm=true")}
         >
-          <button className="uppercase">Get a Quotation</button>
+          <button className="uppercase cursor-pointer">Get a Quotation</button>
         </div>
 
         {/* Mobile Hamburger Button (Hidden on md+ screens) */}
@@ -143,7 +143,7 @@ const Navbar = () => {
             {link.linkTitle}
           </Link>
         ))}
-        <div className="px-8 py-3 text-sm font-semibold bg-cream mt-2">
+        <div className="px-8 py-3 text-sm font-semibold bg-cream mt-2 cursor-pointer">
           <button
             className="uppercase cursor-pointer"
             onClick={() => {
