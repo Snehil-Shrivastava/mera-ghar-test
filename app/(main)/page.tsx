@@ -1,12 +1,12 @@
 import HomeDesignEstimate from "../sections/HomeDesignEstimate";
 import HomeDesignServices from "../sections/HomeDesignServices";
-import HomePageCarousel from "../sections/HomePageCarousel";
+import HomePageShowReel from "../sections/HomePageShowReel";
 
 const Page = () => {
   return (
     <div>
       <div id="home-carousel">
-        <HomePageCarousel />
+        <HomePageShowReel />
       </div>
       <HomeDesignServices />
       <HomeDesignEstimate />
