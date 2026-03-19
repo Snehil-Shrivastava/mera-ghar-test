@@ -67,15 +67,11 @@ const Navbar = () => {
         {/* Desktop Links (Hidden on small screens) */}
         <div className="hidden 1600p:flex gap-15 xl:text-lg">
           {links.map((link, index) => (
-            <>
-              <Link
-                key={index}
-                href={`${link.linkTo}`}
-                className="hover:text-copper"
-              >
+            <div key={index}>
+              <Link href={`${link.linkTo}`} className="hover:text-copper">
                 {link.linkTitle}
               </Link>
-            </>
+            </div>
           ))}
         </div>
 

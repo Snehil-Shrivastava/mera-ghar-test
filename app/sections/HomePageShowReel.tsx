@@ -47,7 +47,7 @@ const HomePageShowReel = () => {
         gsap.fromTo(
           buttonRef.current,
           { yPercent: 50, opacity: 0 },
-          { yPercent: 0, opacity: 1, duration: 0.8 },
+          { yPercent: 0, opacity: 1, duration: 0.6 },
         );
       } else {
         gsap.set(buttonRef.current, { opacity: 0 });
