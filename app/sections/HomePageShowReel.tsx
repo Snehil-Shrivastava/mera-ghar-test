@@ -1,8 +1,5 @@
 "use client";
 
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
 import { useEffect, useRef, useState } from "react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
@@ -17,7 +14,7 @@ const HomePageShowReel = () => {
   useEffect(() => {
     const updateSrc = () => {
       setVideoSrc(
-        window.innerWidth <= 768
+        window.innerWidth <= 1024
           ? "/mera-ghar-portrait.mp4"
           : "/mera-ghar-landscape.mp4",
       );
