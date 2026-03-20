@@ -49,7 +49,7 @@ const Navbar = () => {
       }`}
     >
       {/* Main Navbar Container */}
-      <div className="flex justify-between 1600p:justify-center items-center px-15 xl:px-10 xl:max-[1380px]:gap-25 gap-30 h-[10vh] min-h-30.5">
+      <div className="flex justify-between 1440p:justify-center items-center px-15 xl:px-10 xl:max-[1380px]:gap-25 gap-30 h-[10vh] min-h-30.5">
         {/* Logo */}
         <Link
           href="/"
@@ -65,14 +65,53 @@ const Navbar = () => {
         </Link>
 
         {/* Desktop Links (Hidden on small screens) */}
-        <div className="hidden 1600p:flex gap-15 xl:text-lg">
-          {links.map((link, index) => (
+        <div className="hidden 1440p:flex gap-15 xl:text-lg">
+          {/* {links.map((link, index) => (
             <div key={index}>
               <Link href={`${link.linkTo}`} className="hover:text-copper">
                 {link.linkTitle}
               </Link>
             </div>
-          ))}
+          ))} */}
+          <Link href={`/about`} className="hover:text-copper flex items-center">
+            About us
+          </Link>
+          <Link href={``} className="hover:text-copper flex items-center">
+            Founders
+          </Link>
+          <Link
+            href={``}
+            className="hover:text-copper flex flex-col items-center"
+          >
+            <span>Mera</span>
+            <span>Kitchen</span>
+          </Link>
+          <Link
+            href={``}
+            className="hover:text-copper flex flex-col items-center"
+          >
+            <span>Mera</span>
+            <span>Wardrobe</span>
+          </Link>
+          <Link
+            href={``}
+            className="hover:text-copper flex flex-col items-center"
+          >
+            <span>Mera</span>
+            <span>Door</span>
+          </Link>
+          <Link href={``} className="hover:text-copper flex items-center">
+            Cities
+          </Link>
+          <Link href={``} className="hover:text-copper flex items-center">
+            Contact Us
+          </Link>
+          <Link href={`/blog`} className="hover:text-copper flex items-center">
+            Blogs
+          </Link>
+          <Link href={``} className="hover:text-copper flex items-center">
+            Testimonials
+          </Link>
         </div>
 
         {/* Desktop Button (Hidden on small screens) */}
@@ -87,7 +126,7 @@ const Navbar = () => {
 
         {/* Mobile Hamburger Button (Hidden on md+ screens) */}
         <button
-          className="1600p:hidden block focus:outline-none cursor-pointer"
+          className="1440p:hidden block focus:outline-none cursor-pointer"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           aria-label="Toggle Menu"
         >
@@ -129,7 +168,7 @@ const Navbar = () => {
 
       {/* Mobile Menu Dropdown */}
       <div
-        className={`1600p:hidden absolute top-[9.96vh] left-0 w-full bg-white text-copper flex flex-col items-center gap-6 shadow-xl overflow-hidden transition-all duration-300 ease-in-out ${
+        className={`1440p:hidden absolute top-[9.96vh] left-0 w-full bg-white text-copper flex flex-col items-center gap-6 shadow-xl overflow-hidden transition-all duration-300 ease-in-out ${
           isMobileMenuOpen
             ? "max-h-140 pt-8 pb-12 opacity-100"
             : "max-h-0 py-0 opacity-0"

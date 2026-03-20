@@ -15,7 +15,22 @@ const DesignServicesCard = ({
       <div className="relative w-full h-full">
         <Image src={src} alt="" fill className="object-cover" />
       </div>
-      <div className="bg-white xl:py-4 1440p:px-6 px-5 py-4 1920p:w-105 1600p:max-1920p:w-95 1440p:w-85 xl:max-1440p:w-70 max-xl:w-90 relative bottom-5 left-1/2 -translate-x-1/2 shadow-xl flex items-center justify-between 1440p:gap-5 gap-2">
+      {/* <div className="bg-white xl:py-4 1440p:px-6 px-5 py-4 1920p:w-105 1600p:max-1920p:w-95 1440p:w-85 xl:max-1440p:w-70 max-xl:w-90 relative bottom-5 left-1/2 -translate-x-1/2 shadow-xl flex items-center justify-between 1440p:gap-5 gap-2">
+        <div>
+          <h3 className="font-bold 1440p:text-xl text-base max-xl:text-xl">
+            {name}
+          </h3>
+          <span className="pb-0 1920p:text-base 1600p:max-1920p:text-sm 1440p:text-xs text-[10px] max-xl:text-sm opacity-50">
+            {description}
+          </span>
+        </div>
+        <div>
+          <button className="xl:py-1 xl:px-2 py-0.5 px-1 bg-copper text-white">
+            <ChevronRight size={18} />
+          </button>
+        </div>
+      </div> */}
+      <div className="bg-white/15 backdrop-blur-xs xl:py-4 1440p:px-6 px-5 py-4 1920p:w-105 1600p:max-1920p:w-95 1440p:w-85 xl:max-1440p:w-70 max-xl:w-90 relative bottom-5 left-1/2 -translate-x-1/2 shadow-xl flex items-center justify-between 1440p:gap-5 gap-2">
         <div>
           <h3 className="font-bold 1440p:text-xl text-base max-xl:text-xl">
             {name}
