@@ -67,7 +67,7 @@ const HomePageShowReel = () => {
           muted
           playsInline
           loop
-          className="absolute inset-0 w-full h-full object-cover brightness-50"
+          className="absolute inset-0 w-full h-full object-cover brightness-60"
         />
         <div
           ref={buttonRef}
