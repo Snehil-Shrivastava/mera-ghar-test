@@ -24,8 +24,13 @@ const HomePageTestimonials = () => {
           Trusted for Decades - Here&apos;s Why
         </h1>
         <Swiper
-          slidesPerView={3}
+          slidesPerView={2}
           spaceBetween={30}
+          breakpoints={{
+            1280: {
+              slidesPerView: 3,
+            },
+          }}
           pagination={{
             clickable: true,
           }}
