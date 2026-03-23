@@ -11,7 +11,7 @@ const DesignProcessCard = ({
   icon: string;
 }) => {
   return (
-    <div className="py-11 flex flex-col gap-8 items-center text-center">
+    <div className="py-11 max-xl:py-0 flex flex-col gap-8 items-center text-center">
       <div>
         <Image src={icon} alt="" />
       </div>
