@@ -1,0 +1,16 @@
+.swiper-pagination {
+  position: relative !important;
+  bottom: 0 !important;
+  margin-top: 30px;
+}
+
+.swiper-pagination-bullet {
+  border-radius: 0 !important;
+  background-color: rgb(112, 109, 109) !important;
+  transition: all 0.5s none;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--color-copper) !important;
+  width: 50px !important;
+}
