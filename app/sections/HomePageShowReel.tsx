@@ -8,7 +8,7 @@ const HomePageShowReel = () => {
   const videoRef = useRef<HTMLVideoElement>(null);
   const buttonRef = useRef<HTMLDivElement>(null);
 
-  const [videoSrc, setVideoSrc] = useState("/mera-ghar-landscape.mp4");
+  const [videoSrc, setVideoSrc] = useState("/mera-ghar-landscape.webm");
   const [ended, setEnded] = useState(false);
 
   useEffect(() => {
@@ -16,7 +16,7 @@ const HomePageShowReel = () => {
       setVideoSrc(
         window.innerWidth <= 1024
           ? "/mera-ghar-portrait.mp4"
-          : "/mera-ghar-landscape.mp4",
+          : "/mera-ghar-landscape.webm",
       );
       setEnded(false);
     };

@@ -1,4 +1,4 @@
-import HomeDesignEstimate from "../sections/HomeDesignEstimate";
+import HomeDesignProcess from "../sections/HomeDesignProcess";
 import HomeDesignServices from "../sections/HomeDesignServices";
 import HomePageShowReel from "../sections/HomePageShowReel";
 
@@ -9,7 +9,7 @@ const Page = () => {
         <HomePageShowReel />
       </div>
       <HomeDesignServices />
-      <HomeDesignEstimate />
+      <HomeDesignProcess />
     </div>
   );
 };
