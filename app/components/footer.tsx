@@ -17,7 +17,7 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <div className="bg-copper font-raleway shadow-[0_-10px_10px_-8px_rgba(0,0,0,0.25)] text-white">
-      <div className="w-[85%] max-1440p:w-[90%] mx-auto max-w-450 flex flex-col">
+      <div className=" w-[90%] max-w-480 mx-auto flex flex-col">
         <div className="pt-20 pb-10 flex justify-between gap-20">
           <div className="flex flex-col gap-8 justify-between flex-[0.65]">
             <div className="flex gap-10">

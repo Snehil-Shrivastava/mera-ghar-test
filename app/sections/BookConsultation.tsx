@@ -7,7 +7,6 @@ import wpImg from "@/public/wp-img.svg";
 const BookConsultation = () => {
   return (
     <div
-      className="px-15 1600p:px-50"
       style={{
         backgroundImage: `url('/kitchen_2.webp')`,
         backgroundRepeat: "no-repeat",
@@ -18,11 +17,11 @@ const BookConsultation = () => {
         backgroundBlendMode: "lighten",
       }}
     >
-      <div className="flex flex-col gap-5 w-180 py-30 1600p:py-45">
+      <div className="flex flex-col gap-5 py-30 1600p:py-45 w-[90%] max-w-480 mx-auto">
         <h3 className="text-sm font-semibold uppercase text-copper">
           let&apos;s design your home
         </h3>
-        <h1 className="text-brand-brown font-bold text-[60px] capitalize">
+        <h1 className="text-brand-brown font-bold text-[60px] capitalize w-170">
           Start your journey with our experts today
         </h1>
         <div className="flex gap-10 items-center">

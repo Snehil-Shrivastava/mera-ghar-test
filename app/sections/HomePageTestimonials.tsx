@@ -15,7 +15,7 @@ import TestimonilaCard from "../components/TestimonilaCard";
 const HomePageTestimonials = () => {
   return (
     <div className="py-25 bg-cream">
-      <div className="flex flex-col items-center gap-10">
+      <div className="flex flex-col items-center gap-10 w-[90%] max-w-480 mx-auto">
         <h3 className="text-sm font-semibold uppercase text-copper flex gap-5">
           <Image src={heart} alt="" />
           <span>loved by homeowners</span>
@@ -35,7 +35,7 @@ const HomePageTestimonials = () => {
             clickable: true,
           }}
           modules={[Pagination]}
-          className="mySwiper w-[85%] mx-auto max-w-380"
+          className="mySwiper w-full h-full"
         >
           {Array.from({ length: 6 }).map((_, i) => (
             <SwiperSlide key={i}>

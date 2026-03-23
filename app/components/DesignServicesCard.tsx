@@ -11,7 +11,7 @@ const DesignServicesCard = ({
   src: StaticImageData;
 }) => {
   return (
-    <div className="relative 2240p:w-150 2240p:h-85 1920p:max-2240p:w-140 1920p:max-2240p:h-75 1600p:max-1920p:w-115 1600p:max-1920p:h-60 2xl:max-1600p:w-110 2xl:max-1600p:h-60 1440p:max-2xl:w-100 1440p:max-2xl:h-55 xl:max-1440p:w-90 xl:max-1440p:h-50 max-xl:w-120 max-xl:h-60">
+    <div className="xl:flex-1 relative 2240p:h-85 1920p:max-2240p:h-75 1600p:max-1920p:h-60 2xl:max-1600p:h-60 1440p:max-2xl:h-55 xl:max-1440p:h-50 max-xl:w-120 max-xl:h-60">
       <div className="relative w-full h-full">
         <Image src={src} alt="" fill className="object-cover" />
       </div>
