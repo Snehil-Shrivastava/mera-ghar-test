@@ -15,7 +15,7 @@ const HomePageShowReel = () => {
     const updateSrc = () => {
       setVideoSrc(
         window.innerWidth <= 1024
-          ? "/mera-ghar-portrait.mp4"
+          ? "/mera-ghar-portrait.webm"
           : "/mera-ghar-landscape.webm",
       );
       setEnded(false);
