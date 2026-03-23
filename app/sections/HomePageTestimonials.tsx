@@ -30,7 +30,7 @@ const HomePageTestimonials = () => {
             clickable: true,
           }}
           modules={[Pagination]}
-          className="mySwiper w-[85%] mx-auto"
+          className="mySwiper w-[85%] mx-auto max-w-380"
         >
           {Array.from({ length: 6 }).map((_, i) => (
             <SwiperSlide key={i}>
