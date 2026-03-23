@@ -1,3 +1,4 @@
+import BookConsultation from "../sections/BookConsultation";
 import HomeDesignProcess from "../sections/HomeDesignProcess";
 import HomeDesignServices from "../sections/HomeDesignServices";
 import HomePageShowReel from "../sections/HomePageShowReel";
@@ -12,6 +13,7 @@ const Page = () => {
       <HomeDesignServices />
       <HomeDesignProcess />
       <HomePageTestimonials />
+      <BookConsultation />
     </div>
   );
 };
