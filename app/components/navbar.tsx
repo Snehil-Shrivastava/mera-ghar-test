@@ -44,7 +44,7 @@ const Navbar = () => {
       }`}
     >
       {/* Main Navbar Container */}
-      <div className="flex justify-between xl:justify-between items-center px-15 1600p:px-0 xl:max-[1380px]:gap-25 gap-30 h-[10vh] min-h-30.5 max-w-360 mx-auto">
+      <div className="flex justify-between xl:justify-center items-center px-15 xl:px-0 xl:max-[1380px]:gap-25 gap-30 h-[10vh] min-h-30.5 max-w-360 mx-auto">
         {/* Logo */}
         <Link
           href="/"
@@ -60,7 +60,7 @@ const Navbar = () => {
         </Link>
 
         {/* Desktop Links (Hidden on small screens) */}
-        <div className="hidden xl:flex gap-15 1440p:text-base text-sm">
+        <div className="hidden xl:flex gap-15 xl:text-base text-sm">
           <Link href={`/about`} className="flex items-center nav-link relative">
             About us
           </Link>
