@@ -15,7 +15,7 @@ const DesignProcessCard = ({
       <div>
         <Image src={icon} alt="" />
       </div>
-      <div>
+      <div className="lg:max-xl:w-52">
         <h3 className="text-xl max-xl:text-lg text-brand-brown font-bold">
           {title}
         </h3>

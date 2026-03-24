@@ -13,7 +13,7 @@ const HomeDesignServices = () => {
         <h1 className="text-brand-brown font-bold text-[40px]/[48px] w-170 text-center capitalize">
           Be It End-To-End Interiors, Renovation Or Modular Solutions
         </h1>
-        <div className="flex gap-15 w-full max-lg:flex-col max-xl:items-center max-lg:gap-40">
+        <div className="flex gap-15 lg:max-xl:gap-10 w-full max-lg:flex-col max-xl:items-center max-lg:gap-40">
           {services.map((service, index) => (
             <DesignServicesCard
               key={index}

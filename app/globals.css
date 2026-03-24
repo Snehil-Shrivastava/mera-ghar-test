@@ -44,13 +44,31 @@ body {
   padding-bottom: 25px;
 }
 
+/* .nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 5px;
+  background: var(--color-cream);
+  transition: width 0.3s ease;
+} */
+
 .nav-link::after {
   content: "";
   position: absolute;
   bottom: -10px;
   left: 50%;
   transform: translateX(-50%);
-  width: 8px;
-  height: 5px;
-  background: var(--color-cream);
+  transform-origin: center;
+  width: 0;
+  height: 4px;
+  background-color: var(--color-cream);
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
 }
