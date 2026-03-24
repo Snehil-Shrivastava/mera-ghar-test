@@ -9,7 +9,7 @@ const AboutPageHeader = () => {
         src={aboutHeaderBg}
         alt=""
         fill
-        className="object-fit pointer-events-none"
+        className="object-cover pointer-events-none"
       />
       <div className="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 z-1 text-center">
         <h3 className="uppercase font-semibold text-xl">
