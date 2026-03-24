@@ -14,7 +14,7 @@ const AboutPageMotto = () => {
             Mera Ghar, &apos;Dil Se&apos;
           </h2>
         </div>
-        <div className="pt-8 font-openSans flex flex-col gap-8 text-neutral-700">
+        <div className="pt-8 font-openSans flex flex-col gap-8 text-neutral-700  w-150">
           <p>This motto is the cornerstone of everything we do.</p>
           <p>
             We listen, <b className="font-bold">Dil Se.</b> and we suggest,{" "}

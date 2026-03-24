@@ -14,8 +14,8 @@ const ContactModal = () => {
   const pathname = usePathname();
   const router = useRouter();
 
-  const [step, setStep] = useState(1);
-  const [selectedOptions, setSelectedOptions] = useState<string[]>([]);
+  // const [step, setStep] = useState(1);
+  // const [selectedOptions, setSelectedOptions] = useState<string[]>([]);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -39,14 +39,14 @@ const ContactModal = () => {
   // If the param doesn't exist, don't render anything
   if (!modal) return null;
 
-  const toggleOption = (option: string) => {
-    setSelectedOptions(
-      (prev) =>
-        prev.includes(option)
-          ? prev.filter((item) => item !== option) // Remove if exists
-          : [...prev, option], // Add if doesn't exist
-    );
-  };
+  // const toggleOption = (option: string) => {
+  //   setSelectedOptions(
+  //     (prev) =>
+  //       prev.includes(option)
+  //         ? prev.filter((item) => item !== option) // Remove if exists
+  //         : [...prev, option], // Add if doesn't exist
+  //   );
+  // };
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
@@ -66,10 +66,10 @@ const ContactModal = () => {
         name: formData.name,
         email: formData.email,
         phone: formData.phone,
-        wantToBuild:
-          selectedOptions.length > 0
-            ? selectedOptions.join(", ")
-            : "None specified",
+        // wantToBuild:
+        //   selectedOptions.length > 0
+        //     ? selectedOptions.join(", ")
+        //     : "None specified",
       };
 
       await emailjs.send(
@@ -91,9 +91,9 @@ const ContactModal = () => {
   const handleClose = () => {
     setIsVisible(false);
     setTimeout(() => {
-      setStep(1);
+      // setStep(1);
       setFormData({ name: "", email: "", phone: "" });
-      setSelectedOptions([]);
+      // setSelectedOptions([]);
       setSubmitStatus("idle");
       router.replace(pathname, { scroll: false });
     }, 200);
@@ -174,13 +174,14 @@ const ContactModal = () => {
               {/* Icon & Title - Dynamic based on step */}
               <div className="inline-flex gap-5 max-sm:gap-2.5 items-center mx-auto relative left-1/2 -translate-x-1/2">
                 <h2 className="uppercase text-lg max-sm:text-xs font-medium leading-5 select-none">
-                  {step === 1
+                  {/* {step === 1
                     ? "What are you planning to build"
-                    : "Contact details"}
+                    : "Contact details"} */}
+                  Contact details
                 </h2>
               </div>
 
-              {step === 1 && (
+              {/* {step === 1 && (
                 <div className="animate-in fade-in duration-300">
                   <div className="py-8 flex flex-col justify-center items-center gap-8 max-lg:gap-8 max-sm:gap-6 sm:max-lg:w-[70%] mx-auto">
                     {ConsulationOptions.map((options, index) => {
@@ -227,93 +228,93 @@ const ContactModal = () => {
                     </button>
                   </div>
                 </div>
-              )}
+              )} */}
 
-              {step === 2 && (
-                <form
-                  onSubmit={handleSubmit}
-                  className="animate-in fade-in duration-300 w-full mx-auto"
-                >
-                  <div className="space-y-10 py-4 max-w-md mx-auto max-sm:text-sm">
-                    <div>
-                      <input
-                        required
-                        type="text"
-                        name="name"
-                        value={formData.name}
-                        onChange={handleInputChange}
-                        className="w-full border-b border-gray-300 p-2 focus:outline-none focus:border-black transition-colors"
-                        placeholder="Your Name*"
-                      />
-                    </div>
-
-                    <div>
-                      <input
-                        required
-                        type="email"
-                        name="email"
-                        value={formData.email}
-                        onChange={handleInputChange}
-                        className="w-full border-b border-gray-300 p-2 focus:outline-none focus:border-black transition-colors"
-                        placeholder="Your Email*"
-                      />
-                    </div>
-
-                    <div>
-                      <input
-                        required
-                        type="tel"
-                        name="phone"
-                        value={formData.phone}
-                        onChange={handleInputChange}
-                        className="w-full border-b border-gray-300 p-2 focus:outline-none focus:border-black transition-colors"
-                        placeholder="Your Number*"
-                      />
-                    </div>
+              {/* {step === 1 && ( */}
+              <form
+                onSubmit={handleSubmit}
+                className="animate-in fade-in duration-300 w-full mx-auto"
+              >
+                <div className="space-y-10 py-4 max-w-md mx-auto max-sm:text-sm">
+                  <div>
+                    <input
+                      required
+                      type="text"
+                      name="name"
+                      value={formData.name}
+                      onChange={handleInputChange}
+                      className="w-full border-b border-gray-300 p-2 focus:outline-none focus:border-black transition-colors"
+                      placeholder="Your Name*"
+                    />
                   </div>
 
-                  <div className="flex justify-between mt-8 w-full max-sm:w-full mx-auto select-none max-sm:text-sm">
-                    <button
+                  <div>
+                    <input
+                      required
+                      type="email"
+                      name="email"
+                      value={formData.email}
+                      onChange={handleInputChange}
+                      className="w-full border-b border-gray-300 p-2 focus:outline-none focus:border-black transition-colors"
+                      placeholder="Your Email*"
+                    />
+                  </div>
+
+                  <div>
+                    <input
+                      required
+                      type="tel"
+                      name="phone"
+                      value={formData.phone}
+                      onChange={handleInputChange}
+                      className="w-full border-b border-gray-300 p-2 focus:outline-none focus:border-black transition-colors"
+                      placeholder="Your Number*"
+                    />
+                  </div>
+                </div>
+
+                <div className="flex justify-between mt-8 w-full max-sm:w-full mx-auto select-none max-sm:text-sm">
+                  {/* <button
                       type="button"
                       onClick={() => setStep(1)}
                       className="text-brand-black underline underline-offset-4 hover:text-brand-brown"
                     >
                       Back
-                    </button>
-                    <button
-                      type="submit"
-                      className="bg-brand-black text-white px-8 py-2 hover:bg-brand-brown transition-colors"
-                    >
-                      {isSubmitting ? (
-                        <>
-                          <svg
-                            className="animate-spin h-4 w-4 text-white"
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                          >
-                            <circle
-                              className="opacity-25"
-                              cx="12"
-                              cy="12"
-                              r="10"
-                              stroke="currentColor"
-                              strokeWidth="4"
-                            ></circle>
-                            <path
-                              className="opacity-75"
-                              fill="currentColor"
-                              d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
-                            ></path>
-                          </svg>
-                        </>
-                      ) : (
-                        "Submit"
-                      )}
-                    </button>
-                  </div>
-                </form>
-              )}
+                    </button> */}
+                  <button
+                    type="submit"
+                    className="bg-brand-black text-white px-8 py-2 hover:bg-brand-brown transition-colors"
+                  >
+                    {isSubmitting ? (
+                      <>
+                        <svg
+                          className="animate-spin h-4 w-4 text-white"
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                        >
+                          <circle
+                            className="opacity-25"
+                            cx="12"
+                            cy="12"
+                            r="10"
+                            stroke="currentColor"
+                            strokeWidth="4"
+                          ></circle>
+                          <path
+                            className="opacity-75"
+                            fill="currentColor"
+                            d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+                          ></path>
+                        </svg>
+                      </>
+                    ) : (
+                      "Submit"
+                    )}
+                  </button>
+                </div>
+              </form>
+              {/* )} */}
             </>
           )}
         </div>

@@ -88,9 +88,9 @@ const Navbar = () => {
             <span>Mera</span>
             <span>Door</span>
           </Link>
-          <Link href={`#`} className="flex items-center nav-link relative">
+          {/* <Link href={`#`} className="flex items-center nav-link relative">
             Cities
-          </Link>
+          </Link> */}
           <Link href={`#`} className="flex items-center nav-link relative">
             Contact Us
           </Link>
