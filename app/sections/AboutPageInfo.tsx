@@ -15,7 +15,6 @@ const AboutPageInfo = () => {
             Welcome to mera ghar
           </h2>
         </div>
-        {/* <hr className="w-150 border-neutral-300" /> */}
         <div className="pt-8 font-openSans flex flex-col gap-8 w-150 text-neutral-700">
           <p>
             <b className="font-bold">Mera Ghar</b> represents an emotion.
@@ -44,35 +43,37 @@ const AboutPageInfo = () => {
         </div>
       </div>
       <div className="bg-cream">
-        <div className="w-[90%] max-w-480 mx-auto py-10 relative">
-          <div className="text-brand-brown flex gap-10 justify-between w-160">
-            <h4 className="font-bold border-l-5 border-l-brand-brown pl-5">
-              <span>Not copied</span>
-              <br />
-              <span>from catalogues,</span>
-            </h4>
-            <h4 className="font-bold border-l-5 border-l-brand-brown pl-5">
-              <span>Not forced</span>
-              <br />
-              <span>by trends.</span>
-            </h4>
-            <h4 className="font-bold border-l-5 border-l-brand-brown pl-5">
-              <span>Not rushed just</span>
-              <br />
-              <span>to meet deadlines.</span>
-            </h4>
+        <div className="w-[90%] max-w-480 mx-auto py-10 relative flex">
+          <div className="w-170">
+            <div className="text-brand-brown flex gap-10 justify-between">
+              <h4 className="font-bold border-l-5 border-l-brand-brown pl-5">
+                <span>Not copied</span>
+                <br />
+                <span>from catalogues,</span>
+              </h4>
+              <h4 className="font-bold border-l-5 border-l-brand-brown pl-5">
+                <span>Not forced</span>
+                <br />
+                <span>by trends.</span>
+              </h4>
+              <h4 className="font-bold border-l-5 border-l-brand-brown pl-5">
+                <span>Not rushed just</span>
+                <br />
+                <span>to meet deadlines.</span>
+              </h4>
+            </div>
+            <div className="pt-10">
+              <p>
+                But shaped by{" "}
+                <b className="font-bold">
+                  your preferences, your taste. your comfort and your needs.
+                </b>{" "}
+                Transforming spaces not just into forms,{" "}
+                <b className="font-bold">but into your personal spaces.</b>
+              </p>
+            </div>
           </div>
-          <div className="w-170 pt-10">
-            <p>
-              But shaped by{" "}
-              <b className="font-bold">
-                your preferences, your taste. your comfort and your needs.
-              </b>{" "}
-              Transforming spaces not just into forms,{" "}
-              <b className="font-bold">but into your personal spaces.</b>
-            </p>
-          </div>
-          <div className="absolute -top-50 w-90 h-90 right-45 border-15 border-white">
+          <div className="absolute -top-50 w-90 h-90 right-42 border-15 border-white">
             <Image src={kitchen3} alt="" fill className="object-cover" />
           </div>
         </div>
