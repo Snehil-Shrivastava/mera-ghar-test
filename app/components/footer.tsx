@@ -58,15 +58,15 @@ const Footer = () => {
                   <Image src={CaretRight} alt="" className="w-3" />
                   <span>About Us</span>
                 </Link>
-                <Link href={"/"} className="flex gap-3">
+                <Link href={"#"} className="flex gap-3">
                   <Image src={CaretRight} alt="" className="w-3" />
                   <span>Mera Kitchen</span>
                 </Link>
-                <Link href={"/"} className="flex gap-3">
+                <Link href={"#"} className="flex gap-3">
                   <Image src={CaretRight} alt="" className="w-3" />
                   <span>Mera Wardrobe</span>
                 </Link>
-                <Link href={"/"} className="flex gap-3">
+                <Link href={"#"} className="flex gap-3">
                   <Image src={CaretRight} alt="" className="w-3" />
                   <span>Mera Cities</span>
                 </Link>
@@ -106,11 +106,11 @@ const Footer = () => {
                 Gomti Nagar | Hewett Road | Transport Nagar
               </span>
             </div>
-            <Link href={""} className="flex gap-8 w-65">
+            <Link href={"#"} className="flex gap-8 w-65">
               <Image src={envelope} alt="" />
               <span className="text-lg">Hello@meraghar.com</span>
             </Link>
-            <Link href={""} className="flex gap-8 w-65">
+            <Link href={"#"} className="flex gap-8 w-65">
               <Image src={phone} alt="" />
               <span className="text-lg">+91-8127300000</span>
             </Link>
