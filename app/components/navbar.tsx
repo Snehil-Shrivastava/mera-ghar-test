@@ -6,7 +6,7 @@ import meraGharLogoCopper from "@/public/mera-ghar-logo-copper-skeleton.svg";
 import Link from "next/link";
 import { navLinks } from "@/lib/data";
 import { useState, useEffect } from "react";
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 
 const Navbar = () => {
   const links = navLinks;
@@ -15,18 +15,16 @@ const Navbar = () => {
 
   // Get the current route
   const pathname = usePathname();
-  const isHomePage = pathname === "/";
-
-  // const router = useRouter();
+  // const isHomePage = pathname === "/";
 
   useEffect(() => {
-    if (!isHomePage) return;
+    // if (!isHomePage) return;
 
-    const carousel = document.querySelector("#home-carousel");
+    const hero = document.querySelector("#page-hero");
 
     const handleScroll = () => {
-      if (carousel) {
-        setScrolled(carousel.getBoundingClientRect().bottom <= 200);
+      if (hero) {
+        setScrolled(hero.getBoundingClientRect().bottom <= 200);
       } else {
         setScrolled(window.scrollY > 80);
       }
@@ -36,11 +34,11 @@ const Navbar = () => {
 
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
-  }, [isHomePage]);
+  }, [pathname]);
 
   // We enforce a solid background if the mobile menu is open,
   // so the text and logos are clearly visible when interacting with it.
-  const isSolid = !isHomePage || scrolled || isMobileMenuOpen;
+  const isSolid = scrolled || isMobileMenuOpen;
 
   return (
     <div
@@ -49,7 +47,7 @@ const Navbar = () => {
       }`}
     >
       {/* Main Navbar Container */}
-      <div className="flex justify-between 1440p:justify-center items-center px-15 xl:px-10 xl:max-[1380px]:gap-25 gap-30 h-[10vh] min-h-30.5">
+      <div className="flex justify-between xl:justify-center items-center px-15 xl:px-10 xl:max-[1380px]:gap-25 gap-30 h-[10vh] min-h-30.5">
         {/* Logo */}
         <Link
           href="/"
@@ -65,68 +63,51 @@ const Navbar = () => {
         </Link>
 
         {/* Desktop Links (Hidden on small screens) */}
-        <div className="hidden 1440p:flex gap-15 xl:text-lg">
-          {/* {links.map((link, index) => (
-            <div key={index}>
-              <Link href={`${link.linkTo}`} className="hover:text-copper">
-                {link.linkTitle}
-              </Link>
-            </div>
-          ))} */}
+        <div className="hidden xl:flex gap-15 xl:text-sm">
           <Link href={`/about`} className="hover:text-copper flex items-center">
             About us
           </Link>
-          <Link href={``} className="hover:text-copper flex items-center">
+          <Link href={`#`} className="hover:text-copper flex items-center">
             Founders
           </Link>
           <Link
-            href={``}
+            href={`#`}
             className="hover:text-copper flex flex-col items-center"
           >
             <span>Mera</span>
             <span>Kitchen</span>
           </Link>
           <Link
-            href={``}
+            href={`#`}
             className="hover:text-copper flex flex-col items-center"
           >
             <span>Mera</span>
             <span>Wardrobe</span>
           </Link>
           <Link
-            href={``}
+            href={`#`}
             className="hover:text-copper flex flex-col items-center"
           >
             <span>Mera</span>
             <span>Door</span>
           </Link>
-          <Link href={``} className="hover:text-copper flex items-center">
+          <Link href={`#`} className="hover:text-copper flex items-center">
             Cities
           </Link>
-          <Link href={``} className="hover:text-copper flex items-center">
+          <Link href={`#`} className="hover:text-copper flex items-center">
             Contact Us
           </Link>
           <Link href={`/blog`} className="hover:text-copper flex items-center">
             Blogs
           </Link>
-          <Link href={``} className="hover:text-copper flex items-center">
+          <Link href={`#`} className="hover:text-copper flex items-center">
             Testimonials
           </Link>
         </div>
 
-        {/* Desktop Button (Hidden on small screens) */}
-        {/* <div
-          className={`hidden xl:block px-8 py-3 text-xs font-semibold cursor-pointer transition-colors duration-300 ${
-            isSolid ? "bg-cream" : "bg-copper"
-          }`}
-          onClick={() => router.push("/?showQuotationForm=true")}
-        >
-          <button className="uppercase cursor-pointer">Get a Quotation</button>
-        </div> */}
-
         {/* Mobile Hamburger Button (Hidden on md+ screens) */}
         <button
-          className="1440p:hidden block focus:outline-none cursor-pointer"
+          className="xl:hidden block focus:outline-none cursor-pointer"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           aria-label="Toggle Menu"
         >
@@ -168,7 +149,7 @@ const Navbar = () => {
 
       {/* Mobile Menu Dropdown */}
       <div
-        className={`1440p:hidden absolute top-[9.96vh] left-0 w-full bg-white text-copper flex flex-col items-center gap-6 shadow-xl overflow-hidden transition-all duration-300 ease-in-out ${
+        className={`xl:hidden absolute top-[9.96vh] left-0 w-full bg-white text-copper flex flex-col items-center gap-6 shadow-xl overflow-hidden transition-all duration-300 ease-in-out ${
           isMobileMenuOpen
             ? "max-h-140 pt-8 pb-12 opacity-100"
             : "max-h-0 py-0 opacity-0"
@@ -184,17 +165,6 @@ const Navbar = () => {
             {link.linkTitle}
           </Link>
         ))}
-        {/* <div className="px-8 py-3 text-sm font-semibold bg-cream mt-2 cursor-pointer">
-          <button
-            className="uppercase cursor-pointer"
-            onClick={() => {
-              setIsMobileMenuOpen(false);
-              router.push("/?showQuotationForm=true");
-            }}
-          >
-            Get a Quotation
-          </button>
-        </div> */}
       </div>
     </div>
   );

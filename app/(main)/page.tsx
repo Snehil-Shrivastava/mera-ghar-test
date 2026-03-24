@@ -7,7 +7,7 @@ import HomePageTestimonials from "../sections/HomePageTestimonials";
 const Page = () => {
   return (
     <div>
-      <div id="home-carousel">
+      <div id="page-hero">
         <HomePageShowReel />
       </div>
       <HomeDesignServices />
