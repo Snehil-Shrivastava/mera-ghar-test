@@ -1,5 +1,7 @@
+import AboutPageMotto from "@/app/sections/AboutPageMotto";
 import AboutPageHeader from "@/app/sections/AboutPageHeader";
 import AboutPageInfo from "@/app/sections/AboutPageInfo";
+import AboutPageGoal from "@/app/sections/AboutPageGoal";
 
 const Page = () => {
   return (
@@ -8,6 +10,8 @@ const Page = () => {
         <AboutPageHeader />
       </div>
       <AboutPageInfo />
+      <AboutPageMotto />
+      <AboutPageGoal />
     </div>
   );
 };
