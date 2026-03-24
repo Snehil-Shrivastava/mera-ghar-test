@@ -32,7 +32,7 @@ const AboutPageMotto = () => {
             <b className="font-bold">
               your impression, your expression and a resonance with your true
               identity.
-            </b>
+            </b>{" "}
             Life and home go hand in hand, and with us,{" "}
             <b className="font-bold">
               your home becomes a representation of who you are and what you
