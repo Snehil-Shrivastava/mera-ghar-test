@@ -6,7 +6,7 @@ import kitchen3 from "@/public/kitchen_3.webp";
 const AboutPageInfo = () => {
   return (
     <div>
-      <div className="py-20 w-[90%] max-w-480 mx-auto relative">
+      <div className="py-20 w-[90%] max-w-360 mx-auto relative">
         <div className="pb-8 border-b border-b-neutral-300 w-150 flex flex-col gap-5">
           <h4 className="uppercase font-semibold text-copper text-sm">
             How it works?
@@ -43,7 +43,7 @@ const AboutPageInfo = () => {
         </div>
       </div>
       <div className="bg-cream">
-        <div className="w-[90%] max-w-480 mx-auto py-10 relative flex">
+        <div className="w-[90%] max-w-360 mx-auto py-10 relative flex">
           <div className="w-170">
             <div className="text-brand-brown flex gap-10 justify-between">
               <h4 className="font-bold border-l-5 border-l-brand-brown pl-5">

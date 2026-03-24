@@ -11,7 +11,7 @@ const DesignServicesCard = ({
   src: StaticImageData;
 }) => {
   return (
-    <div className="xl:flex-1 relative 2240p:h-85 1920p:max-2240p:h-75 1600p:max-1920p:h-60 2xl:max-1600p:h-60 1440p:max-2xl:h-55 xl:max-1440p:h-50 max-xl:w-120 max-xl:h-60">
+    <div className="lg:flex-1 relative 2240p:h-85 1920p:max-2240p:h-75 1600p:max-1920p:h-60 2xl:max-1600p:h-60 1440p:max-2xl:h-55 xl:max-1440p:h-50 max-xl:h-50">
       <div className="relative w-full h-full">
         <Image src={src} alt="" fill className="object-cover" />
       </div>
@@ -30,11 +30,9 @@ const DesignServicesCard = ({
           </button>
         </div>
       </div> */}
-      <div className="bg-white/15 backdrop-blur-xs xl:py-4 1440p:px-6 px-5 py-4 1920p:w-105 1600p:max-1920p:w-95 1440p:w-85 xl:max-1440p:w-70 max-xl:w-90 relative bottom-5 left-1/2 -translate-x-1/2 shadow-xl flex items-center justify-between 1440p:gap-5 gap-2">
+      <div className="bg-white/15 backdrop-blur-xs xl:py-4 1440p:px-6 px-5 py-4 1920p:w-105 1600p:max-1920p:w-95 1440p:w-85 xl:max-1440p:w-70 max-xl:w-60 relative bottom-5 left-1/2 -translate-x-1/2 shadow-xl flex items-center justify-between 1440p:gap-5 gap-2">
         <div>
-          <h3 className="font-bold 1440p:text-xl text-base max-xl:text-xl">
-            {name}
-          </h3>
+          <h3 className="font-bold 1440p:text-xl text-base">{name}</h3>
           <span className="pb-0 1920p:text-base 1600p:max-1920p:text-sm 1440p:text-xs text-[10px] max-xl:text-sm opacity-50">
             {description}
           </span>

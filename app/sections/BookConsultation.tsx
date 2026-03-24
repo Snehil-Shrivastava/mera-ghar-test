@@ -17,7 +17,7 @@ const BookConsultation = () => {
         backgroundBlendMode: "lighten",
       }}
     >
-      <div className="flex flex-col gap-5 py-30 1600p:py-45 w-[90%] max-w-480 mx-auto">
+      <div className="flex flex-col gap-5 py-30 1600p:py-45 w-[90%] max-w-360 mx-auto">
         <h3 className="text-sm font-semibold uppercase text-copper">
           let&apos;s design your home
         </h3>

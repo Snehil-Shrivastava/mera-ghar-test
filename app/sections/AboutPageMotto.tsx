@@ -5,7 +5,7 @@ import interior1 from "@/public/interior_1.webp";
 const AboutPageMotto = () => {
   return (
     <div className="py-20">
-      <div className="w-[90%] max-w-480 mx-auto relative">
+      <div className="w-[90%] max-w-360 mx-auto relative">
         <div className="pb-8 border-b border-b-neutral-300 w-150 flex flex-col gap-5">
           <h4 className="uppercase font-semibold text-copper text-sm">
             our motto

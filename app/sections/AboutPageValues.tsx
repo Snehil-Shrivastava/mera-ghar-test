@@ -5,7 +5,7 @@ import door3 from "@/public/door_3.webp";
 const AboutPageValues = () => {
   return (
     <div className="py-20 overflow-x-hidden">
-      <div className="w-[90%] max-w-480 mx-auto">
+      <div className="w-[90%] max-w-360 mx-auto">
         <div className="flex flex-col gap-5 items-center">
           <h4 className="uppercase font-semibold text-copper text-sm">
             Values that define us

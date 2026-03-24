@@ -6,14 +6,14 @@ const HomeDesignServices = () => {
 
   return (
     <div className="pt-20 pb-50 bg-cream">
-      <div className="flex flex-col items-center gap-10 w-[90%] max-w-480 mx-auto">
+      <div className="flex flex-col items-center gap-10 w-[90%] max-w-360 mx-auto">
         <h3 className="text-sm font-semibold uppercase text-copper">
           one-stop shop
         </h3>
         <h1 className="text-brand-brown font-bold text-[40px]/[48px] w-170 text-center capitalize">
           Be It End-To-End Interiors, Renovation Or Modular Solutions
         </h1>
-        <div className="flex gap-15 w-full max-xl:flex-col max-xl:items-center max-xl:gap-40">
+        <div className="flex gap-15 w-full max-lg:flex-col max-xl:items-center max-lg:gap-40">
           {services.map((service, index) => (
             <DesignServicesCard
               key={index}

@@ -9,7 +9,7 @@ import DashedLine from "../components/DashedLine";
 const AboutPageGoal = () => {
   return (
     <div className="py-20 bg-cream">
-      <div className="w-[90%] max-w-480 mx-auto flex flex-col gap-20 relative">
+      <div className="w-[90%] max-w-360 mx-auto flex flex-col gap-20 relative">
         <div className="flex flex-row-reverse gap-30 justify-between">
           <div className="relative h-full w-full flex-1">
             <Image src={door2} alt="" className="object-cover" />
