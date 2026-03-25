@@ -64,7 +64,10 @@ const Navbar = () => {
           <Link href={`/about`} className="flex items-center nav-link relative">
             About us
           </Link>
-          <Link href={`#`} className="flex items-center nav-link relative">
+          <Link
+            href={`/founders`}
+            className="flex items-center nav-link relative"
+          >
             Founders
           </Link>
           <Link
