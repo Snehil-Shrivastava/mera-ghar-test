@@ -26,7 +26,7 @@ const BookConsultation = () => {
         </h1>
         <div className="flex gap-10 items-center">
           <Link
-            href={"/?showQuotationForm=true"}
+            href={"?showQuotationForm=true"}
             className="flex gap-4 justify-between bg-copper py-3.5 px-5 w-80 text-white"
           >
             <button className="uppercase">Book free consulatation</button>

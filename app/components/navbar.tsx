@@ -71,21 +71,21 @@ const Navbar = () => {
             Founders
           </Link>
           <Link
-            href={`#`}
+            href={`/mera-kitchen`}
             className="flex flex-col text-center nav-link relative"
           >
             <span>Mera</span>
             <span>Kitchen</span>
           </Link>
           <Link
-            href={`#`}
+            href={`/mera-wardrobe`}
             className="flex flex-col text-center nav-link relative"
           >
             <span>Mera</span>
             <span>Wardrobe</span>
           </Link>
           <Link
-            href={`#`}
+            href={`/mera-door`}
             className="flex flex-col text-center nav-link relative"
           >
             <span>Mera</span>
