@@ -10,9 +10,14 @@ const AboutPageGoal = () => {
   return (
     <div className="py-20 bg-cream">
       <div className="w-[90%] max-w-360 mx-auto flex flex-col gap-20 relative">
-        <div className="flex flex-row-reverse gap-30 justify-between">
-          <div className="relative h-full w-full flex-1">
-            <Image src={door2} alt="" className="object-cover" />
+        <div className="flex flex-row-reverse gap-30 max-xl:gap-15 justify-between">
+          <div
+            className="relative w-full flex-1"
+            style={{
+              height: "inherit",
+            }}
+          >
+            <Image src={door2} alt="" className="object-cover h-full" />
           </div>
           <div className="flex-1 flex flex-col gap-4 items-end">
             <div>
@@ -26,8 +31,13 @@ const AboutPageGoal = () => {
             </p>
           </div>
         </div>
-        <div className="flex gap-30 justify-between">
-          <div className="relative h-120 w-full flex-1">
+        <div className="flex gap-30 max-xl:gap-15 justify-between">
+          <div
+            className="relative w-full flex-1"
+            style={{
+              height: "inherit",
+            }}
+          >
             <Image src={door2} alt="" className="object-cover h-full" />
           </div>
           <div className="flex-1 flex flex-col gap-2 items-start text-base/loose">
@@ -53,8 +63,13 @@ const AboutPageGoal = () => {
             </p>
           </div>
         </div>
-        <div className="flex flex-row-reverse gap-30 justify-between">
-          <div className="relative h-100 w-full flex-1">
+        <div className="flex flex-row-reverse gap-30 max-xl:gap-15 justify-between">
+          <div
+            className="relative w-full flex-1"
+            style={{
+              height: "inherit",
+            }}
+          >
             <Image src={door2} alt="" className="object-cover h-full" />
           </div>
           <div className="flex-1 flex flex-col gap-4 items-end text-base/loose">

@@ -41,7 +41,7 @@ const AboutPageInfo = () => {
             </p>
           </div>
         </div>
-        <div className="flex-1 relative flex justify-end">
+        <div className="flex-1 relative flex justify-end items-center">
           {/* <div className="absolute right-0 top-1/2 -translate-y-1/2 w-100 h-120"> */}
           <div className="w-100 h-120 relative">
             <Image src={wardrobe1} alt="" fill className="object-cover" />
@@ -51,7 +51,7 @@ const AboutPageInfo = () => {
       <div className="bg-cream">
         <div className="w-[90%] max-w-360 mx-auto py-10 relative flex">
           <div className="flex-1">
-            <div className="text-brand-brown flex gap-10 justify-between">
+            <div className="text-brand-brown flex gap-10 justify-between flex-wrap max-xl:justify-start">
               <h4 className="font-bold border-l-5 border-l-brand-brown pl-5">
                 <span>Not copied</span>
                 <br />
@@ -83,7 +83,7 @@ const AboutPageInfo = () => {
             <Image src={kitchen3} alt="" fill className="object-cover" />
           </div> */}
           <div className="relative flex-1">
-            <div className="absolute -top-70 left-10 w-90 h-90 border-15 border-white">
+            <div className="absolute -top-70 left-10 max-xl:top-1/2 max-xl:-translate-y-1/2 w-90 h-90 border-15 border-white">
               <Image src={kitchen3} alt="" fill className="object-cover" />
             </div>
           </div>
