@@ -107,23 +107,23 @@ const Footer = () => {
               Stay Tuned With Us
             </span>
             <div className="flex gap-8 max-xl:gap-4 w-65 max-xl:w-45">
-              <Image src={pin} alt="" />
-              <span className="text-lg max-xl:text-sm">
-                Gomti Nagar | Hewett Road | Transport Nagar
-              </span>
+              <Image src={pin} alt="" className="max-xl:w-3.5 w-4" />
+              <span className="text-lg max-xl:text-sm">Gomti Nagar</span>
             </div>
             <Link
               href={"#"}
               className="flex gap-8 max-xl:gap-4 w-65 max-xl:w-45"
             >
-              <Image src={envelope} alt="" />
-              <span className="text-lg max-xl:text-sm">Hello@meraghar.com</span>
+              <Image src={envelope} alt="" className="max-xl:w-3.5 w-4" />
+              <span className="text-lg max-xl:text-sm">
+                info@meraghar.solutions
+              </span>
             </Link>
             <Link
               href={"#"}
               className="flex gap-8 max-xl:gap-4 w-65 max-xl:w-45"
             >
-              <Image src={phone} alt="" />
+              <Image src={phone} alt="" className="max-xl:w-3.5 w-4" />
               <span className="text-lg max-xl:text-sm">+91-8127300000</span>
             </Link>
           </div>
