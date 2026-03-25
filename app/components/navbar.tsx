@@ -94,7 +94,10 @@ const Navbar = () => {
           {/* <Link href={`#`} className="flex items-center nav-link relative">
             Cities
           </Link> */}
-          <Link href={`#`} className="flex items-center nav-link relative">
+          <Link
+            href={`/contact-us`}
+            className="flex items-center nav-link relative"
+          >
             Contact Us
           </Link>
           <Link href={`/blog`} className="flex items-center nav-link relative">
