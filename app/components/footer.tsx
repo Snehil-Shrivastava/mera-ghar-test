@@ -103,29 +103,31 @@ const Footer = () => {
             </div>
           </div>
           <div className="flex flex-col gap-10 items-end flex-[0.65]">
-            <span className="text-2xl max-xl:text-xl font-bold">
-              Stay Tuned With Us
-            </span>
-            <div className="flex gap-8 max-xl:gap-4 w-65 max-xl:w-45">
-              <Image src={pin} alt="" className="max-xl:w-3.5 w-4" />
-              <span className="text-lg max-xl:text-sm">Gomti Nagar</span>
-            </div>
-            <Link
-              href={"#"}
-              className="flex gap-8 max-xl:gap-4 w-65 max-xl:w-45"
-            >
-              <Image src={envelope} alt="" className="max-xl:w-3.5 w-4" />
-              <span className="text-lg max-xl:text-sm">
-                info@meraghar.solutions
+            <div className="flex flex-col gap-10">
+              <span className="text-2xl max-xl:text-xl font-bold">
+                Stay Tuned With Us
               </span>
-            </Link>
-            <Link
-              href={"#"}
-              className="flex gap-8 max-xl:gap-4 w-65 max-xl:w-45"
-            >
-              <Image src={phone} alt="" className="max-xl:w-3.5 w-4" />
-              <span className="text-lg max-xl:text-sm">+91-8127300000</span>
-            </Link>
+              <div className="flex gap-6 max-xl:gap-4 w-65 max-xl:w-45">
+                <Image src={pin} alt="" className="max-xl:w-3.5 w-4" />
+                <span className="text-lg max-xl:text-sm">Gomti Nagar</span>
+              </div>
+              <Link
+                href={"#"}
+                className="flex gap-6 max-xl:gap-4 w-65 max-xl:w-45"
+              >
+                <Image src={envelope} alt="" className="max-xl:w-3.5 w-4" />
+                <span className="text-lg max-xl:text-sm">
+                  info@meraghar.solutions
+                </span>
+              </Link>
+              <Link
+                href={"#"}
+                className="flex gap-6 max-xl:gap-4 w-65 max-xl:w-45"
+              >
+                <Image src={phone} alt="" className="max-xl:w-3.5 w-4" />
+                <span className="text-lg max-xl:text-sm">+91-8127300000</span>
+              </Link>
+            </div>
           </div>
         </div>
         <div className="py-8 font-semibold text-center max-xl:text-sm border-t border-t-cream/50 uppercase">

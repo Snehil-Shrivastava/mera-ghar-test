@@ -4,8 +4,8 @@ import logoCream from "@/public/mera-ghar-logo-cream-skeleton.svg";
 
 const FoundersLore = () => {
   return (
-    <div className="py-20 overflow-y-hidden">
-      <h2 className="capitalize text-brand-brown font-bold text-[40px] text-center mb-15">
+    <div className="pt-20 pb-30 overflow-x-hidden">
+      <h2 className="capitalize text-brand-brown font-bold text-[40px] text-center mb-20">
         Crossing of Paths
       </h2>
       <div className="w-[90%] max-w-360 mx-auto flex gap-10 relative">
@@ -39,7 +39,7 @@ const FoundersLore = () => {
           </p>
         </div>
         <div className="flex-1 text-white font-light relative">
-          <div className="bg-brand-brown p-8 absolute w-180 flex flex-col gap-10">
+          <div className="bg-brand-brown p-8 absolute top-1/2 -translate-y-1/2 w-180 flex flex-col gap-10">
             <div className="relative">
               <Image src={logoCream} alt="" className="w-20 object-cover" />
             </div>

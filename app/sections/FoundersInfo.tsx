@@ -9,12 +9,12 @@ const FoundersInfo = () => {
       <div className="py-20">
         <div className="w-[90%] max-w-360 mx-auto flex gap-10">
           <div className="flex-[1.25]">
-            <div className="pb-6 max-xl:pb-3 border-b border-b-neutral-300 flex flex-col gap-5">
+            <div className="pb-4 max-xl:pb-3 border-b border-b-neutral-300 flex flex-col gap-5">
               <h2 className="capitalize text-brand-brown font-bold text-[60px] max-xl:text-[40px]">
                 Mr. Anurag Agarwal
               </h2>
             </div>
-            <div className="pt-8 max-xl:pt-4 font-openSans flex flex-col gap-2 text-neutral-700 text-sm">
+            <div className="pt-6 max-xl:pt-4 font-openSans flex flex-col gap-2 text-neutral-700 text-sm">
               <p>
                 Born and brought up in Lucknow, Uttar Pradesh a first generation
                 businessman with an MBA.
@@ -81,7 +81,7 @@ const FoundersInfo = () => {
                 src={anuragAgarwal}
                 alt=""
                 fill
-                className="object-cover h-full"
+                className="object-cover xl:object-contain h-full"
               />
             </div>
           </div>
@@ -90,12 +90,12 @@ const FoundersInfo = () => {
       <div className="py-20 bg-cream">
         <div className="w-[90%] max-w-360 mx-auto flex gap-10 flex-row-reverse">
           <div className="flex-[1.25]">
-            <div className="pb-6 max-xl:pb-3 border-b border-b-neutral-300 flex flex-col gap-5">
+            <div className="pb-4 max-xl:pb-3 border-b border-b-neutral-300 flex flex-col gap-5">
               <h2 className="capitalize text-brand-brown font-bold text-[60px] max-xl:text-[40px]">
                 Mr. Tabrez Rashid
               </h2>
             </div>
-            <div className="pt-8 max-xl:pt-4 font-openSans flex flex-col gap-2 text-neutral-700 text-sm">
+            <div className="pt-6 max-xl:pt-4 font-openSans flex flex-col gap-2 text-neutral-700 text-sm">
               <p>
                 A Kolkata boy who grew up in times when the environment and
                 market place was dominated by leftist value system which
@@ -164,7 +164,7 @@ const FoundersInfo = () => {
                 src={tabrezRashid}
                 alt=""
                 fill
-                className="object-cover h-full"
+                className="object-cover xl:object-contain h-full"
               />
             </div>
           </div>
