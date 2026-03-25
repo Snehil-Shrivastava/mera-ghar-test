@@ -33,7 +33,7 @@ const ContactForm = () => {
             placeholder="Message"
             className="border-b border-b-neutral-400 py-3 col-span-2 outline-none"
           />
-          <button className="uppercase bg-copper px-8 py-3 text-white text-sm">
+          <button className="uppercase bg-copper px-8 py-3 text-white text-sm w-60">
             send message
           </button>
         </form>

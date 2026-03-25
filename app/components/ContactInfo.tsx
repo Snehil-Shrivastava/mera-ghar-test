@@ -8,7 +8,7 @@ import email from "@/public/email.svg";
 const ContactInfo = () => {
   return (
     <div className="flex-[0.9] flex flex-col gap-8">
-      <h1 className="capitalize text-brand-brown text-[52px]/[62px] font-bold">
+      <h1 className="capitalize text-brand-brown text-[52px]/[62px] max-xl:text-[40px]/[50px] font-bold">
         Talk to the expert and know us better
       </h1>
       <p className="text-lg opacity-75">
