@@ -9,12 +9,12 @@ const FoundersInfo = () => {
       <div className="py-20">
         <div className="w-[90%] max-w-360 mx-auto flex gap-10">
           <div className="flex-[1.25]">
-            <div className="pb-6 border-b border-b-neutral-300 flex flex-col gap-5">
-              <h2 className="capitalize text-brand-brown font-bold text-[60px]">
+            <div className="pb-6 max-xl:pb-3 border-b border-b-neutral-300 flex flex-col gap-5">
+              <h2 className="capitalize text-brand-brown font-bold text-[60px] max-xl:text-[40px]">
                 Mr. Anurag Agarwal
               </h2>
             </div>
-            <div className="pt-8 font-openSans flex flex-col gap-2 text-neutral-700 text-sm">
+            <div className="pt-8 max-xl:pt-4 font-openSans flex flex-col gap-2 text-neutral-700 text-sm">
               <p>
                 Born and brought up in Lucknow, Uttar Pradesh a first generation
                 businessman with an MBA.
@@ -76,7 +76,7 @@ const FoundersInfo = () => {
               height: "inherit",
             }}
           >
-            <div className="w-full relative h-full max-h-180">
+            <div className="w-full relative h-full max-h-170">
               <Image
                 src={anuragAgarwal}
                 alt=""
@@ -90,12 +90,12 @@ const FoundersInfo = () => {
       <div className="py-20 bg-cream">
         <div className="w-[90%] max-w-360 mx-auto flex gap-10 flex-row-reverse">
           <div className="flex-[1.25]">
-            <div className="pb-6 border-b border-b-neutral-300 flex flex-col gap-5">
-              <h2 className="capitalize text-brand-brown font-bold text-[60px]">
+            <div className="pb-6 max-xl:pb-3 border-b border-b-neutral-300 flex flex-col gap-5">
+              <h2 className="capitalize text-brand-brown font-bold text-[60px] max-xl:text-[40px]">
                 Mr. Tabrez Rashid
               </h2>
             </div>
-            <div className="pt-8 font-openSans flex flex-col gap-2 text-neutral-700 text-sm">
+            <div className="pt-8 max-xl:pt-4 font-openSans flex flex-col gap-2 text-neutral-700 text-sm">
               <p>
                 A Kolkata boy who grew up in times when the environment and
                 market place was dominated by leftist value system which
@@ -159,7 +159,7 @@ const FoundersInfo = () => {
               height: "inherit",
             }}
           >
-            <div className="w-full relative h-full max-h-180">
+            <div className="w-full relative h-full max-h-170">
               <Image
                 src={tabrezRashid}
                 alt=""

@@ -5,6 +5,9 @@ import logoCream from "@/public/mera-ghar-logo-cream-skeleton.svg";
 const FoundersLore = () => {
   return (
     <div className="py-20 overflow-y-hidden">
+      <h2 className="capitalize text-brand-brown font-bold text-[40px] text-center mb-15">
+        Crossing of Paths
+      </h2>
       <div className="w-[90%] max-w-360 mx-auto flex gap-10 relative">
         <div className="flex flex-col gap-4 border-l-6 border-l-brand-brown pl-5 flex-1 text-sm">
           <p>Anurag and Tabrez met for the first time in the year 2009!</p>
@@ -40,7 +43,7 @@ const FoundersLore = () => {
             <div className="relative">
               <Image src={logoCream} alt="" className="w-20 object-cover" />
             </div>
-            <div className="flex flex-col gap-3 text-sm w-4/5">
+            <div className="flex flex-col gap-3 text-sm w-4/5 max-xl:w-105">
               <p>
                 <b className="font-bold">Mera Ghar</b> is the culmination of the
                 friendship, trust, respect and competencies of Anurag and
