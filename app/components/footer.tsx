@@ -36,13 +36,19 @@ const Footer = () => {
               </div>
             </div>
             <div className="flex items-center max-md:justify-center gap-5 max-xl:gap-7 max-md:hidden">
-              <Link href={"https://www.facebook.com/KrishnaPlyAndHardwares"}>
+              <Link
+                href={"https://www.facebook.com/KrishnaPlyAndHardwares"}
+                target="_blank"
+              >
                 <Image src={facebook} alt="" className="max-xl:w-4" />
               </Link>
               {/* <Link href={"#"}>
                 <Image src={twitter} alt="" className="max-xl:w-4" />
               </Link> */}
-              <Link href={"https://www.instagram.com/meraghar.solutions"}>
+              <Link
+                href={"https://www.instagram.com/meraghar.solutions"}
+                target="_blank"
+              >
                 <Image src={instagram} alt="" className="max-xl:w-4" />
               </Link>
               {/* <Link href={"#"}>
@@ -135,13 +141,19 @@ const Footer = () => {
             </div>
           </div>
           <div className="flex items-center max-md:justify-center gap-5 max-xl:gap-7 md:hidden">
-            <Link href={"https://www.facebook.com/KrishnaPlyAndHardwares"}>
+            <Link
+              href={"https://www.facebook.com/KrishnaPlyAndHardwares"}
+              target="_blank"
+            >
               <Image src={facebook} alt="" className="max-xl:w-4" />
             </Link>
             {/* <Link href={"#"}>
               <Image src={twitter} alt="" className="max-xl:w-4" />
             </Link> */}
-            <Link href={"https://www.instagram.com/meraghar.solutions"}>
+            <Link
+              href={"https://www.instagram.com/meraghar.solutions"}
+              target="_blank"
+            >
               <Image src={instagram} alt="" className="max-xl:w-4" />
             </Link>
             {/* <Link href={"#"}>
