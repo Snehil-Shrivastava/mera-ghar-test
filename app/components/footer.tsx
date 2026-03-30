@@ -26,8 +26,8 @@ const Footer = () => {
               </div>
               <div className="text-lg max-xl:text-sm w-45">
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipiscing elit sed do
-                  eiusmod tempor incididunt
+                  Crafting premium, personalised home interiors that respect
+                  both emotion and functionality.
                 </p>
               </div>
             </div>
