@@ -5,7 +5,7 @@ import logoCream from "@/public/mera-ghar-logo-cream-skeleton.svg";
 const FoundersLore = () => {
   return (
     <div className="pt-20 pb-30 overflow-x-hidden">
-      <h2 className="capitalize text-brand-brown font-bold text-[40px] text-center mb-20">
+      <h2 className="capitalize text-brand-brown font-bold text-[40px] max-sm:text-4xl text-center mb-20 max-sm:mb-10">
         Crossing of Paths
       </h2>
       <div className="w-[90%] max-w-360 mx-auto flex max-lg:flex-col gap-10 relative">

@@ -9,10 +9,10 @@ const AboutPageInfo = () => {
       <div className="py-20 w-[90%] max-w-360 mx-auto relative flex gap-15">
         <div className="flex-1">
           <div className="pb-8 border-b border-b-neutral-300 flex flex-col gap-5">
-            <h4 className="uppercase font-semibold text-copper text-sm">
+            <h4 className="uppercase font-semibold text-copper text-sm max-sm:text-xs">
               How it works?
             </h4>
-            <h2 className="capitalize text-brand-brown font-bold text-[40px] max-xl:w-80 max-lg:w-auto">
+            <h2 className="capitalize text-brand-brown font-bold text-[40px] max-sm:text-3xl max-xl:w-80 max-lg:w-auto">
               Welcome to mera ghar
             </h2>
           </div>
@@ -52,7 +52,7 @@ const AboutPageInfo = () => {
         </div>
       </div>
       <div className="bg-cream">
-        <div className="w-[90%] max-w-360 mx-auto py-10 relative flex">
+        <div className="w-[90%] max-w-360 mx-auto py-10 relative flex max-sm:flex-col-reverse max-sm:gap-10">
           <div className="flex-1 max-xl:flex-[1.25] max-lg:max-w-50">
             <div className="text-brand-brown flex gap-10 justify-between flex-wrap max-lg:justify-between max-lg:h-full max-xl:gap-x-25">
               <h4 className="font-bold border-l-5 border-l-brand-brown pl-5 max-lg:h-15 max-lg:flex max-lg:flex-col max-lg:justify-center">
@@ -85,7 +85,7 @@ const AboutPageInfo = () => {
           {/* <div className="absolute -top-50 w-90 h-90 right-42 border-15 border-white">
             <Image src={kitchen3} alt="" fill className="object-cover" />
           </div> */}
-          <div className="relative flex-1 max-lg:flex max-lg:justify-end">
+          <div className="relative flex-1 max-lg:flex max-lg:justify-end max-sm:justify-start">
             {/* <div className="absolute -top-70 left-10 max-xl:top-1/2 max-xl:-translate-y-1/2 w-90 h-90 border-15 border-white"> */}
             <div className="absolute max-lg:relative -top-70 max-lg:top-0 left-10 max-lg:left-0 max-xl:right-5 max-lg:right-auto max-xl:left-auto w-90 h-90 border-15 border-white">
               <Image src={kitchen3} alt="" fill className="object-cover" />

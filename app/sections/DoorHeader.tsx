@@ -11,16 +11,16 @@ const DoorHeader = () => {
         className="object-cover pointer-events-none"
       />
       <div className="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 z-1 text-center w-4/5">
-        <h1 className="font-bold text-[96px] max-lg:text-[68px] capitalize">
+        <h1 className="font-bold text-[96px] max-lg:text-[68px] max-sm:text-4xl max-sm:leading-20 capitalize">
           Mera Door
         </h1>
         <div className="flex flex-col gap-4 max-w-180 mx-auto">
-          <p className="text-lg text-cream">
+          <p className="text-lg max-sm:text-base text-cream">
             Mera Door is designed and crafted to complement modern aesthetics.
             Luxurious and iconic designs for all those who value proportion,
             material harmony, and statement entrances.
           </p>
-          <p className="text-lg text-cream">
+          <p className="text-lg max-sm:text-base text-cream">
             Our doors lead into the spaces you have created in life, adding
             depth, elegance, and bespoke modern luxury to the entrance and
             turning it into a signature entrance.

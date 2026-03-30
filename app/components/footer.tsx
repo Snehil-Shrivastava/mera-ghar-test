@@ -36,18 +36,18 @@ const Footer = () => {
               </div>
             </div>
             <div className="flex items-center max-md:justify-center gap-5 max-xl:gap-7 max-md:hidden">
-              <Link href={"#"}>
+              <Link href={"https://www.facebook.com/KrishnaPlyAndHardwares"}>
                 <Image src={facebook} alt="" className="max-xl:w-4" />
               </Link>
-              <Link href={"#"}>
+              {/* <Link href={"#"}>
                 <Image src={twitter} alt="" className="max-xl:w-4" />
-              </Link>
-              <Link href={"#"}>
+              </Link> */}
+              <Link href={"https://www.instagram.com/meraghar.solutions"}>
                 <Image src={instagram} alt="" className="max-xl:w-4" />
               </Link>
-              <Link href={"#"}>
+              {/* <Link href={"#"}>
                 <Image src={pinterest} alt="" className="max-xl:w-4" />
-              </Link>
+              </Link> */}
             </div>
           </div>
           <div className="flex-1 flex max-lg:flex-col gap-20 max-xl:gap-20 max-lg:gap-10 justify-between">
@@ -135,18 +135,18 @@ const Footer = () => {
             </div>
           </div>
           <div className="flex items-center max-md:justify-center gap-5 max-xl:gap-7 md:hidden">
-            <Link href={"#"}>
+            <Link href={"https://www.facebook.com/KrishnaPlyAndHardwares"}>
               <Image src={facebook} alt="" className="max-xl:w-4" />
             </Link>
-            <Link href={"#"}>
+            {/* <Link href={"#"}>
               <Image src={twitter} alt="" className="max-xl:w-4" />
-            </Link>
-            <Link href={"#"}>
+            </Link> */}
+            <Link href={"https://www.instagram.com/meraghar.solutions"}>
               <Image src={instagram} alt="" className="max-xl:w-4" />
             </Link>
-            <Link href={"#"}>
+            {/* <Link href={"#"}>
               <Image src={pinterest} alt="" className="max-xl:w-4" />
-            </Link>
+            </Link> */}
           </div>
         </div>
         <div className="py-8 font-semibold text-center max-xl:text-sm max-md:text-[10px] border-t border-t-cream/50 uppercase">

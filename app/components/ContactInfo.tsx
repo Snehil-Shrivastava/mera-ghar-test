@@ -9,7 +9,7 @@ import ContactForm from "./ContactForm";
 const ContactInfo = () => {
   return (
     <div className="flex-[0.9] flex flex-col gap-8">
-      <h1 className="capitalize text-brand-brown text-[52px]/[62px] max-xl:text-[40px]/[50px] font-bold">
+      <h1 className="capitalize text-brand-brown text-[52px]/[62px] max-xl:text-[40px]/[50px] max-sm:text-4xl font-bold">
         Talk to the expert and know us better
       </h1>
       <p className="text-lg opacity-75">
@@ -35,16 +35,18 @@ const ContactInfo = () => {
             <h3 className="text-brand-brown font-bold text-xl">Display</h3>
             <div className="flex flex-col gap-5">
               <Link href={"#"} className="flex gap-4 items-start">
-                <Image src={location} alt="" />
-                <span>Akshya Nagar 1st Block 1st Cross, Rammurthy </span>
+                <Image src={location} alt="" className="max-sm:w-5" />
+                <span className="max-sm:text-xs">
+                  Akshya Nagar 1st Block 1st Cross, Rammurthy{" "}
+                </span>
               </Link>
               <Link href={"#"} className="flex gap-4 items-start">
-                <Image src={phone} alt="" />
-                <span>+62345188368</span>
+                <Image src={phone} alt="" className="max-sm:w-5" />
+                <span className="max-sm:text-xs">+62345188368</span>
               </Link>
               <Link href={"#"} className="flex gap-4 items-start">
-                <Image src={email} alt="" />
-                <span>info@meraghar.com</span>
+                <Image src={email} alt="" className="max-sm:w-5" />
+                <span className="max-sm:text-xs">info@meraghar.com</span>
               </Link>
             </div>
           </div>
@@ -52,16 +54,18 @@ const ContactInfo = () => {
             <h3 className="text-brand-brown font-bold text-xl">Office</h3>
             <div className="flex flex-col gap-5">
               <Link href={"#"} className="flex gap-4 items-start">
-                <Image src={location} alt="" />
-                <span>Akshya Nagar 1st Block 1st Cross, Rammurthy </span>
+                <Image src={location} alt="" className="max-sm:w-5" />
+                <span className="max-sm:text-xs">
+                  Akshya Nagar 1st Block 1st Cross, Rammurthy{" "}
+                </span>
               </Link>
               <Link href={"#"} className="flex gap-4 items-start">
-                <Image src={phone} alt="" />
-                <span>+62345188368</span>
+                <Image src={phone} alt="" className="max-sm:w-5" />
+                <span className="max-sm:text-xs">+62345188368</span>
               </Link>
               <Link href={"#"} className="flex gap-4 items-start">
-                <Image src={email} alt="" />
-                <span>info@meraghar.com</span>
+                <Image src={email} alt="" className="max-sm:w-5" />
+                <span className="max-sm:text-xs">info@meraghar.com</span>
               </Link>
             </div>
           </div>

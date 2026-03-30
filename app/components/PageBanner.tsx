@@ -22,14 +22,16 @@ const PageBanner = ({
       />
       <div className="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 z-1 text-center max-w-180 max-lg:w-4/5">
         {tagline && (
-          <h3 className="uppercase font-semibold text-xl max-lg:text-base">
+          <h3 className="uppercase font-semibold text-xl max-lg:text-base max-sm:text-sm">
             {tagline}
           </h3>
         )}
-        <h1 className="font-bold text-[96px] max-lg:text-[68px] capitalize">
+        <h1 className="font-bold text-[96px] max-lg:text-[68px] max-sm:text-[52px] capitalize">
           {heading}
         </h1>
-        {paragraph && <p className="text-lg text-cream">{paragraph}</p>}
+        {paragraph && (
+          <p className="text-lg max-sm:text-base text-cream">{paragraph}</p>
+        )}
       </div>
       <div className="absolute inset-0 bg-copper opacity-80 pointer-events-none" />
     </div>

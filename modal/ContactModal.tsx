@@ -108,7 +108,7 @@ const ContactModal = () => {
       />
 
       <div
-        className={`fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 lg:w-100 sm:max-lg:w-120 xs:max-sm:w-100 max-xs:w-[90%] max-w-200 bg-white p-6 pb-10 shadow-xl z-1000 transition-all duration-300 ease-out font-openSans ${isVisible ? "opacity-100 scale-100" : "opacity-0 scale-95"}`}
+        className={`fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 lg:w-100 sm:max-lg:w-120 max-sm:w-[90%] max-w-200 bg-white p-6 pb-10 shadow-xl z-1000 transition-all duration-300 ease-out font-openSans ${isVisible ? "opacity-100 scale-100" : "opacity-0 scale-95"}`}
       >
         {/* Header (Close Button) */}
         <div className="flex justify-end items-center mb-6">

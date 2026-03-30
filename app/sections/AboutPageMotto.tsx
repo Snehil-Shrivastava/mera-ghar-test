@@ -8,10 +8,10 @@ const AboutPageMotto = () => {
       <div className="w-[90%] max-w-360 mx-auto relative flex gap-15">
         <div className="flex-1">
           <div className="pb-8 border-b border-b-neutral-300 flex flex-col gap-5">
-            <h4 className="uppercase font-semibold text-copper text-sm">
+            <h4 className="uppercase font-semibold text-copper text-sm max-sm:text-xs">
               our motto
             </h4>
-            <h2 className="capitalize text-brand-brown font-bold text-[40px]">
+            <h2 className="capitalize text-brand-brown font-bold text-[40px] max-sm:text-3xl">
               Mera Ghar, &apos;Dil Se&apos;
             </h2>
           </div>

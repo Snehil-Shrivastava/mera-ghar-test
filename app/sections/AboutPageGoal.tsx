@@ -1,44 +1,47 @@
 import Image from "next/image";
 
-import door2 from "@/public/door_2.webp";
 import vision from "@/public/vision.svg";
 import mission from "@/public/mission.svg";
 import purpose from "@/public/purpose.svg";
 import DashedLine from "../components/DashedLine";
 
+import goalVision from "@/public/goal_vision.webp";
+import goalMission from "@/public/goal_mission.webp";
+import goalPurpose from "@/public/goal_purpose.webp";
+
 const AboutPageGoal = () => {
   return (
     <div className="py-20 bg-cream">
       <div className="w-[90%] max-w-360 mx-auto flex flex-col gap-20 relative">
-        <div className="flex flex-row-reverse gap-30 max-xl:gap-15 justify-between">
+        <div className="flex flex-row-reverse gap-30 max-xl:gap-15 justify-between max-sm:flex-col-reverse max-sm:gap-7">
           <div
             className="relative w-full flex-1"
             style={{
               height: "inherit",
             }}
           >
-            <Image src={door2} alt="" className="object-cover h-full" />
+            <Image src={goalVision} alt="" className="object-cover h-full" />
           </div>
-          <div className="flex-1 flex flex-col gap-4 items-end">
+          <div className="flex-1 flex flex-col gap-4 items-end max-sm:items-start">
             <div>
               <Image src={vision} alt="" />
             </div>
             <h3 className="text-2xl font-bold capitalize">vision</h3>
-            <p className="text-end text-base/loose">
+            <p className="text-end text-base/loose max-sm:text-start">
               To become the premier and most trusted Indian home interiors
               brand, crafting premium, personalised home interiors that respect
               both emotion and functionality while being accessible to everyone.
             </p>
           </div>
         </div>
-        <div className="flex gap-30 max-xl:gap-15 justify-between">
+        <div className="flex gap-30 max-xl:gap-15 justify-between max-sm:flex-col-reverse max-sm:gap-7">
           <div
             className="relative w-full flex-1"
             style={{
               height: "inherit",
             }}
           >
-            <Image src={door2} alt="" className="object-cover h-full" />
+            <Image src={goalMission} alt="" className="object-cover h-full" />
           </div>
           <div className="flex-1 flex flex-col gap-2 items-start text-base/loose">
             <div>
@@ -63,21 +66,21 @@ const AboutPageGoal = () => {
             </p>
           </div>
         </div>
-        <div className="flex flex-row-reverse gap-30 max-xl:gap-15 justify-between">
+        <div className="flex flex-row-reverse gap-30 max-xl:gap-15 justify-between max-sm:flex-col-reverse max-sm:gap-7">
           <div
             className="relative w-full flex-1"
             style={{
               height: "inherit",
             }}
           >
-            <Image src={door2} alt="" className="object-cover h-full" />
+            <Image src={goalPurpose} alt="" className="object-cover h-full" />
           </div>
-          <div className="flex-1 flex flex-col gap-4 items-end text-base/loose">
+          <div className="flex-1 flex flex-col gap-4 items-end text-base/loose max-sm:items-start">
             <div>
               <Image src={purpose} alt="" />
             </div>
             <h3 className="text-2xl font-bold capitalize">purpose</h3>
-            <p className="text-end">
+            <p className="text-end max-sm:text-start">
               To facilitate people in building their homes by providing products
               and solutions that reflect their preferences, taste, comfort, and
               needs. By utilising our vast experience to help them choose
@@ -96,7 +99,7 @@ const AboutPageGoal = () => {
             </p>
           </div>
         </div>
-        <div className="absolute h-full left-1/2 -translate-x-1/2">
+        <div className="absolute h-full left-1/2 -translate-x-1/2 max-sm:hidden">
           <DashedLine stroke="#B5B5B5B2" />
         </div>
       </div>
