@@ -56,14 +56,22 @@ const ContactInfo = () => {
                   Pradesh 226010{" "}
                 </span>
               </Link>
-              <Link href={"#"} className="flex gap-4 items-start">
+              <Link
+                href={
+                  "https://api.whatsapp.com/send/?phone=%2B918127300000&text&type=phone_number&app_absent=0"
+                }
+                className="flex gap-4 items-start"
+              >
                 <span className="max-sm:w-5">
                   <Phone />
                 </span>
                 {/* <Image src={phone} alt="" className="max-sm:w-5" /> */}
                 <span className="max-sm:text-xs">+91-8127300000</span>
               </Link>
-              <Link href={"#"} className="flex gap-4 items-start">
+              <Link
+                href={"mailto:info@meraghar.solutions"}
+                className="flex gap-4 items-start"
+              >
                 <span className="max-sm:w-5">
                   <Email />
                 </span>
