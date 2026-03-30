@@ -67,15 +67,15 @@ const Footer = () => {
                     <Image src={CaretRight} alt="" className="w-3 max-lg:w-2" />
                     <span>About Us</span>
                   </Link>
-                  <Link href={"#"} className="flex gap-3">
+                  <Link href={"/mera-kitchen"} className="flex gap-3">
                     <Image src={CaretRight} alt="" className="w-3 max-lg:w-2" />
                     <span>Mera Kitchen</span>
                   </Link>
-                  <Link href={"#"} className="flex gap-3">
+                  <Link href={"/mera-wardrobe"} className="flex gap-3">
                     <Image src={CaretRight} alt="" className="w-3 max-lg:w-2" />
                     <span>Mera Wardrobe</span>
                   </Link>
-                  <Link href={"#"} className="flex gap-3">
+                  <Link href={"/mera-door"} className="flex gap-3">
                     <Image src={CaretRight} alt="" className="w-3 max-lg:w-2" />
                     <span>Mera Door</span>
                   </Link>
@@ -94,7 +94,7 @@ const Footer = () => {
                     <Image src={CaretRight} alt="" className="w-3 max-lg:w-2" />
                     <span>Testimonials</span>
                   </Link>
-                  <Link href={"#"} className="flex gap-3">
+                  <Link href={"/contact-us"} className="flex gap-3">
                     <Image src={CaretRight} alt="" className="w-3 max-lg:w-2" />
                     <span>Contact Us</span>
                   </Link>

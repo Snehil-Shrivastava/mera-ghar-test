@@ -1,0 +1,31 @@
+/* globals.css or LogoMarquee.module.css */
+.marquee-container {
+  overflow: hidden; /* Hides the duplicated content until it's in the 'track' */
+  white-space: nowrap; /* Prevents logos from wrapping to the next line */
+  position: relative;
+}
+
+.marquee-track {
+  display: inline-block;
+  animation: scroll 70s linear infinite;
+  /* Optional: Pause animation on hover */
+  &:hover {
+    animation-play-state: paused;
+  }
+}
+
+.logo-slide {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(
+      -50%
+    ); /* Moves exactly the width of the original content set */
+  }
+}
