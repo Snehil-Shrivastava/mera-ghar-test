@@ -4,6 +4,7 @@ import Link from "next/link";
 import location from "@/public/location.svg";
 import phone from "@/public/phone.svg";
 import email from "@/public/email.svg";
+import ContactForm from "./ContactForm";
 
 const ContactInfo = () => {
   return (
@@ -25,6 +26,9 @@ const ContactInfo = () => {
             Have a question about pricing, plan, or anything about us? Fill out
             the or call us, and our expert will give you a better suggestion.
           </p>
+        </div>
+        <div className="lg:hidden">
+          <ContactForm />
         </div>
         <div className="flex gap-10">
           <div className="flex-1 flex flex-col gap-10">
@@ -60,6 +64,11 @@ const ContactInfo = () => {
                 <span>info@meraghar.com</span>
               </Link>
             </div>
+          </div>
+        </div>
+        <div className="bg-neutral-300 w-full h-70 relative p-6">
+          <div className="capitalize bg-white px-6 py-2 absolute">
+            View large map
           </div>
         </div>
       </div>

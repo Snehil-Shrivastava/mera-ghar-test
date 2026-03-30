@@ -1,6 +1,6 @@
 const ContactForm = () => {
   return (
-    <div className="flex-1 flex flex-col gap-10">
+    <div className="flex flex-col gap-10">
       <div className="border border-neutral-300 shadow-xs py-10 px-10 max-h-162.5">
         <form className="grid grid-cols-2 gap-x-10 gap-y-10 text-sm">
           <input
@@ -38,7 +38,7 @@ const ContactForm = () => {
           </button>
         </form>
       </div>
-      <div className="bg-neutral-300 w-full h-70 relative p-6">
+      <div className="bg-neutral-300 w-full h-70 relative p-6 max-lg:hidden">
         <div className="capitalize bg-white px-6 py-2 absolute">
           View large map
         </div>
