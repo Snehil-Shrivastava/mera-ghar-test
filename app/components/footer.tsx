@@ -119,7 +119,10 @@ const Footer = () => {
                     </span>
                   </Link>
                   <Link
-                    href={"#"}
+                    href={
+                      "https://api.whatsapp.com/send/?phone=%2B918127300000&text&type=phone_number&app_absent=0"
+                    }
+                    target="_blank"
                     className="flex gap-6 max-xl:gap-4 w-65 max-xl:w-45"
                   >
                     <Image src={phone} alt="" className="max-xl:w-3.5 w-4" />

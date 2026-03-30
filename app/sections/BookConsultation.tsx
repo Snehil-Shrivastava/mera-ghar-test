@@ -34,7 +34,12 @@ const BookConsultation = () => {
             <button className="uppercase">Book free consulatation</button>
             <ChevronRight />
           </Link>
-          <Link href={"#"}>
+          <Link
+            href={
+              "https://api.whatsapp.com/send/?phone=%2B918127300000&text&type=phone_number&app_absent=0"
+            }
+            target="_blank"
+          >
             <Image src={wpImg} alt="" />
           </Link>
         </div>
