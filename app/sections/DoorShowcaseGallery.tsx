@@ -1,16 +1,21 @@
+import { mera_door } from "@/lib/data";
 import { ChevronRight } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 
 const DoorShowcaseGallery = () => {
+  const DoorGallery = mera_door;
   return (
     <div className="py-20 flex flex-col gap-15">
       <div className="w-[90%] max-w-360 mx-auto grid grid-cols-2 gap-x-15 gap-y-15 place-items-center">
-        <div className="h-80 w-full bg-neutral-300"></div>
-        <div className="h-80 w-full bg-neutral-300"></div>
-        <div className="h-80 w-full bg-neutral-300"></div>
-        <div className="h-80 w-full bg-neutral-300"></div>
-        <div className="h-80 w-full bg-neutral-300"></div>
-        <div className="h-80 w-full bg-neutral-300"></div>
+        {DoorGallery.map((data, index) => (
+          <Image
+            key={index}
+            src={data.src}
+            alt=""
+            className="object-cover h-100"
+          />
+        ))}
       </div>
       <div className="flex gap-10 items-center w-[90%] max-w-360 mx-auto justify-center">
         <Link
