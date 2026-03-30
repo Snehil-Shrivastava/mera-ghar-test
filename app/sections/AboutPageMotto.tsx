@@ -15,6 +15,9 @@ const AboutPageMotto = () => {
               Mera Ghar, &apos;Dil Se&apos;
             </h2>
           </div>
+          <div className="relative w-full h-90 mt-8 lg:hidden">
+            <Image src={interior1} alt="" fill className="object-cover" />
+          </div>
           <div className="pt-8 font-openSans flex flex-col gap-8 text-neutral-700">
             <p>This motto is the cornerstone of everything we do.</p>
             <p>
@@ -42,7 +45,7 @@ const AboutPageMotto = () => {
             </p>
           </div>
         </div>
-        <div className="flex-1 max-xl:flex max-xl:items-center">
+        <div className="flex-1 max-xl:flex max-xl:items-center max-lg:hidden">
           {/* <div className="absolute right-0 -top-5 w-130 h-70"> */}
           <div className="relative w-130 h-70">
             <Image src={interior1} alt="" fill className="object-cover" />

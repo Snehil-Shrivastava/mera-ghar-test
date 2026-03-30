@@ -12,9 +12,12 @@ const AboutPageInfo = () => {
             <h4 className="uppercase font-semibold text-copper text-sm">
               How it works?
             </h4>
-            <h2 className="capitalize text-brand-brown font-bold text-[40px] max-xl:w-80">
+            <h2 className="capitalize text-brand-brown font-bold text-[40px] max-xl:w-80 max-lg:w-auto">
               Welcome to mera ghar
             </h2>
+          </div>
+          <div className="w-full h-100 relative mt-8 lg:hidden">
+            <Image src={wardrobe1} alt="" fill className="object-cover" />
           </div>
           <div className="pt-8 font-openSans flex flex-col gap-8 text-neutral-700">
             <p>
@@ -41,7 +44,7 @@ const AboutPageInfo = () => {
             </p>
           </div>
         </div>
-        <div className="flex-1 relative flex justify-end items-center">
+        <div className="flex-1 relative flex justify-end items-center max-lg:hidden">
           {/* <div className="absolute right-0 top-1/2 -translate-y-1/2 w-100 h-120"> */}
           <div className="w-100 h-120 relative">
             <Image src={wardrobe1} alt="" fill className="object-cover" />
