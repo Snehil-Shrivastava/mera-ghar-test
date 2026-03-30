@@ -14,7 +14,7 @@ const HomeDesignProcess = () => {
           We design tailored solutions around your needs—so it truly feels like
           home
         </h1>
-        <div className="flex justify-between gap-10 max-xl:gap-8 max-xl:pt-10 w-full">
+        <div className="flex max-lg:grid max-lg:grid-cols-2 max-lg:gap-y-20 justify-between gap-10 max-xl:gap-8 max-xl:pt-10 w-full">
           {process.map((process, index) => (
             <DesignProcessCard
               key={index}
