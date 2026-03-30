@@ -23,7 +23,7 @@ const Navbar = () => {
       if (hero) {
         setScrolled(hero.getBoundingClientRect().bottom <= 200);
       } else {
-        setScrolled(window.scrollY > 80);
+        setScrolled(window.scrollY > 50);
       }
     };
 

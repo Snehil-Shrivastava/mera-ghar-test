@@ -16,9 +16,9 @@ const DoorHeader = () => {
         </h1>
         <div className="flex flex-col gap-4 max-w-180 mx-auto">
           <p className="text-lg text-cream">
-            Mera Door is designed and crafted to complement modern
-            aesthetics.Luxurious and iconic designs for all those who value
-            proportion, material harmony, and statement entrances.
+            Mera Door is designed and crafted to complement modern aesthetics.
+            Luxurious and iconic designs for all those who value proportion,
+            material harmony, and statement entrances.
           </p>
           <p className="text-lg text-cream">
             Our doors lead into the spaces you have created in life, adding

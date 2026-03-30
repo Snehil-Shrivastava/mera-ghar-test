@@ -7,7 +7,7 @@ import AboutPageValues from "@/app/sections/AboutPageValues";
 const Page = () => {
   return (
     <div>
-      <div id="page-hero">
+      <div>
         <AboutPageHeader />
       </div>
       <AboutPageInfo />

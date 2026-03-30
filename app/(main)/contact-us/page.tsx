@@ -4,7 +4,7 @@ import ContactMain from "@/app/sections/ContactMain";
 const page = () => {
   return (
     <div>
-      <div id="page-hero">
+      <div>
         <ContactHeader />
       </div>
       <ContactMain />

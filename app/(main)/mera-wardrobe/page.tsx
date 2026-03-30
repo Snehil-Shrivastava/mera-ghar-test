@@ -4,7 +4,7 @@ import WardrobeShowcaseGallery from "@/app/sections/WardrobeShowcaseGallery";
 const Page = () => {
   return (
     <div>
-      <div id="page-hero">
+      <div>
         <WardrobeHeader />
       </div>
       <WardrobeShowcaseGallery />

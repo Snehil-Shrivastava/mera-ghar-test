@@ -12,7 +12,7 @@ const AboutPageInfo = () => {
             <h4 className="uppercase font-semibold text-copper text-sm">
               How it works?
             </h4>
-            <h2 className="capitalize text-brand-brown font-bold text-[40px]">
+            <h2 className="capitalize text-brand-brown font-bold text-[40px] max-xl:w-80">
               Welcome to mera ghar
             </h2>
           </div>
@@ -50,8 +50,8 @@ const AboutPageInfo = () => {
       </div>
       <div className="bg-cream">
         <div className="w-[90%] max-w-360 mx-auto py-10 relative flex">
-          <div className="flex-1">
-            <div className="text-brand-brown flex gap-10 justify-between flex-wrap max-xl:justify-start">
+          <div className="flex-1 max-xl:flex-[1.25]">
+            <div className="text-brand-brown flex gap-10 justify-between flex-wrap max-lg:justify-start max-xl:gap-x-25">
               <h4 className="font-bold border-l-5 border-l-brand-brown pl-5">
                 <span>Not copied</span>
                 <br />
@@ -83,7 +83,8 @@ const AboutPageInfo = () => {
             <Image src={kitchen3} alt="" fill className="object-cover" />
           </div> */}
           <div className="relative flex-1">
-            <div className="absolute -top-70 left-10 max-xl:top-1/2 max-xl:-translate-y-1/2 w-90 h-90 border-15 border-white">
+            {/* <div className="absolute -top-70 left-10 max-xl:top-1/2 max-xl:-translate-y-1/2 w-90 h-90 border-15 border-white"> */}
+            <div className="absolute -top-70 left-10 max-xl:right-5 max-xl:left-auto w-90 h-90 border-15 border-white">
               <Image src={kitchen3} alt="" fill className="object-cover" />
             </div>
           </div>

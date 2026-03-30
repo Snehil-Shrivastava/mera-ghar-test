@@ -5,7 +5,7 @@ import FoundersLore from "@/app/sections/FoundersLore";
 const Page = () => {
   return (
     <div>
-      <div id="page-hero">
+      <div>
         <FoundersHeader />
       </div>
       <FoundersInfo />

@@ -4,7 +4,7 @@ import DoorShowcaseGallery from "@/app/sections/DoorShowcaseGallery";
 const Page = () => {
   return (
     <div>
-      <div id="page-hero">
+      <div>
         <DoorHeader />
       </div>
       <DoorShowcaseGallery />

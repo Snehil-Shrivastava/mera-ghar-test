@@ -4,7 +4,7 @@ import KitchenShowcaseGallery from "@/app/sections/KitchenShowcaseGallery";
 const Page = () => {
   return (
     <div>
-      <div id="page-hero">
+      <div>
         <KitchenHeader />
       </div>
       <KitchenShowcaseGallery />

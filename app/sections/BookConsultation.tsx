@@ -18,11 +18,13 @@ const BookConsultation = () => {
       }}
     >
       <div className="flex flex-col gap-5 py-30 1600p:py-45 w-[90%] max-w-360 mx-auto">
-        <h3 className="text-sm font-semibold uppercase text-copper">
-          let&apos;s design your home
+        <h3 className="text-sm font-semibold uppercase text-copper w-60">
+          Let&apos;s Begin Crating Your Home
         </h3>
-        <h1 className="text-brand-brown font-bold text-[60px] max-lg:text-[44px]/[52px] capitalize w-170 max-lg:w-130">
-          Start your journey with our experts today
+        <h1 className="text-brand-brown font-bold text-[60px] max-lg:text-[44px]/[52px] capitalize w-230 max-lg:w-full">
+          <span>Connect With</span>
+          <br />
+          <span>The Experts Now</span>
         </h1>
         <div className="flex gap-10 items-center">
           <Link
