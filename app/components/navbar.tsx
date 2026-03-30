@@ -18,12 +18,15 @@ const Navbar = () => {
 
   useEffect(() => {
     const hero = document.querySelector("#page-hero");
+    const pages = pathname !== "/blog";
 
     const handleScroll = () => {
       if (hero) {
         setScrolled(hero.getBoundingClientRect().bottom <= 200);
-      } else {
+      } else if (pages) {
         setScrolled(window.scrollY > 50);
+      } else {
+        setScrolled(true);
       }
     };
 

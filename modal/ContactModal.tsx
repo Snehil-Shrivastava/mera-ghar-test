@@ -6,16 +6,12 @@ import emailjs from "@emailjs/browser";
 
 import { useEffect, useState } from "react";
 
-const ConsulationOptions = ["Kitchens", "Wardrobes", "Doors"];
-
 const ContactModal = () => {
   const searchParams = useSearchParams();
   const modal = searchParams.get("showQuotationForm");
   const pathname = usePathname();
   const router = useRouter();
 
-  // const [step, setStep] = useState(1);
-  // const [selectedOptions, setSelectedOptions] = useState<string[]>([]);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -39,15 +35,6 @@ const ContactModal = () => {
   // If the param doesn't exist, don't render anything
   if (!modal) return null;
 
-  // const toggleOption = (option: string) => {
-  //   setSelectedOptions(
-  //     (prev) =>
-  //       prev.includes(option)
-  //         ? prev.filter((item) => item !== option) // Remove if exists
-  //         : [...prev, option], // Add if doesn't exist
-  //   );
-  // };
-
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
     setFormData((prev) => ({
@@ -66,10 +53,6 @@ const ContactModal = () => {
         name: formData.name,
         email: formData.email,
         phone: formData.phone,
-        // wantToBuild:
-        //   selectedOptions.length > 0
-        //     ? selectedOptions.join(", ")
-        //     : "None specified",
       };
 
       await emailjs.send(
@@ -91,9 +74,7 @@ const ContactModal = () => {
   const handleClose = () => {
     setIsVisible(false);
     setTimeout(() => {
-      // setStep(1);
       setFormData({ name: "", email: "", phone: "" });
-      // setSelectedOptions([]);
       setSubmitStatus("idle");
       router.replace(pathname, { scroll: false });
     }, 200);
@@ -174,63 +155,10 @@ const ContactModal = () => {
               {/* Icon & Title - Dynamic based on step */}
               <div className="inline-flex gap-5 max-sm:gap-2.5 items-center mx-auto relative left-1/2 -translate-x-1/2">
                 <h2 className="uppercase text-lg max-sm:text-xs font-medium leading-5 select-none">
-                  {/* {step === 1
-                    ? "What are you planning to build"
-                    : "Contact details"} */}
                   Contact details
                 </h2>
               </div>
 
-              {/* {step === 1 && (
-                <div className="animate-in fade-in duration-300">
-                  <div className="py-8 flex flex-col justify-center items-center gap-8 max-lg:gap-8 max-sm:gap-6 sm:max-lg:w-[70%] mx-auto">
-                    {ConsulationOptions.map((options, index) => {
-                      const isSelected = selectedOptions.includes(options);
-
-                      return (
-                        <label
-                          key={index}
-                          className={`
-                    cursor-pointer px-6 py-3 border transition-all duration-200 w-48 max-lg:w-35 max-sm:w-30 text-center select-none max-sm:text-sm
-                    ${
-                      isSelected
-                        ? "bg-brand-brown text-white border-black"
-                        : "border-gray-300 hover:bg-brand-black hover:text-white text-black"
-                    }
-                  `}
-                        >
-                          <input
-                            type="checkbox"
-                            value={options}
-                            name="wantToBuild"
-                            className="sr-only"
-                            checked={isSelected}
-                            onChange={() => toggleOption(options)}
-                          />
-                          {options}
-                        </label>
-                      );
-                    })}
-                  </div>
-
-                  <div
-                    className={`flex justify-center transition-all duration-100 ease-linear mt-4 w-full max-sm:w-full mx-auto select-none max-sm:text-sm ${
-                      selectedOptions.length > 0
-                        ? "opacity-100 visible"
-                        : "opacity-0 invisible"
-                    }`}
-                  >
-                    <button
-                      onClick={() => setStep(2)}
-                      className="bg-brand-black text-white px-8 py-2 hover:bg-brand-brown transition-colors"
-                    >
-                      Next
-                    </button>
-                  </div>
-                </div>
-              )} */}
-
-              {/* {step === 1 && ( */}
               <form
                 onSubmit={handleSubmit}
                 className="animate-in fade-in duration-300 w-full mx-auto"
@@ -269,18 +197,12 @@ const ContactModal = () => {
                       onChange={handleInputChange}
                       className="w-full border-b border-gray-300 p-2 focus:outline-none focus:border-black transition-colors"
                       placeholder="Your Number*"
+                      // pattern="[0-9+\-\s()]{7,15}"
                     />
                   </div>
                 </div>
 
                 <div className="flex justify-between mt-8 w-full max-sm:w-full mx-auto select-none max-sm:text-sm">
-                  {/* <button
-                      type="button"
-                      onClick={() => setStep(1)}
-                      className="text-brand-black underline underline-offset-4 hover:text-brand-brown"
-                    >
-                      Back
-                    </button> */}
                   <button
                     type="submit"
                     className="bg-brand-black text-white px-8 py-2 hover:bg-brand-brown transition-colors"
@@ -314,7 +236,6 @@ const ContactModal = () => {
                   </button>
                 </div>
               </form>
-              {/* )} */}
             </>
           )}
         </div>
