@@ -74,7 +74,7 @@ const DoorShowcaseGallery = () => {
 
     <>
       <div className="py-20 flex flex-col gap-15">
-        <div className="w-[90%] max-w-360 mx-auto grid grid-cols-2 gap-x-15 gap-y-15 place-items-center">
+        <div className="w-[90%] max-w-360 mx-auto grid grid-cols-2 max-lg:grid-cols-1 gap-x-15 gap-y-15 place-items-center">
           {DoorGallery.map((data, index) => (
             <div
               key={index}

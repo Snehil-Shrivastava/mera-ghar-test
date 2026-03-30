@@ -20,7 +20,7 @@ const HomePageTestimonials = () => {
           <Image src={heart} alt="" />
           <span>loved by homeowners</span>
         </h3>
-        <h1 className="text-brand-brown font-bold text-[40px]/[48px] w-170 text-center capitalize">
+        <h1 className="text-brand-brown font-bold text-[40px]/[48px] max-lg:text-[32px]/[40px] w-170 max-lg:w-140 text-center capitalize">
           Trusted for Decades - Here&apos;s Why
         </h1>
         <Swiper

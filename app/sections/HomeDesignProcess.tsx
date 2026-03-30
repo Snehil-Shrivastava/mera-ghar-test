@@ -10,7 +10,7 @@ const HomeDesignProcess = () => {
         <h3 className="text-sm font-semibold uppercase text-copper">
           How it works?
         </h3>
-        <h1 className="text-brand-brown font-bold text-[40px]/[48px] w-200 text-center capitalize">
+        <h1 className="text-brand-brown font-bold text-[40px]/[48px] max-lg:text-[32px]/[40px] w-200 max-lg:w-160 text-center capitalize">
           We design tailored solutions around your needs—so it truly feels like
           home
         </h1>

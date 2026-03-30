@@ -21,7 +21,7 @@ const BookConsultation = () => {
         <h3 className="text-sm font-semibold uppercase text-copper">
           let&apos;s design your home
         </h3>
-        <h1 className="text-brand-brown font-bold text-[60px] capitalize w-170">
+        <h1 className="text-brand-brown font-bold text-[60px] max-lg:text-[44px]/[52px] capitalize w-170 max-lg:w-130">
           Start your journey with our experts today
         </h1>
         <div className="flex gap-10 items-center">
