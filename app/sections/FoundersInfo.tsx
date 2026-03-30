@@ -8,11 +8,19 @@ const FoundersInfo = () => {
     <>
       <div className="py-20">
         <div className="w-[90%] max-w-360 mx-auto flex gap-10">
-          <div className="flex-[1.25]">
+          <div className="flex-[1.25] max-lg:flex-1">
             <div className="pb-4 max-xl:pb-8 border-b border-b-neutral-300 flex flex-col gap-5">
               <h2 className="capitalize text-brand-brown font-bold text-[60px] max-xl:text-[40px]/[35px]">
                 Mr. Anurag Agarwal
               </h2>
+            </div>
+            <div className="w-120 mx-auto relative h-full max-h-170 lg:hidden mt-6">
+              <Image
+                src={anuragAgarwal}
+                alt=""
+                // fill
+                className="object-cover xl:object-contain h-full"
+              />
             </div>
             <div className="pt-6 max-xl:pt-6 font-openSans flex flex-col gap-2 text-neutral-700 text-sm">
               <p>
@@ -71,7 +79,7 @@ const FoundersInfo = () => {
             </div>
           </div>
           <div
-            className="flex-1 relative flex justify-end items-start"
+            className="flex-1 relative flex justify-end items-start max-lg:hidden"
             style={{
               height: "inherit",
             }}
@@ -89,11 +97,19 @@ const FoundersInfo = () => {
       </div>
       <div className="py-20 bg-cream">
         <div className="w-[90%] max-w-360 mx-auto flex gap-10 flex-row-reverse">
-          <div className="flex-[1.25]">
+          <div className="flex-[1.25] max-lg:flex-1">
             <div className="pb-4 max-xl:pb-8 border-b border-b-neutral-300 flex flex-col gap-5">
               <h2 className="capitalize text-brand-brown font-bold text-[60px] max-xl:text-[40px]/[35px]">
                 Mr. Tabrez Rashid
               </h2>
+            </div>
+            <div className="w-120 mx-auto relative h-full max-h-170 lg:hidden mt-6">
+              <Image
+                src={tabrezRashid}
+                alt=""
+                // fill
+                className="object-cover xl:object-contain h-full"
+              />
             </div>
             <div className="pt-6 max-xl:pt-6 font-openSans flex flex-col gap-2 text-neutral-700 text-sm">
               <p>
@@ -154,7 +170,7 @@ const FoundersInfo = () => {
             </div>
           </div>
           <div
-            className="flex-1 relative flex justify-end items-start"
+            className="flex-1 relative flex justify-end items-start max-lg:hidden"
             style={{
               height: "inherit",
             }}
