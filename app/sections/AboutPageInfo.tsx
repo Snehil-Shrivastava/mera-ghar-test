@@ -53,25 +53,25 @@ const AboutPageInfo = () => {
       </div>
       <div className="bg-cream">
         <div className="w-[90%] max-w-360 mx-auto py-10 relative flex">
-          <div className="flex-1 max-xl:flex-[1.25]">
-            <div className="text-brand-brown flex gap-10 justify-between flex-wrap max-lg:justify-start max-xl:gap-x-25">
-              <h4 className="font-bold border-l-5 border-l-brand-brown pl-5">
+          <div className="flex-1 max-xl:flex-[1.25] max-lg:max-w-50">
+            <div className="text-brand-brown flex gap-10 justify-between flex-wrap max-lg:justify-between max-lg:h-full max-xl:gap-x-25">
+              <h4 className="font-bold border-l-5 border-l-brand-brown pl-5 max-lg:h-15 max-lg:flex max-lg:flex-col max-lg:justify-center">
                 <span>Not copied</span>
-                <br />
+                <br className="max-lg:hidden" />
                 <span>from catalogues,</span>
               </h4>
-              <h4 className="font-bold border-l-5 border-l-brand-brown pl-5">
+              <h4 className="font-bold border-l-5 border-l-brand-brown pl-5 max-lg:h-15 max-lg:flex max-lg:flex-col max-lg:justify-center">
                 <span>Not forced</span>
-                <br />
+                <br className="max-lg:hidden" />
                 <span>by trends.</span>
               </h4>
-              <h4 className="font-bold border-l-5 border-l-brand-brown pl-5">
+              <h4 className="font-bold border-l-5 border-l-brand-brown pl-5 max-lg:h-15 max-lg:flex max-lg:flex-col max-lg:justify-center">
                 <span>Not rushed just</span>
-                <br />
+                <br className="max-lg:hidden" />
                 <span>to meet deadlines.</span>
               </h4>
             </div>
-            <div className="pt-10">
+            <div className="pt-10 max-lg:hidden">
               <p>
                 But shaped by{" "}
                 <b className="font-bold">
@@ -85,12 +85,22 @@ const AboutPageInfo = () => {
           {/* <div className="absolute -top-50 w-90 h-90 right-42 border-15 border-white">
             <Image src={kitchen3} alt="" fill className="object-cover" />
           </div> */}
-          <div className="relative flex-1">
+          <div className="relative flex-1 max-lg:flex max-lg:justify-end">
             {/* <div className="absolute -top-70 left-10 max-xl:top-1/2 max-xl:-translate-y-1/2 w-90 h-90 border-15 border-white"> */}
-            <div className="absolute -top-70 left-10 max-xl:right-5 max-xl:left-auto w-90 h-90 border-15 border-white">
+            <div className="absolute max-lg:relative -top-70 max-lg:top-0 left-10 max-lg:left-0 max-xl:right-5 max-lg:right-auto max-xl:left-auto w-90 h-90 border-15 border-white">
               <Image src={kitchen3} alt="" fill className="object-cover" />
             </div>
           </div>
+        </div>
+        <div className="lg:hidden w-[90%] mx-auto pb-10">
+          <p>
+            But shaped by{" "}
+            <b className="font-bold">
+              your preferences, your taste. your comfort and your needs.
+            </b>{" "}
+            Transforming spaces not just into forms,{" "}
+            <b className="font-bold">but into your personal spaces.</b>
+          </p>
         </div>
       </div>
     </div>

@@ -18,9 +18,9 @@ const Footer = () => {
   return (
     <div className="bg-copper font-raleway text-white">
       <div className=" w-[90%] max-lg:w-[85%] max-w-360 mx-auto flex flex-col">
-        <div className="pt-20 pb-10 flex justify-between gap-20 max-xl:gap-15">
+        <div className="pt-20 max-md:pt-15 pb-10 max-md:pb-6 flex max-md:flex-col justify-between gap-20 max-xl:gap-15 max-md:gap-8">
           <div className="flex flex-col gap-8 max-xl:gap-6 justify-between max-lg:justify-start">
-            <div className="flex gap-10 max-xl:gap-5 max-xl:flex-col max-lg:flex-[0.7] max-lg:justify-between">
+            <div className="flex gap-10 max-xl:gap-5 max-xl:flex-col max-lg:flex-[0.7] max-lg:justify-between max-md:items-center">
               <div>
                 <Image
                   src={LogoCream}
@@ -28,14 +28,14 @@ const Footer = () => {
                   className="w-19 max-xl:w-12 max-lg:w-20"
                 />
               </div>
-              <div className="text-lg max-xl:text-sm w-45">
+              <div className="text-lg max-xl:text-sm w-45 max-md:text-center">
                 <p>
                   Crafting premium, personalised home interiors that respect
                   both emotion and functionality.
                 </p>
               </div>
             </div>
-            <div className="flex items-center gap-5 max-xl:gap-7">
+            <div className="flex items-center max-md:justify-center gap-5 max-xl:gap-7 max-md:hidden">
               <Link href={"#"}>
                 <Image src={facebook} alt="" className="max-xl:w-4" />
               </Link>
@@ -51,7 +51,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="flex-1 flex max-lg:flex-col gap-20 max-xl:gap-20 max-lg:gap-10 justify-between">
-            <div className="flex gap-10 justify-between flex-1">
+            <div className="flex gap-10 justify-between 1440p:justify-around lg:max-xl:justify-around flex-1">
               <div className="flex flex-col gap-8">
                 <span className="text-2xl max-xl:text-xl font-bold">
                   Quick Links
@@ -104,14 +104,14 @@ const Footer = () => {
                 <span className="text-2xl max-xl:text-xl font-bold">
                   Stay Tuned With Us
                 </span>
-                <div className="flex flex-col gap-10 max-lg:grid max-lg:grid-cols-2 max-lg:gap-y-6">
-                  <div className="flex gap-6 max-xl:gap-4 w-65 max-xl:w-45">
+                <div className="flex flex-col gap-10 max-lg:grid max-lg:grid-cols-2 max-lg:gap-y-6 max-md:gap-3">
+                  <div className="flex gap-6 max-xl:gap-4 w-65 max-xl:w-45 max-md:w-auto">
                     <Image src={pin} alt="" className="max-xl:w-3.5 w-4" />
                     <span className="text-lg max-xl:text-sm">Gomti Nagar</span>
                   </div>
                   <Link
                     href={"#"}
-                    className="flex gap-6 max-xl:gap-4 w-65 max-xl:w-45"
+                    className="flex gap-6 max-xl:gap-4 w-65 max-xl:w-45 max-md:w-auto"
                   >
                     <Image src={envelope} alt="" className="max-xl:w-3.5 w-4" />
                     <span className="text-lg max-xl:text-sm">
@@ -123,7 +123,7 @@ const Footer = () => {
                       "https://api.whatsapp.com/send/?phone=%2B918127300000&text&type=phone_number&app_absent=0"
                     }
                     target="_blank"
-                    className="flex gap-6 max-xl:gap-4 w-65 max-xl:w-45"
+                    className="flex gap-6 max-xl:gap-4 w-65 max-xl:w-45 max-md:w-auto"
                   >
                     <Image src={phone} alt="" className="max-xl:w-3.5 w-4" />
                     <span className="text-lg max-xl:text-sm">
@@ -134,8 +134,22 @@ const Footer = () => {
               </div>
             </div>
           </div>
+          <div className="flex items-center max-md:justify-center gap-5 max-xl:gap-7 md:hidden">
+            <Link href={"#"}>
+              <Image src={facebook} alt="" className="max-xl:w-4" />
+            </Link>
+            <Link href={"#"}>
+              <Image src={twitter} alt="" className="max-xl:w-4" />
+            </Link>
+            <Link href={"#"}>
+              <Image src={instagram} alt="" className="max-xl:w-4" />
+            </Link>
+            <Link href={"#"}>
+              <Image src={pinterest} alt="" className="max-xl:w-4" />
+            </Link>
+          </div>
         </div>
-        <div className="py-8 font-semibold text-center max-xl:text-sm border-t border-t-cream/50 uppercase">
+        <div className="py-8 font-semibold text-center max-xl:text-sm max-md:text-[10px] border-t border-t-cream/50 uppercase">
           <span>All right Reserved - MERA GHAR</span>
         </div>
       </div>
