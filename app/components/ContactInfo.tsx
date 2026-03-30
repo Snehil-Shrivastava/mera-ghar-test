@@ -1,9 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import location from "@/public/location.svg";
-import phone from "@/public/phone.svg";
-import email from "@/public/email.svg";
+import Location from "@/public/location_copper";
+import Phone from "@/public/phone_copper";
+import Email from "@/public/email_copper";
 import ContactForm from "./ContactForm";
 
 const ContactInfo = () => {
@@ -47,18 +47,27 @@ const ContactInfo = () => {
           <div className="flex-1 flex flex-col gap-10">
             <div className="flex flex-col gap-5">
               <Link href={"#"} className="flex gap-4 items-start">
-                <Image src={location} alt="" className="max-sm:w-5" />
+                <span className="max-sm:w-5">
+                  <Location />
+                </span>
+                {/* <Image src={location} alt="" className="max-sm:w-5" /> */}
                 <span className="max-sm:text-xs">
                   TC 14, 6th floor, Vibhuti Khand, Gomti Nagar, Lucknow, Uttar
                   Pradesh 226010{" "}
                 </span>
               </Link>
               <Link href={"#"} className="flex gap-4 items-start">
-                <Image src={phone} alt="" className="max-sm:w-5" />
-                <span className="max-sm:text-xs">+62345188368</span>
+                <span className="max-sm:w-5">
+                  <Phone />
+                </span>
+                {/* <Image src={phone} alt="" className="max-sm:w-5" /> */}
+                <span className="max-sm:text-xs">+91-8127300000</span>
               </Link>
               <Link href={"#"} className="flex gap-4 items-start">
-                <Image src={email} alt="" className="max-sm:w-5" />
+                <span className="max-sm:w-5">
+                  <Email />
+                </span>
+                {/* <Image src={email} alt="" className="max-sm:w-5" /> */}
                 <span className="max-sm:text-xs">info@meraghar.com</span>
               </Link>
             </div>
