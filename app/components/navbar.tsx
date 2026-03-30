@@ -44,7 +44,7 @@ const Navbar = () => {
       }`}
     >
       {/* Main Navbar Container */}
-      <div className="flex justify-between xl:max-1600p:justify-center items-center px-15 xl:px-0 xl:max-[1380px]:gap-25 gap-30 h-[10vh] min-h-30.5 max-w-360 mx-auto">
+      <div className="flex justify-between xl:max-1600p:justify-center items-center px-15 max-md:px-5 xl:px-0 xl:max-[1380px]:gap-25 gap-30 h-[10vh] min-h-30.5 max-w-360 mx-auto">
         {/* Logo */}
         <Link
           href="/"

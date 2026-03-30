@@ -18,10 +18,10 @@ const BookConsultation = () => {
       }}
     >
       <div className="flex flex-col gap-5 py-30 1600p:py-45 w-[90%] max-w-360 mx-auto">
-        <h3 className="text-sm font-semibold uppercase text-copper w-60">
+        <h3 className="text-sm max-md:text-[10px] font-semibold uppercase text-copper w-60">
           Let&apos;s Begin Crating Your Home
         </h3>
-        <h1 className="text-brand-brown font-bold text-[60px] max-lg:text-[44px]/[52px] capitalize w-230 max-lg:w-full">
+        <h1 className="text-brand-brown font-bold text-[60px] max-lg:text-[44px]/[52px] max-md:text-2xl capitalize w-230 max-md:w-full max-lg:w-full">
           <span>Connect With</span>
           <br />
           <span>The Experts Now</span>
@@ -29,7 +29,7 @@ const BookConsultation = () => {
         <div className="flex gap-10 items-center">
           <Link
             href={"?showQuotationForm=true"}
-            className="flex gap-4 justify-between bg-copper py-3.5 px-5 w-80 text-white"
+            className="flex gap-4 justify-between bg-copper py-3.5 px-5 w-80 text-white max-md:text-sm"
           >
             <button className="uppercase">Book free consulatation</button>
             <ChevronRight />

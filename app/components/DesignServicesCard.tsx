@@ -11,7 +11,7 @@ const DesignServicesCard = ({
   src: StaticImageData;
 }) => {
   return (
-    <div className="lg:flex-1 relative 2240p:h-85 1920p:max-2240p:h-75 1600p:max-1920p:h-60 2xl:max-1600p:h-60 1440p:max-2xl:h-55 xl:max-1440p:h-50 max-xl:h-50 max-lg:w-150 max-lg:h-75">
+    <div className="lg:flex-1 relative 2240p:h-85 1920p:max-2240p:h-75 1600p:max-1920p:h-60 2xl:max-1600p:h-60 1440p:max-2xl:h-55 xl:max-1440p:h-50 max-xl:h-50 max-lg:w-150 max-lg:h-75 max-md:w-4/5 max-md:h-40">
       <div className="relative w-full h-full">
         <Image src={src} alt="" fill className="object-cover" />
       </div>
@@ -30,7 +30,7 @@ const DesignServicesCard = ({
           </button>
         </div>
       </div> */}
-      <div className="bg-white/15 backdrop-blur-xs xl:py-4 1440p:px-6 px-5 py-4 1920p:w-90 1600p:max-1920p:w-85 1440p:w-80 xl:max-1440p:w-70 max-xl:w-60 max-lg:w-100 relative bottom-5 left-1/2 -translate-x-1/2 shadow-xl flex items-center justify-between 1440p:gap-5 gap-2 max-lg:hover:scale-105 transition-transform duration-300 cursor-pointer">
+      <div className="bg-white/15 backdrop-blur-xs xl:py-4 1440p:px-6 px-5 py-4 1920p:w-90 1600p:max-1920p:w-85 1440p:w-80 xl:max-1440p:w-70 max-xl:w-60 max-lg:w-100 max-md:w-4/5 relative bottom-5 left-1/2 -translate-x-1/2 shadow-xl flex items-center justify-between 1440p:gap-5 gap-2 max-lg:hover:scale-105 transition-transform duration-300 cursor-pointer">
         <div>
           <h3 className="font-bold 1440p:text-xl text-base">{name}</h3>
           <span className="pb-0 1920p:text-base 1600p:max-1920p:text-sm 1440p:text-xs text-[10px] max-xl:text-sm opacity-50">
