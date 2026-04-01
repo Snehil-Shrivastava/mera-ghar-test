@@ -69,14 +69,6 @@ const HomePageShowReel = () => {
           loop
           className="absolute inset-0 w-full h-full object-cover brightness-60"
         />
-        {/* <div
-          ref={buttonRef}
-          className="absolute max-lg:bottom-[10%] bottom-[8%] left-1/2 -translate-x-1/2 z-2 opacity-0"
-        >
-          <button className="uppercase bg-copper py-4 px-10 text-xs font-semibold text-cream">
-            Book free consulatation
-          </button>
-        </div> */}
       </div>
     </div>
   );

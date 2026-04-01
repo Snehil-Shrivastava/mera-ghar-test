@@ -12,7 +12,6 @@ const BookConsultation = () => {
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center center",
         backgroundSize: "cover",
-        // backgroundAttachment: "fixed",
         backgroundColor: "rgba(255, 255, 255, 0.8)",
         backgroundBlendMode: "lighten",
       }}
@@ -24,7 +23,6 @@ const BookConsultation = () => {
         </h3>
         <h1 className="text-brand-brown font-bold text-[40px] max-lg:text-[32px]/[42px] max-md:text-[26px] capitalize w-230 max-md:w-full max-lg:w-full flex flex-col">
           <span>Connect With</span>
-          {/* <br /> */}
           <span>The Experts Now</span>
         </h1>
         <div className="flex gap-10 items-center">
