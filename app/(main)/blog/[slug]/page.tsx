@@ -51,7 +51,7 @@ async function getPost(slug: string) {
 }
 
 const Page = async ({ params }: { params: { slug: string } }) => {
-  const resolvedParams = params;
+  const resolvedParams = await params;
   const post = await getPost(resolvedParams.slug);
 
   if (!post) {
