@@ -13,7 +13,7 @@ const DesignProcessCard = ({
   return (
     <div className="py-11 max-xl:py-0 flex flex-col gap-8 items-center text-center">
       <div>
-        <Image src={icon} alt="" />
+        <Image src={icon} alt="" width={40} height={40} />
       </div>
       <div className="lg:max-xl:w-52">
         <h3 className="text-xl max-xl:text-lg text-brand-brown font-bold">

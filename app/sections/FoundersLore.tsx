@@ -1,7 +1,3 @@
-import Image from "next/image";
-
-import logoCream from "@/public/mera-ghar-logo-cream-skeleton.svg";
-
 const FoundersLore = () => {
   return (
     <div className="pt-20 pb-30 overflow-x-hidden">

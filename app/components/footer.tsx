@@ -90,15 +90,15 @@ const Footer = () => {
                     <Image src={CaretRight} alt="" className="w-3 max-lg:w-2" />
                     <span>Blogs</span>
                   </Link>
-                  <Link href={"/testimonials"} className="flex gap-3">
+                  {/* <Link href={"/testimonials"} className="flex gap-3">
                     <Image src={CaretRight} alt="" className="w-3 max-lg:w-2" />
                     <span>Testimonials</span>
-                  </Link>
+                  </Link> */}
                   <Link href={"/contact-us"} className="flex gap-3">
                     <Image src={CaretRight} alt="" className="w-3 max-lg:w-2" />
                     <span>Contact Us</span>
                   </Link>
-                  <Link href={"#"} className="flex gap-3">
+                  <Link href={"/terms-and-conditions"} className="flex gap-3">
                     <Image src={CaretRight} alt="" className="w-3 max-lg:w-2" />
                     <span>Terms & Conditions</span>
                   </Link>

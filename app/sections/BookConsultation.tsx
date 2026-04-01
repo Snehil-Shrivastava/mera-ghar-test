@@ -1,4 +1,3 @@
-import { ChevronRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -18,10 +17,10 @@ const BookConsultation = () => {
       className="relative"
     >
       <div className="flex flex-col gap-5 py-30 1600p:py-45 w-[90%] max-w-360 mx-auto">
-        <h3 className="text-lg max-lg:text-base max-md:text-sm font-semibold uppercase text-copper">
+        <h3 className="text-xl max-lg:text-base max-md:text-sm font-semibold uppercase text-copper">
           Let&apos;s Begin Crafting Your Home
         </h3>
-        <h1 className="text-brand-brown font-bold text-[40px] max-lg:text-[32px]/[42px] max-md:text-[26px] capitalize w-230 max-md:w-full max-lg:w-full flex flex-col">
+        <h1 className="text-brand-brown font-bold text-[36px] max-lg:text-[32px]/[42px] max-md:text-[26px] capitalize w-230 max-md:w-full max-lg:w-full flex flex-col">
           <span>Connect With</span>
           <span>The Experts Now</span>
         </h1>

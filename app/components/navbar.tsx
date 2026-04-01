@@ -18,7 +18,9 @@ const Navbar = () => {
 
   useEffect(() => {
     const hero = document.querySelector("#page-hero");
-    const pages = !pathname.startsWith("/blog");
+    const pages =
+      !pathname.startsWith("/blog") &&
+      !pathname.includes("/terms-and-conditions");
 
     const handleScroll = () => {
       if (hero) {
@@ -94,9 +96,6 @@ const Navbar = () => {
             <span>Mera</span>
             <span>Door</span>
           </Link>
-          {/* <Link href={`#`} className="flex items-center nav-link relative">
-            Cities
-          </Link> */}
           <Link
             href={`/contact-us`}
             className="flex items-center nav-link relative"
@@ -106,12 +105,6 @@ const Navbar = () => {
           <Link href={`/blog`} className="flex items-center nav-link relative">
             Blogs
           </Link>
-          {/* <Link
-            href={`/testimonials`}
-            className="flex items-center nav-link relative"
-          >
-            Testimonials
-          </Link> */}
         </div>
 
         {/* Mobile Hamburger Button */}
