@@ -11,8 +11,10 @@ import heart from "@/public/heart.svg";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
 import TestimonilaCard from "../components/TestimonilaCard";
+import { Testimonials } from "@/lib/data";
 
 const HomePageTestimonials = () => {
+  const TestimonialsData = Testimonials;
   return (
     <div className="py-25 bg-cream">
       <div className="flex flex-col items-center gap-10 max-md:gap-8 w-[90%] max-w-360 mx-auto">
@@ -27,9 +29,9 @@ const HomePageTestimonials = () => {
           slidesPerView={1}
           spaceBetween={30}
           breakpoints={{
-            1280: {
-              slidesPerView: 3,
-            },
+            // 1280: {
+            //   slidesPerView: 3,
+            // },
             768: {
               slidesPerView: 2,
             },
@@ -40,9 +42,13 @@ const HomePageTestimonials = () => {
           modules={[Pagination]}
           className="mySwiper w-full h-full"
         >
-          {Array.from({ length: 6 }).map((_, i) => (
-            <SwiperSlide key={i}>
-              <TestimonilaCard />
+          {TestimonialsData.map((testimonials, index) => (
+            <SwiperSlide key={index}>
+              <TestimonilaCard
+                quote={testimonials.quote}
+                name={testimonials.name}
+                location={testimonials.location}
+              />
             </SwiperSlide>
           ))}
         </Swiper>

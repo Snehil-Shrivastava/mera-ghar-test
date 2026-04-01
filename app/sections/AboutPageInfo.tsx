@@ -9,9 +9,9 @@ const AboutPageInfo = () => {
       <div className="py-20 w-[90%] max-w-360 mx-auto relative flex gap-15">
         <div className="flex-1">
           <div className="pb-8 border-b border-b-neutral-300 flex flex-col gap-5">
-            <h4 className="uppercase font-semibold text-copper text-sm max-sm:text-xs">
+            {/* <h4 className="uppercase font-semibold text-copper text-sm max-sm:text-xs">
               How it works?
-            </h4>
+            </h4> */}
             <h2 className="capitalize text-brand-brown font-bold text-[40px] max-sm:text-3xl max-xl:w-80 max-lg:w-auto">
               Welcome to mera ghar
             </h2>

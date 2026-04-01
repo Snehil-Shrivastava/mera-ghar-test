@@ -7,9 +7,9 @@ const AboutPageValues = () => {
     <div className="py-20 overflow-x-hidden">
       <div className="w-[90%] max-w-360 mx-auto">
         <div className="flex flex-col gap-5 items-center">
-          <h4 className="uppercase font-semibold text-copper text-sm max-sm:text-xs">
+          {/* <h4 className="uppercase font-semibold text-copper text-sm max-sm:text-xs">
             Values that define us
-          </h4>
+          </h4> */}
           <h2 className="capitalize text-brand-brown font-bold text-[40px] max-sm:text-3xl">
             Core values
           </h2>

@@ -31,7 +31,7 @@ const BookConsultation = () => {
             href={"?showQuotationForm=true"}
             className="flex gap-4 justify-between bg-copper py-3.5 px-5 w-80 text-white max-md:text-sm"
           >
-            <button className="uppercase">Book free consulatation</button>
+            <button className="uppercase">Book free consultation</button>
             <ChevronRight />
           </Link>
           <Link

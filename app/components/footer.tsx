@@ -164,7 +164,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="py-8 font-semibold text-center max-xl:text-sm max-md:text-[10px] border-t border-t-cream/50 uppercase">
-          <span>All right Reserved - MERA GHAR</span>
+          <span>All rights Reserved</span>
         </div>
       </div>
     </div>

@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import anuragAgarwal from "@/public/anurag-agarwal.png";
+import anuragAgarwal from "@/public/anurag-agarwal-2.png";
 import tabrezRashid from "@/public/tabrez-rashid.png";
 
 const FoundersInfo = () => {
