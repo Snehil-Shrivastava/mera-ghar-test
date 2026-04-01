@@ -53,10 +53,10 @@ import emailjs from "@emailjs/browser";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
-    first_name: "",
-    last_name: "",
-    email: "",
-    company_name: "",
+    name: "",
+    // last_name: "",
+    // email: "",
+    // company_name: "",
     phone: "",
     message: "",
   });
@@ -83,10 +83,10 @@ const ContactForm = () => {
         process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
         process.env.NEXT_PUBLIC_EMAILJS_CONTACT_TEMPLATE_ID!,
         {
-          first_name: formData.first_name,
-          last_name: formData.last_name,
-          email: formData.email,
-          company_name: formData.company_name,
+          name: formData.name,
+          // last_name: formData.last_name,
+          // email: formData.email,
+          // company_name: formData.company_name,
           phone: formData.phone,
           message: formData.message,
         },
@@ -95,10 +95,10 @@ const ContactForm = () => {
 
       setSubmitStatus("success");
       setFormData({
-        first_name: "",
-        last_name: "",
-        email: "",
-        company_name: "",
+        name: "",
+        // last_name: "",
+        // email: "",
+        // company_name: "",
         phone: "",
         message: "",
       });
@@ -152,13 +152,13 @@ const ContactForm = () => {
             <input
               required
               type="text"
-              name="first_name"
-              value={formData.first_name}
+              name="name"
+              value={formData.name}
               onChange={handleInputChange}
-              placeholder="First Name*"
-              className="border-b border-b-neutral-400 py-3 outline-none focus:border-b-black transition-colors"
+              placeholder="Name*"
+              className="border-b border-b-neutral-400 py-3 col-span-2 outline-none focus:border-b-black transition-colors"
             />
-            <input
+            {/* <input
               required
               type="text"
               name="last_name"
@@ -166,8 +166,8 @@ const ContactForm = () => {
               onChange={handleInputChange}
               placeholder="Last Name*"
               className="border-b border-b-neutral-400 py-3 outline-none focus:border-b-black transition-colors"
-            />
-            <input
+            /> */}
+            {/* <input
               required
               type="email"
               name="email"
@@ -183,7 +183,7 @@ const ContactForm = () => {
               onChange={handleInputChange}
               placeholder="Company Name"
               className="border-b border-b-neutral-400 py-3 col-span-2 outline-none focus:border-b-black transition-colors"
-            />
+            /> */}
             <input
               required
               type="tel"

@@ -90,7 +90,7 @@ const Footer = () => {
                     <Image src={CaretRight} alt="" className="w-3 max-lg:w-2" />
                     <span>Blogs</span>
                   </Link>
-                  <Link href={"#"} className="flex gap-3">
+                  <Link href={"/testimonials"} className="flex gap-3">
                     <Image src={CaretRight} alt="" className="w-3 max-lg:w-2" />
                     <span>Testimonials</span>
                   </Link>
@@ -111,12 +111,16 @@ const Footer = () => {
                   Stay Tuned With Us
                 </span>
                 <div className="flex flex-col gap-10 max-lg:grid max-lg:grid-cols-2 max-lg:gap-y-6 max-md:gap-3">
-                  <div className="flex gap-6 max-xl:gap-4 w-65 max-xl:w-45 max-md:w-auto">
+                  <Link
+                    href={"https://maps.app.goo.gl/bYx9HXwFzmqd6R2f9"}
+                    target="_blank"
+                    className="flex gap-6 max-xl:gap-4 w-65 max-xl:w-45 max-md:w-auto"
+                  >
                     <Image src={pin} alt="" className="max-xl:w-3.5 w-4" />
                     <span className="text-lg max-xl:text-sm">
                       Gomti Nagar, Lucknow
                     </span>
-                  </div>
+                  </Link>
                   <Link
                     href={"mailto:info@meraghar.solutions"}
                     className="flex gap-6 max-xl:gap-4 w-65 max-xl:w-45 max-md:w-auto"

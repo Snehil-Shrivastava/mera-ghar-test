@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import interior1 from "@/public/interior_1.webp";
+import interior2 from "@/public/minimalist-kitchen-interior-design.webp";
 
 const AboutPageMotto = () => {
   return (
@@ -16,7 +16,7 @@ const AboutPageMotto = () => {
             </h2>
           </div>
           <div className="relative w-full h-90 mt-8 lg:hidden">
-            <Image src={interior1} alt="" fill className="object-cover" />
+            <Image src={interior2} alt="" fill className="object-cover" />
           </div>
           <div className="pt-8 font-openSans flex flex-col gap-8 text-neutral-700">
             <p>This motto is the cornerstone of everything we do.</p>
@@ -48,7 +48,7 @@ const AboutPageMotto = () => {
         <div className="flex-1 max-xl:flex max-xl:items-center max-lg:hidden">
           {/* <div className="absolute right-0 -top-5 w-130 h-70"> */}
           <div className="relative w-130 h-70">
-            <Image src={interior1} alt="" fill className="object-cover" />
+            <Image src={interior2} alt="" fill className="object-cover" />
           </div>
         </div>
       </div>

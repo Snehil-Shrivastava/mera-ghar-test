@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 import wardrobe1 from "@/public/wardrobe_1.webp";
-import kitchen3 from "@/public/kitchen_3.webp";
+import kitchen10 from "@/public/3d-rendering-modern-kitchen-fully-parametric-manufacturable-with-opened-shelf-cabinets.jpg.webp";
 
 const AboutPageInfo = () => {
   return (
@@ -88,7 +88,7 @@ const AboutPageInfo = () => {
           <div className="relative flex-1 max-lg:flex max-lg:justify-end max-sm:justify-start">
             {/* <div className="absolute -top-70 left-10 max-xl:top-1/2 max-xl:-translate-y-1/2 w-90 h-90 border-15 border-white"> */}
             <div className="absolute max-lg:relative -top-70 max-lg:top-0 left-10 max-lg:left-0 max-xl:right-5 max-lg:right-auto max-xl:left-auto w-90 h-90 border-15 border-white">
-              <Image src={kitchen3} alt="" fill className="object-cover" />
+              <Image src={kitchen10} alt="" fill className="object-cover" />
             </div>
           </div>
         </div>

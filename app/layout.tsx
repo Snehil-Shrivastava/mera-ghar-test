@@ -29,6 +29,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={`${raleway.variable} ${openSans.variable} antialiased relative`}
+        suppressHydrationWarning={true}
       >
         {children}
       </body>

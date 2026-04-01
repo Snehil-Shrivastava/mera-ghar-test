@@ -18,7 +18,7 @@ const Navbar = () => {
 
   useEffect(() => {
     const hero = document.querySelector("#page-hero");
-    const pages = pathname !== "/blog";
+    const pages = !pathname.startsWith("/blog");
 
     const handleScroll = () => {
       if (hero) {
@@ -106,7 +106,10 @@ const Navbar = () => {
           <Link href={`/blog`} className="flex items-center nav-link relative">
             Blogs
           </Link>
-          <Link href={`#`} className="flex items-center nav-link relative">
+          <Link
+            href={`/testimonials`}
+            className="flex items-center nav-link relative"
+          >
             Testimonials
           </Link>
         </div>

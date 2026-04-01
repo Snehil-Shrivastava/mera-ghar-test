@@ -6,15 +6,16 @@ import Phone from "@/public/phone_copper";
 import Email from "@/public/email_copper";
 import ContactForm from "./ContactForm";
 
+import contactImg from "@/public/contact-us-img.webp";
+
 const ContactInfo = () => {
   return (
     <div className="flex-[0.9] flex flex-col gap-8">
       <h1 className="capitalize text-brand-brown text-[52px]/[62px] max-xl:text-[40px]/[50px] max-sm:text-4xl font-bold">
-        Talk to the expert and know us better
+        Let&apos;s create your lifespaces - Dil Se
       </h1>
       <p className="text-lg opacity-75">
-        Have a question about pricing, plan, or anything about us? Fill out the
-        form or call us, and our expert will give you a better suggestion.
+        Call or visit us to visualize your perfect Kitchen, Wardrobe, Doors.
       </p>
       <div className="flex flex-col gap-10">
         {/* <h4 className="text-brand-green font-semibold text-lg uppercase">
@@ -27,7 +28,7 @@ const ContactInfo = () => {
             the or call us, and our expert will give you a better suggestion.
           </p>
         </div> */}
-        <div className="bg-neutral-300 w-full h-70 relative max-lg:hidden">
+        {/* <div className="bg-neutral-300 w-full h-70 relative max-lg:hidden">
           <div className="capitalize bg-white relative h-full">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d28475.19649031269!2d80.9868825!3d26.8590437!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399be2c09c60f6b3%3A0xb59bb20be582a998!2sKrishna%20Ply%20%26%20Hardwares%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1774862567296!5m2!1sen!2sin"
@@ -39,6 +40,9 @@ const ContactInfo = () => {
               referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
           </div>
+        </div> */}
+        <div>
+          <Image src={contactImg} alt="" className="object-contain" />
         </div>
         <div className="lg:hidden">
           <ContactForm />
@@ -46,7 +50,11 @@ const ContactInfo = () => {
         <div className="flex gap-10">
           <div className="flex-1 flex flex-col gap-10">
             <div className="flex flex-col gap-5">
-              <Link href={"#"} className="flex gap-4 items-start">
+              <Link
+                href={"https://maps.app.goo.gl/bYx9HXwFzmqd6R2f9"}
+                target="_blank"
+                className="flex gap-4 items-start"
+              >
                 <span className="max-sm:w-5">
                   <Location />
                 </span>
@@ -60,6 +68,7 @@ const ContactInfo = () => {
                 href={
                   "https://api.whatsapp.com/send/?phone=%2B918127300000&text&type=phone_number&app_absent=0"
                 }
+                target="_blank"
                 className="flex gap-4 items-start"
               >
                 <span className="max-sm:w-5">
@@ -76,7 +85,7 @@ const ContactInfo = () => {
                   <Email />
                 </span>
                 {/* <Image src={email} alt="" className="max-sm:w-5" /> */}
-                <span className="max-sm:text-xs">info@meraghar.com</span>
+                <span className="max-sm:text-xs">info@meraghar.solutions</span>
               </Link>
             </div>
           </div>

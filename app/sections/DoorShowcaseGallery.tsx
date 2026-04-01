@@ -102,7 +102,7 @@ const DoorShowcaseGallery = () => {
             className="flex gap-4 justify-between bg-copper py-3.5 px-5 w-80 text-white cursor-pointer"
           >
             <button className="uppercase cursor-pointer">
-              Book free consulatation
+              Book free consultation
             </button>
             <ChevronRight />
           </Link>

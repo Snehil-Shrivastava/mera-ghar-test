@@ -205,7 +205,7 @@ const ContactModal = () => {
                 <div className="flex justify-between mt-8 w-full max-sm:w-full mx-auto select-none max-sm:text-sm">
                   <button
                     type="submit"
-                    className="bg-brand-black text-white px-8 py-2 hover:bg-brand-brown transition-colors"
+                    className="bg-copper text-white px-8 py-2 hover:bg-brand-brown transition-colors"
                   >
                     {isSubmitting ? (
                       <>

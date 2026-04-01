@@ -16,14 +16,15 @@ const BookConsultation = () => {
         backgroundColor: "rgba(255, 255, 255, 0.8)",
         backgroundBlendMode: "lighten",
       }}
+      className="relative"
     >
       <div className="flex flex-col gap-5 py-30 1600p:py-45 w-[90%] max-w-360 mx-auto">
-        <h3 className="text-sm max-md:text-[10px] font-semibold uppercase text-copper w-60">
+        <h3 className="text-lg max-lg:text-base max-md:text-sm font-semibold uppercase text-copper">
           Let&apos;s Begin Crating Your Home
         </h3>
-        <h1 className="text-brand-brown font-bold text-[60px] max-lg:text-[44px]/[52px] max-md:text-2xl capitalize w-230 max-md:w-full max-lg:w-full">
+        <h1 className="text-brand-brown font-bold text-[40px] max-lg:text-[32px]/[42px] max-md:text-[26px] capitalize w-230 max-md:w-full max-lg:w-full flex flex-col">
           <span>Connect With</span>
-          <br />
+          {/* <br /> */}
           <span>The Experts Now</span>
         </h1>
         <div className="flex gap-10 items-center">
