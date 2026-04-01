@@ -9,9 +9,6 @@ const AboutPageInfo = () => {
       <div className="py-20 w-[90%] max-w-360 mx-auto relative flex gap-15">
         <div className="flex-1">
           <div className="pb-8 border-b border-b-neutral-300 flex flex-col gap-5">
-            {/* <h4 className="uppercase font-semibold text-copper text-sm max-sm:text-xs">
-              How it works?
-            </h4> */}
             <h2 className="capitalize text-brand-brown font-bold text-[40px] max-sm:text-3xl max-xl:w-80 max-lg:w-auto">
               Welcome to mera ghar
             </h2>
@@ -45,7 +42,6 @@ const AboutPageInfo = () => {
           </div>
         </div>
         <div className="flex-1 relative flex justify-end items-center max-lg:hidden">
-          {/* <div className="absolute right-0 top-1/2 -translate-y-1/2 w-100 h-120"> */}
           <div className="w-100 h-120 relative">
             <Image src={wardrobe1} alt="" fill className="object-cover" />
           </div>
@@ -82,11 +78,7 @@ const AboutPageInfo = () => {
               </p>
             </div>
           </div>
-          {/* <div className="absolute -top-50 w-90 h-90 right-42 border-15 border-white">
-            <Image src={kitchen3} alt="" fill className="object-cover" />
-          </div> */}
           <div className="relative flex-1 max-lg:flex max-lg:justify-end max-sm:justify-start">
-            {/* <div className="absolute -top-70 left-10 max-xl:top-1/2 max-xl:-translate-y-1/2 w-90 h-90 border-15 border-white"> */}
             <div className="absolute max-lg:relative -top-70 max-lg:top-0 left-10 max-lg:left-0 max-xl:right-5 max-lg:right-auto max-xl:left-auto w-90 h-90 border-15 border-white">
               <Image src={kitchen10} alt="" fill className="object-cover" />
             </div>

@@ -46,7 +46,6 @@ const AboutPageMotto = () => {
           </div>
         </div>
         <div className="flex-1 max-xl:flex max-xl:items-center max-lg:hidden">
-          {/* <div className="absolute right-0 -top-5 w-130 h-70"> */}
           <div className="relative w-130 h-70">
             <Image src={interior2} alt="" fill className="object-cover" />
           </div>

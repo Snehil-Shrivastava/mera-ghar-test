@@ -23,9 +23,6 @@ const AboutPageGoal = () => {
             <Image src={goalVision} alt="" className="object-cover h-full" />
           </div>
           <div className="flex-1 flex flex-col gap-4 items-end max-sm:items-start">
-            {/* <div>
-              <Image src={vision} alt="" />
-            </div> */}
             <h3 className="text-2xl font-bold capitalize">vision</h3>
             <p className="text-end text-base/loose max-sm:text-start">
               To become the premier and most trusted Indian home interiors
@@ -44,9 +41,6 @@ const AboutPageGoal = () => {
             <Image src={goalMission} alt="" className="object-cover h-full" />
           </div>
           <div className="flex-1 flex flex-col gap-2 items-start text-base/loose">
-            {/* <div>
-              <Image src={mission} alt="" />
-            </div> */}
             <h3 className="text-2xl font-bold capitalize">mission</h3>
             <p className="text-start">
               To offer a curated ecosystem of materials and design-led solutions
@@ -76,9 +70,6 @@ const AboutPageGoal = () => {
             <Image src={goalPurpose} alt="" className="object-cover h-full" />
           </div>
           <div className="flex-1 flex flex-col gap-4 items-end text-base/loose max-sm:items-start">
-            {/* <div>
-              <Image src={purpose} alt="" />
-            </div> */}
             <h3 className="text-2xl font-bold capitalize">purpose</h3>
             <p className="text-end max-sm:text-start">
               To facilitate people in building their homes by providing products
