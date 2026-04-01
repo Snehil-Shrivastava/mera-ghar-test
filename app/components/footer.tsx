@@ -28,7 +28,7 @@ const Footer = () => {
                   className="w-19 max-xl:w-12 max-lg:w-20"
                 />
               </div>
-              <div className="text-lg max-xl:text-sm w-45 max-md:text-center">
+              <div className="text-lg max-xl:text-sm w-45 max-md:w-80 max-sm:w-70 max-md:text-center">
                 <p>
                   Crafting premium, personalised home interiors that respect
                   both emotion and functionality.

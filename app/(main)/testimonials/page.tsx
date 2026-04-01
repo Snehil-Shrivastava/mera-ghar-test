@@ -1,9 +1,6 @@
 import PageBanner from "@/app/components/PageBanner";
 import TestimonilaCard from "@/app/components/TestimonilaCard";
 import { Testimonials } from "@/lib/data";
-import { ChevronRight } from "lucide-react";
-import Link from "next/link";
-import React from "react";
 
 const Page = () => {
   const testimonialData = Testimonials;

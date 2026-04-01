@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import interior2 from "@/public/minimalist-kitchen-interior-design.webp";
+import interior2 from "@/public/modern-interior-design-interior_23-2151929504.webp";
 
 const AboutPageMotto = () => {
   return (

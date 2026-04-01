@@ -9,7 +9,9 @@ const nextConfig: NextConfig = {
         hostname: "khaki-nightingale-888676.hostingersite.com",
       },
     ],
+    unoptimized: true,
   },
+  output: "export",
 };
 
 export default nextConfig;
