@@ -1,7 +1,10 @@
+import { notFound } from "next/navigation";
+
 export async function generateStaticParams() {
   const res = await fetch(process.env.WORDPRESS_URL!, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
+    next: { revalidate: false },
     body: JSON.stringify({
       query: `
         query GetAllSlugs {
@@ -25,6 +28,7 @@ async function getPost(slug: string) {
   const res = await fetch(process.env.WORDPRESS_URL!, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
+    next: { revalidate: false },
     body: JSON.stringify({
       query: `
         query GetPost($slug: ID!) {
@@ -47,17 +51,11 @@ async function getPost(slug: string) {
 }
 
 const Page = async ({ params }: { params: { slug: string } }) => {
-  const resolvedParams = await params;
+  const resolvedParams = params;
   const post = await getPost(resolvedParams.slug);
 
   if (!post) {
-    return (
-      <div className="pt-[10vh]">
-        <div className="flex flex-col gap-6 py-10 px-20 font-openSans text-center">
-          <h2 className="text-3xl font-bold font-raleway">Post Not Found</h2>
-        </div>
-      </div>
-    );
+    notFound();
   }
 
   return (
