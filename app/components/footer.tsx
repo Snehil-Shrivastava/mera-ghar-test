@@ -1,9 +1,7 @@
 import Image from "next/image";
 
 import facebook from "@/public/facebook.svg";
-import twitter from "@/public/twitter.svg";
 import instagram from "@/public/instagram.svg";
-import pinterest from "@/public/pinterest.svg";
 
 import pin from "@/public/map-pin.svg";
 import envelope from "@/public/envelope.svg";
@@ -37,7 +35,7 @@ const Footer = () => {
             </div>
             <div className="flex items-center max-md:justify-center gap-5 max-xl:gap-7 max-md:hidden">
               <Link
-                href={"https://www.facebook.com/KrishnaPlyAndHardwares"}
+                href={"https://www.facebook.com/MeraGhar.Solutions/"}
                 target="_blank"
               >
                 <Image src={facebook} alt="" className="max-xl:w-4" />
