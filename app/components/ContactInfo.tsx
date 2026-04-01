@@ -95,7 +95,7 @@ const ContactInfo = () => {
             View large map
           </div>
         </div> */}
-        <div className="bg-neutral-300 w-full h-70 relative lg:hidden">
+        {/* <div className="bg-neutral-300 w-full h-70 relative lg:hidden">
           <div className="capitalize bg-white relative h-full">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d28475.19649031269!2d80.9868825!3d26.8590437!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399be2c09c60f6b3%3A0xb59bb20be582a998!2sKrishna%20Ply%20%26%20Hardwares%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1774862567296!5m2!1sen!2sin"
@@ -107,7 +107,7 @@ const ContactInfo = () => {
               referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

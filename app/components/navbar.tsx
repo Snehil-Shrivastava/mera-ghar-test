@@ -106,12 +106,12 @@ const Navbar = () => {
           <Link href={`/blog`} className="flex items-center nav-link relative">
             Blogs
           </Link>
-          <Link
+          {/* <Link
             href={`/testimonials`}
             className="flex items-center nav-link relative"
           >
             Testimonials
-          </Link>
+          </Link> */}
         </div>
 
         {/* Mobile Hamburger Button */}

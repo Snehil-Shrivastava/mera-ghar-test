@@ -11,7 +11,7 @@ interface BlogCardProps {
 
 const BlogCard = ({ title, excerpt, slug, imageUrl }: BlogCardProps) => {
   return (
-    <div className="px-3 pt-3 pb-6 shadow-md rounded-md flex flex-col gap-6 bg-white">
+    <div className="px-3 pt-3 pb-6 shadow-md rounded-md flex flex-col gap-6 bg-white max-lg:max-w-120">
       <div className="w-full h-50 relative min-h-50">
         {/* Use WP image if it exists, otherwise fallback to placeholder */}
         <Image

@@ -20,7 +20,7 @@ const ClientLogoPage2 = () => {
         <Image
           src={ramplus}
           alt=""
-          className="object-contain max-lg:scale-140"
+          className="object-contain max-lg:scale-140 max-sm:scale-200"
           fill
         />
       </div>
@@ -28,12 +28,17 @@ const ClientLogoPage2 = () => {
         <Image
           src={mepla}
           alt=""
-          className="object-contain max-lg:scale-140"
+          className="object-contain max-lg:scale-140 max-sm:scale-200"
           fill
         />
       </div>
       <div className="relative h-20 max-xl:h-14 max-xl:w-40 max-lg:w-20 max-sm:w-12">
-        <Image src={aristo} alt="" className="object-contain" fill />
+        <Image
+          src={aristo}
+          alt=""
+          className="object-contain max-sm:scale-180"
+          fill
+        />
       </div>
       <div className="relative h-20 max-xl:h-14 max-xl:w-40 max-lg:w-20 max-sm:w-12">
         <Image
@@ -47,7 +52,7 @@ const ClientLogoPage2 = () => {
         <Image
           src={senosan}
           alt=""
-          className="object-contain max-lg:scale-140"
+          className="object-contain max-lg:scale-140 max-sm:scale-200"
           fill
         />
       </div>
@@ -55,7 +60,7 @@ const ClientLogoPage2 = () => {
         <Image
           src={bosch}
           alt=""
-          className="object-contain max-lg:scale-140"
+          className="object-contain max-lg:scale-140 max-sm:scale-200"
           fill
         />
       </div>
@@ -71,7 +76,7 @@ const ClientLogoPage2 = () => {
         <Image
           src={godrej}
           alt=""
-          className="object-contain max-lg:scale-140"
+          className="object-contain max-lg:scale-140 max-sm:scale-200"
           fill
         />
       </div>
@@ -79,7 +84,7 @@ const ClientLogoPage2 = () => {
         <Image
           src={specta}
           alt=""
-          className="object-contain max-xl:scale-130"
+          className="object-contain max-xl:scale-130 max-sm:scale-160"
           fill
         />
       </div>
@@ -87,18 +92,23 @@ const ClientLogoPage2 = () => {
         <Image
           src={archidply}
           alt=""
-          className="object-contain max-lg:scale-150"
+          className="object-contain max-lg:scale-150 max-sm:scale-200"
           fill
         />
       </div>
       <div className="relative h-20 max-xl:h-14 max-xl:w-40 max-lg:w-20 max-sm:w-12">
-        <Image src={alstone} alt="" className="object-contain" fill />
+        <Image
+          src={alstone}
+          alt=""
+          className="object-contain max-sm:scale-150"
+          fill
+        />
       </div>
       <div className="relative h-20 max-xl:h-14 max-xl:w-40 max-lg:w-20 max-sm:w-12">
         <Image
           src={floresta}
           alt=""
-          className="object-contain scale-140 max-xl:scale-180"
+          className="object-contain scale-140 max-xl:scale-180 max-sm:scale-200"
           fill
         />
       </div>

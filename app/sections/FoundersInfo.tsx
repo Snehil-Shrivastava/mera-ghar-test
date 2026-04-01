@@ -18,7 +18,6 @@ const FoundersInfo = () => {
               <Image
                 src={anuragAgarwal}
                 alt=""
-                // fill
                 className="object-cover xl:object-contain h-full"
               />
             </div>
@@ -107,7 +106,6 @@ const FoundersInfo = () => {
               <Image
                 src={tabrezRashid}
                 alt=""
-                // fill
                 className="object-cover xl:object-contain h-full"
               />
             </div>

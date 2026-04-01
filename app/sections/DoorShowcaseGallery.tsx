@@ -99,12 +99,12 @@ const DoorShowcaseGallery = () => {
         <div className="flex gap-10 items-center w-[90%] max-w-360 mx-auto justify-center">
           <Link
             href={"?showQuotationForm=true"}
-            className="flex gap-4 justify-between bg-copper py-3.5 px-5 w-80 text-white cursor-pointer"
+            className="flex gap-4 justify-center bg-copper py-3.5 px-5 w-auto text-white cursor-pointer"
           >
             <button className="uppercase cursor-pointer">
               Book free consultation
             </button>
-            <ChevronRight />
+            {/* <ChevronRight /> */}
           </Link>
         </div>
       </div>

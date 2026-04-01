@@ -196,12 +196,11 @@ const ContactForm = () => {
               className="border-b border-b-neutral-400 py-3 col-span-2 outline-none focus:border-b-black transition-colors"
             />
             <textarea
-              required
               rows={6}
               name="message"
               value={formData.message}
               onChange={handleInputChange}
-              placeholder="Message*"
+              placeholder="Message"
               className="border-b border-b-neutral-400 py-3 col-span-2 outline-none focus:border-b-black transition-colors resize-none"
             />
 

@@ -8,7 +8,7 @@ const FoundersLore = () => {
       <h2 className="capitalize text-brand-brown font-bold text-[40px] max-sm:text-4xl text-center mb-20 max-sm:mb-10">
         Crossing of Paths
       </h2>
-      <div className="w-[90%] max-w-360 mx-auto flex max-lg:flex-col gap-10 relative">
+      <div className="w-[90%] max-w-360 mx-auto flex flex-col gap-10 relative">
         <div className="flex flex-col gap-4 border-l-6 border-l-brand-brown pl-5 flex-1 text-sm">
           <p>Anurag and Tabrez met for the first time in the year 2009!</p>
           <p>
@@ -38,12 +38,12 @@ const FoundersLore = () => {
             evolved between the two.
           </p>
         </div>
-        <div className="flex-1 text-white font-light relative">
-          <div className="bg-brand-brown p-8 absolute max-lg:relative top-1/2 max-lg:top-0 -translate-y-1/2 max-lg:translate-y-0 w-180 max-lg:w-full flex flex-col gap-10">
-            <div className="relative">
+        <div className="flex-1 text-white font-light relative h-auto">
+          <div className="bg-brand-brown p-8 w-full flex flex-col gap-10">
+            {/* <div className="relative">
               <Image src={logoCream} alt="" className="w-20 object-cover" />
-            </div>
-            <div className="flex flex-col gap-3 text-sm w-4/5 max-xl:w-105 max-lg:w-full">
+            </div> */}
+            <div className="flex flex-col gap-3 text-sm w-full">
               <p>
                 <b className="font-bold">Mera Ghar</b> is the culmination of the
                 friendship, trust, respect and competencies of Anurag and

@@ -117,7 +117,7 @@ const LogoStripCarousel = () => {
       <button
         disabled={isBeginning}
         onClick={() => swiper?.slidePrev()}
-        className={`absolute -left-20 max-xl:-left-15 bg-copper px-3 py-2 max-lg:px-2 max-lg:py-0.5 text-white top-1/2 -translate-y-1/2 z-10 disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer ${isBeginning ? "hidden" : ""}`}
+        className={`absolute -left-20 max-xl:-left-15 max-sm:-left-5 bg-copper px-3 py-2 max-lg:px-2 max-lg:py-0.5 text-white top-1/2 -translate-y-1/2 z-10 disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer ${isBeginning ? "hidden" : ""}`}
       >
         <ChevronLeft className="max-lg:w-4" />
       </button>
@@ -126,7 +126,7 @@ const LogoStripCarousel = () => {
       <button
         disabled={isEnd}
         onClick={() => swiper?.slideNext()}
-        className={`absolute -right-20 max-xl:-right-15 bg-copper px-3 py-2 max-lg:px-2 max-lg:py-0.5 text-white top-1/2 -translate-y-1/2 z-10 disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer ${isEnd ? "hidden" : ""}`}
+        className={`absolute -right-20 max-xl:-right-15 max-sm:-right-5 bg-copper px-3 py-2 max-lg:px-2 max-lg:py-0.5 text-white top-1/2 -translate-y-1/2 z-10 disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer ${isEnd ? "hidden" : ""}`}
       >
         <ChevronRight className="max-lg:w-4" />
       </button>

@@ -19,7 +19,7 @@ const BookConsultation = () => {
     >
       <div className="flex flex-col gap-5 py-30 1600p:py-45 w-[90%] max-w-360 mx-auto">
         <h3 className="text-lg max-lg:text-base max-md:text-sm font-semibold uppercase text-copper">
-          Let&apos;s Begin Crating Your Home
+          Let&apos;s Begin Crafting Your Home
         </h3>
         <h1 className="text-brand-brown font-bold text-[40px] max-lg:text-[32px]/[42px] max-md:text-[26px] capitalize w-230 max-md:w-full max-lg:w-full flex flex-col">
           <span>Connect With</span>
@@ -28,10 +28,10 @@ const BookConsultation = () => {
         <div className="flex gap-10 items-center">
           <Link
             href={"?showQuotationForm=true"}
-            className="flex gap-4 justify-between bg-copper py-3.5 px-5 w-80 text-white max-md:text-sm"
+            className="flex gap-4 justify-center bg-copper py-3.5 px-5 w-auto text-white max-md:text-sm"
           >
             <button className="uppercase">Book free consultation</button>
-            <ChevronRight />
+            {/* <ChevronRight /> */}
           </Link>
           <Link
             href={

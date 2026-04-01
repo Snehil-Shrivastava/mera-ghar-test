@@ -1,8 +1,5 @@
 import Image from "next/image";
 
-import vision from "@/public/vision.svg";
-import mission from "@/public/mission.svg";
-import purpose from "@/public/purpose.svg";
 import DashedLine from "../components/DashedLine";
 
 import goalVision from "@/public/goal_vision.webp";

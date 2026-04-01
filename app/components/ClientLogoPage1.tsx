@@ -17,13 +17,18 @@ const ClientLogoPage1 = () => {
   return (
     <div className="h-full grid grid-cols-6 max-xl:grid-cols-3 max-md:grid-cols-2 gap-y-20 max-xl:gap-y-15 max-md:gap-x-0 max-md:gap-y-10 max-sm:gap-y-8 gap-x-15 max-xl:justify-items-center">
       <div className="relative h-20 max-xl:h-14 max-xl:w-40 max-lg:w-20 max-sm:w-12">
-        <Image src={hettich} alt="" className="object-contain" fill />
+        <Image
+          src={hettich}
+          alt=""
+          className="object-contain max-sm:scale-150"
+          fill
+        />
       </div>
       <div className="relative h-20 max-xl:h-14 max-xl:w-40 max-lg:w-20 max-sm:w-12">
         <Image
           src={hafele}
           alt=""
-          className="object-contain max-lg:scale-140"
+          className="object-contain max-lg:scale-140 max-sm:scale-190"
           fill
         />
       </div>
@@ -39,7 +44,7 @@ const ClientLogoPage1 = () => {
         <Image
           src={century}
           alt=""
-          className="object-contain max-lg:scale-120"
+          className="object-contain max-lg:scale-120 max-sm:scale-150"
           fill
         />
       </div>
@@ -47,7 +52,7 @@ const ClientLogoPage1 = () => {
         <Image
           src={greenply}
           alt=""
-          className="object-contain max-lg:scale-130"
+          className="object-contain max-lg:scale-130 max-sm:scale-180"
           fill
         />
       </div>
@@ -63,7 +68,7 @@ const ClientLogoPage1 = () => {
         <Image
           src={grass}
           alt=""
-          className="object-contain max-lg:scale-120"
+          className="object-contain max-lg:scale-120 max-sm:scale-180"
           fill
         />
       </div>
@@ -71,7 +76,7 @@ const ClientLogoPage1 = () => {
         <Image
           src={kesseboehmer}
           alt=""
-          className="object-contain max-lg:scale-150"
+          className="object-contain max-lg:scale-150 max-sm:scale-240"
           fill
         />
       </div>
@@ -79,7 +84,7 @@ const ClientLogoPage1 = () => {
         <Image
           src={salice}
           alt=""
-          className="object-contain max-lg:scale-150"
+          className="object-contain max-lg:scale-150 max-sm:scale-200"
           fill
         />
       </div>
@@ -87,7 +92,7 @@ const ClientLogoPage1 = () => {
         <Image
           src={tesa}
           alt=""
-          className="object-contain max-lg:scale-130"
+          className="object-contain max-lg:scale-130 max-sm:scale-180"
           fill
         />
       </div>
@@ -95,7 +100,7 @@ const ClientLogoPage1 = () => {
         <Image
           src={marino}
           alt=""
-          className="object-contain max-lg:scale-140"
+          className="object-contain max-lg:scale-140 max-sm:scale-180"
           fill
         />
       </div>
@@ -103,7 +108,7 @@ const ClientLogoPage1 = () => {
         <Image
           src={mikasa}
           alt=""
-          className="object-contain max-lg:scale-140"
+          className="object-contain max-lg:scale-140 max-sm:scale-200"
           fill
         />
       </div>

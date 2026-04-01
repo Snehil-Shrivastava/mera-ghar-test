@@ -1,4 +1,3 @@
-import React from "react";
 import PageBanner from "../components/PageBanner";
 
 const FoundersHeader = () => {
