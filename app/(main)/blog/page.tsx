@@ -5,7 +5,7 @@ async function getPosts() {
   const res = await fetch(process.env.WORDPRESS_URL!, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
-    cache: "no-store",
+    cache: "force-cache",
     body: JSON.stringify({
       query: `
         query GetAllPosts {

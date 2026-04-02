@@ -4,7 +4,7 @@ export async function generateStaticParams() {
   const res = await fetch(process.env.WORDPRESS_URL!, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
-    cache: "no-store",
+    cache: "force-cache",
     body: JSON.stringify({
       query: `
         query GetAllSlugs {
@@ -28,7 +28,7 @@ async function getPost(slug: string) {
   const res = await fetch(process.env.WORDPRESS_URL!, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
-    cache: "no-store",
+    cache: "force-cache",
     body: JSON.stringify({
       query: `
         query GetPost($slug: ID!) {
