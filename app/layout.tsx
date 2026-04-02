@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Raleway, Open_Sans } from "next/font/google";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/next";
 
 const raleway = Raleway({
   variable: "--font-raleway",
@@ -32,6 +33,7 @@ export default function RootLayout({
         suppressHydrationWarning={true}
       >
         {children}
+        <Analytics />
       </body>
     </html>
   );
