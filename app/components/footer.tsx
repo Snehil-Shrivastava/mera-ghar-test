@@ -112,16 +112,36 @@ const Footer = () => {
                   <Link
                     href={"https://maps.app.goo.gl/bYx9HXwFzmqd6R2f9"}
                     target="_blank"
-                    className="flex gap-6 max-xl:gap-4 w-65 max-xl:w-45 max-md:w-auto"
+                    className="flex gap-6 max-xl:gap-4 w-75 max-xl:w-55 max-md:w-auto items-center"
                   >
-                    <Image src={pin} alt="" className="max-xl:w-3.5 w-4" />
-                    <span className="text-lg max-xl:text-sm">
-                      Gomti Nagar, Lucknow
-                    </span>
+                    <div className="flex gap-6 max-xl:gap-4 w-full items-center">
+                      <Image src={pin} alt="" className="max-xl:w-3.5 w-4" />
+                      <div className="flex flex-col">
+                        <span className="font-bold">Flagship Store</span>
+                        <span className="text-lg max-xl:text-sm">
+                          Gomti Nagar, Lucknow
+                        </span>
+                      </div>
+                    </div>
+                  </Link>
+                  <Link
+                    href={"https://maps.app.goo.gl/bYx9HXwFzmqd6R2f9"}
+                    target="_blank"
+                    className="flex gap-6 max-xl:gap-4 w-75 max-xl:w-55 max-md:w-auto items-center"
+                  >
+                    <div className="flex gap-6 max-xl:gap-4 w-full items-center">
+                      <Image src={pin} alt="" className="max-xl:w-3.5 w-4" />
+                      <div className="flex flex-col">
+                        <span className="font-bold">Factory</span>
+                        <span className="text-lg max-xl:text-sm">
+                          Transport Nagar, Lucknow
+                        </span>
+                      </div>
+                    </div>
                   </Link>
                   <Link
                     href={"mailto:info@meraghar.solutions"}
-                    className="flex gap-6 max-xl:gap-4 w-65 max-xl:w-45 max-md:w-auto"
+                    className="flex gap-6 max-xl:gap-4 w-75 max-xl:w-55 max-md:w-auto items-center"
                   >
                     <Image src={envelope} alt="" className="max-xl:w-3.5 w-4" />
                     <span className="text-lg max-xl:text-sm">
@@ -133,7 +153,7 @@ const Footer = () => {
                       "https://api.whatsapp.com/send/?phone=%2B918127300000&text&type=phone_number&app_absent=0"
                     }
                     target="_blank"
-                    className="flex gap-6 max-xl:gap-4 w-65 max-xl:w-45 max-md:w-auto"
+                    className="flex gap-6 max-xl:gap-4 w-75 max-xl:w-55 max-md:w-auto items-center"
                   >
                     <Image src={phone} alt="" className="max-xl:w-3.5 w-4" />
                     <span className="text-lg max-xl:text-sm">

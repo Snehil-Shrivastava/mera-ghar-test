@@ -1,3 +1,4 @@
+import FloatingBanner from "../components/FloatingBanner";
 import BookConsultation from "../sections/BookConsultation";
 import HomeDesignProcess from "../sections/HomeDesignProcess";
 import HomeDesignServices from "../sections/HomeDesignServices";
@@ -8,8 +9,9 @@ import HomePageTestimonials from "../sections/HomePageTestimonials";
 const Page = () => {
   return (
     <div>
-      <div id="page-hero">
+      <div id="page-hero" style={{ position: "relative" }}>
         <HomePageShowReel />
+        <FloatingBanner />
       </div>
       <HomeDesignServices />
       <HomeDesignProcess />

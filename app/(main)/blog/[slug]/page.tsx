@@ -59,8 +59,8 @@ const Page = async ({ params }: { params: { slug: string } }) => {
   }
 
   return (
-    <div className="pt-[10vh]">
-      <div className="flex flex-col gap-6 pt-10 pb-25 px-20 font-openSans max-w-360 mx-auto">
+    <div className="pt-[10vh] max-sm:pt-30.5">
+      <div className="flex flex-col gap-6 pt-10 pb-25 px-20 max-sm:px-10 font-openSans max-w-360 mx-auto">
         {/* Render the dynamic Title */}
         <h2 className="text-3xl font-bold font-raleway">{post.title}</h2>
 
