@@ -178,13 +178,12 @@ const ContactModal = () => {
 
                   <div>
                     <input
-                      required
                       type="email"
                       name="email"
                       value={formData.email}
                       onChange={handleInputChange}
                       className="w-full border-b border-gray-300 p-2 focus:outline-none focus:border-black transition-colors"
-                      placeholder="Your Email*"
+                      placeholder="Your Email"
                     />
                   </div>
 
