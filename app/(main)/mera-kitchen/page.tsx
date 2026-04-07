@@ -1,4 +1,3 @@
-import FloatingBanner from "@/app/components/FloatingBanner";
 import KitchenHeader from "@/app/sections/KitchenHeader";
 import KitchenShowcaseGallery from "@/app/sections/KitchenShowcaseGallery";
 
@@ -7,7 +6,6 @@ const Page = () => {
     <div>
       <div style={{ position: "relative" }}>
         <KitchenHeader />
-        <FloatingBanner />
       </div>
       <KitchenShowcaseGallery />
     </div>

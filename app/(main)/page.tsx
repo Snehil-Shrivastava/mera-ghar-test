@@ -1,4 +1,3 @@
-import FloatingBanner from "../components/FloatingBanner";
 import BookConsultation from "../sections/BookConsultation";
 import HomeDesignProcess from "../sections/HomeDesignProcess";
 import HomeDesignServices from "../sections/HomeDesignServices";
@@ -11,7 +10,6 @@ const Page = () => {
     <div>
       <div id="page-hero" style={{ position: "relative" }}>
         <HomePageShowReel />
-        <FloatingBanner />
       </div>
       <HomeDesignServices />
       <HomeDesignProcess />

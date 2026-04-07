@@ -5,6 +5,7 @@ import { ChevronLeft, ChevronRight, X } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { useState, useEffect, useCallback } from "react";
+import FloatingBanner from "../components/FloatingBanner";
 
 const KitchenShowcaseGallery = () => {
   const KitchemGallery = mera_kitchen;
@@ -51,27 +52,30 @@ const KitchenShowcaseGallery = () => {
   return (
     <>
       <div className="py-20 flex flex-col gap-15">
-        <div className="w-[90%] max-w-360 mx-auto grid grid-cols-2 max-lg:grid-cols-1 gap-x-15 gap-y-15 place-items-center">
-          {KitchemGallery.map((data, index) => (
-            <div
-              key={index}
-              className="relative cursor-zoom-in group overflow-hidden"
-              // @ts-expect-error random
-              onClick={() => setSelectedImage({ src: data.src, index })}
-            >
-              <Image
-                src={data.src}
-                alt=""
-                className="object-cover h-100 max-xl:h-80 transition-transform duration-500 ease-in-out group-hover:scale-105"
-              />
-              {/* Subtle hover overlay */}
-              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300 flex items-center justify-center">
-                <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white text-sm tracking-widest uppercase font-light">
-                  View
-                </span>
+        <div className="w-[90%] max-w-360 mx-auto">
+          <FloatingBanner />
+          <div className="grid grid-cols-2 max-lg:grid-cols-1 gap-x-15 gap-y-15 place-items-center pt-10">
+            {KitchemGallery.map((data, index) => (
+              <div
+                key={index}
+                className="relative cursor-zoom-in group overflow-hidden"
+                // @ts-expect-error random
+                onClick={() => setSelectedImage({ src: data.src, index })}
+              >
+                <Image
+                  src={data.src}
+                  alt=""
+                  className="object-cover h-100 max-xl:h-80 transition-transform duration-500 ease-in-out group-hover:scale-105"
+                />
+                {/* Subtle hover overlay */}
+                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300 flex items-center justify-center">
+                  <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white text-sm tracking-widest uppercase font-light">
+                    View
+                  </span>
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
         <div className="flex gap-10 items-center w-[90%] max-w-360 mx-auto justify-center">
           <Link

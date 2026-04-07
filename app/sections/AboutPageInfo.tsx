@@ -2,48 +2,52 @@ import Image from "next/image";
 
 import wardrobe1 from "@/public/wardrobe_1.webp";
 import kitchen10 from "@/public/3d-rendering-modern-kitchen-fully-parametric-manufacturable-with-opened-shelf-cabinets.jpg.webp";
+import FloatingBanner from "../components/FloatingBanner";
 
 const AboutPageInfo = () => {
   return (
     <div>
-      <div className="py-20 w-[90%] max-w-360 mx-auto relative flex gap-15">
-        <div className="flex-1">
-          <div className="pb-8 border-b border-b-neutral-300 flex flex-col gap-5">
-            <h2 className="capitalize text-brand-brown font-bold text-[40px] max-sm:text-3xl max-xl:w-80 max-lg:w-auto">
-              Welcome to mera ghar
-            </h2>
+      <div className="py-20 w-[90%] max-w-360 mx-auto">
+        <FloatingBanner />
+        <div className="flex gap-15 relative pt-10">
+          <div className="flex-1">
+            <div className="pb-8 border-b border-b-neutral-300 flex flex-col gap-5">
+              <h2 className="capitalize text-brand-brown font-bold text-[40px] max-sm:text-3xl max-xl:w-80 max-lg:w-auto">
+                Welcome to mera ghar
+              </h2>
+            </div>
+            <div className="w-full h-100 relative mt-8 lg:hidden">
+              <Image src={wardrobe1} alt="" fill className="object-cover" />
+            </div>
+            <div className="pt-8 font-openSans flex flex-col gap-8 text-neutral-700">
+              <p>
+                <b className="font-bold">Mera Ghar</b> represents an emotion.
+              </p>
+              <p>
+                Spoken in any language, it captures the essence of a home - the
+                memories, the love and care, the comfort, the spaces, and the
+                nostalgia. Every home is built with a dream and deep involvement
+                for the comfort and convenience of the loved ones who live in it
+                and share life together. At{" "}
+                <b className="font-bold">Mera Ghar</b>, we craft
+                precision-based, customised home interior solutions, including{" "}
+                <b className="font-bold">kitchens, wardrobes and doors.</b>
+              </p>
+              <p>
+                <b className="font-bold">Mera Ghar</b> carefully builds with
+                materials that last, from designs that adapt to solutions that
+                respect both emotions and functionality. For us,{" "}
+                <b className="font-bold">
+                  listening comes before suggesting and customising comes before
+                  standardising.
+                </b>
+              </p>
+            </div>
           </div>
-          <div className="w-full h-100 relative mt-8 lg:hidden">
-            <Image src={wardrobe1} alt="" fill className="object-cover" />
-          </div>
-          <div className="pt-8 font-openSans flex flex-col gap-8 text-neutral-700">
-            <p>
-              <b className="font-bold">Mera Ghar</b> represents an emotion.
-            </p>
-            <p>
-              Spoken in any language, it captures the essence of a home - the
-              memories, the love and care, the comfort, the spaces, and the
-              nostalgia. Every home is built with a dream and deep involvement
-              for the comfort and convenience of the loved ones who live in it
-              and share life together. At <b className="font-bold">Mera Ghar</b>
-              , we craft precision-based, customised home interior solutions,
-              including{" "}
-              <b className="font-bold">kitchens, wardrobes and doors.</b>
-            </p>
-            <p>
-              <b className="font-bold">Mera Ghar</b> carefully builds with
-              materials that last, from designs that adapt to solutions that
-              respect both emotions and functionality. For us,{" "}
-              <b className="font-bold">
-                listening comes before suggesting and customising comes before
-                standardising.
-              </b>
-            </p>
-          </div>
-        </div>
-        <div className="flex-1 relative flex justify-end items-center max-lg:hidden">
-          <div className="w-100 h-120 relative">
-            <Image src={wardrobe1} alt="" fill className="object-cover" />
+          <div className="flex-1 relative flex justify-end items-center max-lg:hidden">
+            <div className="w-100 h-120 relative">
+              <Image src={wardrobe1} alt="" fill className="object-cover" />
+            </div>
           </div>
         </div>
       </div>

@@ -1,4 +1,3 @@
-import FloatingBanner from "@/app/components/FloatingBanner";
 import WardrobeHeader from "@/app/sections/WardrobeHeader";
 import WardrobeShowcaseGallery from "@/app/sections/WardrobeShowcaseGallery";
 
@@ -7,7 +6,6 @@ const Page = () => {
     <div>
       <div style={{ position: "relative" }}>
         <WardrobeHeader />
-        <FloatingBanner />
       </div>
       <WardrobeShowcaseGallery />
     </div>

@@ -2,94 +2,99 @@ import Image from "next/image";
 
 import anuragAgarwal from "@/public/anurag-agarwal-2.png";
 import tabrezRashid from "@/public/tabrez-rashid.png";
+import FloatingBanner from "../components/FloatingBanner";
 
 const FoundersInfo = () => {
   return (
     <div>
       <div className="py-20">
-        <div className="w-[90%] max-w-360 mx-auto flex gap-10">
-          <div className="flex-[1.25] max-lg:flex-1 max-sm:flex max-sm:flex-col">
-            <div className="pb-4 max-xl:pb-8 border-b border-b-neutral-300 flex flex-col gap-5">
-              <h2 className="capitalize text-brand-brown font-bold text-[60px] max-xl:text-[40px]/[35px] max-sm:text-4xl">
-                Mr. Anurag Agarwal
-              </h2>
+        <div className="w-[90%] max-w-360 mx-auto">
+          <FloatingBanner />
+          <div className="flex gap-10 pt-10">
+            <div className="flex-[1.25] max-lg:flex-1 max-sm:flex max-sm:flex-col">
+              <div className="pb-4 max-xl:pb-8 border-b border-b-neutral-300 flex flex-col gap-5">
+                <h2 className="capitalize text-brand-brown font-bold text-[60px] max-xl:text-[40px]/[35px] max-sm:text-4xl">
+                  Mr. Anurag Agarwal
+                </h2>
+              </div>
+              <div className="w-120 max-sm:w-full mx-auto relative h-full max-h-170 lg:hidden mt-6">
+                <Image
+                  src={anuragAgarwal}
+                  alt=""
+                  className="object-cover xl:object-contain h-full"
+                />
+              </div>
+              <div className="pt-6 max-xl:pt-6 font-openSans flex flex-col gap-2 text-neutral-700 text-sm">
+                <p>
+                  Born and brought up in Lucknow, Uttar Pradesh a first
+                  generation businessman with an MBA.
+                </p>
+                <p>
+                  From a small self started trading business of home interior
+                  products in the year 1999 in the bustling old city of Lucknow
+                  he changed the rules of the game at a very early stage.
+                </p>
+                <p>
+                  He put customer service, solutions-centricity and trust as the
+                  corner stone in a trade dominated by price and scale.
+                </p>
+                <p>
+                  Over the years he emerged as one of the strongest player and
+                  an extremely loved person in the sector.
+                </p>
+                <p>
+                  A frequent and avid visitor to worldwide exhibitions and
+                  seminars, he utilised the global exposure to study and
+                  understand international products and trends making them the
+                  bedrock of his product and solution offerings to the
+                  consumers. He didn&apos;t just grow with time, he evolved and
+                  upgraded!
+                </p>
+                <p>
+                  With an affable demeanour he continued to strive and provide
+                  product and solutions way ahead of times to the market, making
+                  him the preferred choice of both Architects/Designers as well
+                  as customers building homes.
+                </p>
+                <p>
+                  Come 2017, he transformed the market by building a first of
+                  its kind 10,000 Square Feet experience centre where both
+                  designers and clients could spend hours exploring with him the
+                  design, form and function solutions and products for their
+                  dream house and interior spaces.
+                </p>
+                <p>
+                  One of the first to realise the customers need for solutions
+                  instead of brass tack products he founded his own automated
+                  furniture factory with top of the line European machinery in
+                  2021.
+                </p>
+                <p>
+                  Today he stands tall as an expert of home interiors solutions,
+                  with deep understanding of structural, design and functional
+                  products to an acute aesthetic sense and the biggest palate of
+                  design based products.
+                </p>
+                <p>
+                  Successfully integrating his mastery of the products into
+                  customised solutions for all categories of homes and spaces.
+                </p>
+              </div>
             </div>
-            <div className="w-120 max-sm:w-full mx-auto relative h-full max-h-170 lg:hidden mt-6">
-              <Image
-                src={anuragAgarwal}
-                alt=""
-                className="object-cover xl:object-contain h-full"
-              />
-            </div>
-            <div className="pt-6 max-xl:pt-6 font-openSans flex flex-col gap-2 text-neutral-700 text-sm">
-              <p>
-                Born and brought up in Lucknow, Uttar Pradesh a first generation
-                businessman with an MBA.
-              </p>
-              <p>
-                From a small self started trading business of home interior
-                products in the year 1999 in the bustling old city of Lucknow he
-                changed the rules of the game at a very early stage.
-              </p>
-              <p>
-                He put customer service, solutions-centricity and trust as the
-                corner stone in a trade dominated by price and scale.
-              </p>
-              <p>
-                Over the years he emerged as one of the strongest player and an
-                extremely loved person in the sector.
-              </p>
-              <p>
-                A frequent and avid visitor to worldwide exhibitions and
-                seminars, he utilised the global exposure to study and
-                understand international products and trends making them the
-                bedrock of his product and solution offerings to the consumers.
-                He didn&apos;t just grow with time, he evolved and upgraded!
-              </p>
-              <p>
-                With an affable demeanour he continued to strive and provide
-                product and solutions way ahead of times to the market, making
-                him the preferred choice of both Architects/Designers as well as
-                customers building homes.
-              </p>
-              <p>
-                Come 2017, he transformed the market by building a first of its
-                kind 10,000 Square Feet experience centre where both designers
-                and clients could spend hours exploring with him the design,
-                form and function solutions and products for their dream house
-                and interior spaces.
-              </p>
-              <p>
-                One of the first to realise the customers need for solutions
-                instead of brass tack products he founded his own automated
-                furniture factory with top of the line European machinery in
-                2021.
-              </p>
-              <p>
-                Today he stands tall as an expert of home interiors solutions,
-                with deep understanding of structural, design and functional
-                products to an acute aesthetic sense and the biggest palate of
-                design based products.
-              </p>
-              <p>
-                Successfully integrating his mastery of the products into
-                customised solutions for all categories of homes and spaces.
-              </p>
-            </div>
-          </div>
-          <div
-            className="flex-1 relative flex justify-end items-start max-lg:hidden"
-            style={{
-              height: "inherit",
-            }}
-          >
-            <div className="w-full relative h-full max-h-170">
-              <Image
-                src={anuragAgarwal}
-                alt=""
-                fill
-                className="object-cover xl:object-contain h-full"
-              />
+            <div
+              className="flex-1 relative flex justify-end items-start max-lg:hidden"
+              style={{
+                height: "inherit",
+              }}
+            >
+              <div className="w-full relative h-full max-h-170">
+                <Image
+                  src={anuragAgarwal}
+                  alt=""
+                  fill
+                  className="object-cover xl:object-contain h-full"
+                />
+              </div>
             </div>
           </div>
         </div>

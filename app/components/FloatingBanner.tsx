@@ -15,7 +15,7 @@ const FloatingBanner = () => {
     //     <Image src={dalivery30days} alt="" />
     //   </div>
     // </div>
-    <div className="absolute bottom-20 max-md:bottom-10 left-0 right-0 md:flex md:justify-between md:items-center max-md:grid max-md:grid-cols-2 max-md:justify-items-center gap-20 max-md:gap-y-10 max-md:gap-x-0 max-sm:gap-10 w-[90%] max-md:w-[70%] max-sm:w-4/5 max-w-360 mx-auto">
+    <div className="md:flex md:justify-between md:items-center max-md:grid max-md:grid-cols-2 max-md:justify-items-center gap-20 max-md:gap-y-10 max-md:gap-x-0 max-sm:gap-10 pb-10 w-full">
       <div className="w-52.5 max-lg:w-37.5 max-md:w-35 max-sm:w-32">
         <Image src={freedelivery} alt="" />
       </div>
