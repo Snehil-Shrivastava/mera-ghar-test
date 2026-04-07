@@ -15,17 +15,17 @@ const FloatingBanner = () => {
     //     <Image src={dalivery30days} alt="" />
     //   </div>
     // </div>
-    <div className="absolute bottom-20 left-0 right-0 md:flex md:justify-between md:items-center max-md:grid max-md:grid-cols-2 max-md:justify-items-center gap-20 max-md:gap-y-10 max-md:gap-x-0 max-sm:gap-10 w-[90%] max-md:w-[70%] max-sm:w-4/5 max-w-360 mx-auto">
-      <div className="w-52.5 max-lg:w-37.5 max-md:w-35 max-sm:w-27">
+    <div className="absolute bottom-20 max-md:bottom-10 left-0 right-0 md:flex md:justify-between md:items-center max-md:grid max-md:grid-cols-2 max-md:justify-items-center gap-20 max-md:gap-y-10 max-md:gap-x-0 max-sm:gap-10 w-[90%] max-md:w-[70%] max-sm:w-4/5 max-w-360 mx-auto">
+      <div className="w-52.5 max-lg:w-37.5 max-md:w-35 max-sm:w-32">
         <Image src={freedelivery} alt="" />
       </div>
-      <div className="w-52.5 max-lg:w-37.5 max-md:w-35 max-sm:w-27 md:hidden">
+      <div className="w-52.5 max-lg:w-37.5 max-md:w-35 max-sm:w-32 md:hidden">
         <Image src={delivery30days} alt="" />
       </div>
-      <div className="w-40 max-lg:w-25 max-md:w-27 max-sm:w-20">
+      <div className="w-40 max-lg:w-25 max-md:w-27 max-sm:w-24">
         <Image src={easyEMI} alt="" />
       </div>
-      <div className="w-40 max-lg:w-25 max-md:w-27 max-sm:w-20">
+      <div className="w-40 max-lg:w-25 max-md:w-27 max-sm:w-24">
         <Image src={annualService} alt="" />
       </div>
       <div className="w-52.5 max-lg:w-37.5 max-md:w-30 max-sm:w-27 max-md:hidden">

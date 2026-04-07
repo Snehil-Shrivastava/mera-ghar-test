@@ -108,10 +108,10 @@ const Footer = () => {
                 <span className="text-2xl max-xl:text-xl font-bold">
                   Stay Tuned With Us
                 </span>
-                <div className="flex flex-col gap-10 max-lg:grid max-lg:grid-cols-2 max-lg:gap-y-6 max-md:gap-3">
+                <div className="flex flex-col gap-5 max-lg:grid max-lg:grid-cols-2 max-lg:gap-y-6 max-md:gap-3">
                   <Link
-                    href={"https://maps.app.goo.gl/bYx9HXwFzmqd6R2f9"}
-                    target="_blank"
+                    href={""}
+                    // target="_blank"
                     className="flex gap-6 max-xl:gap-4 w-75 max-xl:w-55 max-md:w-auto items-center"
                   >
                     <div className="flex gap-6 max-xl:gap-4 w-full items-center">
@@ -125,8 +125,8 @@ const Footer = () => {
                     </div>
                   </Link>
                   <Link
-                    href={"https://maps.app.goo.gl/bYx9HXwFzmqd6R2f9"}
-                    target="_blank"
+                    href={""}
+                    // target="_blank"
                     className="flex gap-6 max-xl:gap-4 w-75 max-xl:w-55 max-md:w-auto items-center"
                   >
                     <div className="flex gap-6 max-xl:gap-4 w-full items-center">
